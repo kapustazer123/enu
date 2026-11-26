@@ -101,5 +101,6 @@
     }
   ],
   "flashcards": "flashcards.json",
+  "questions": "questions.json",
   "links": []
 }
