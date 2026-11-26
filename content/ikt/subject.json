@@ -109,10 +109,5 @@
     }
   ],
   "flashcards": "flashcards.json",
-  "links": [
-    {
-      "title": "Курс на mooc.enu.kz",
-      "url": "https://mooc.enu.kz/course/view.php?id=1369"
-    }
-  ]
+  "links": []
 }

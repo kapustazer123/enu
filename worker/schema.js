@@ -33,4 +33,18 @@ export const SCHEMA = [
     updated_at INTEGER NOT NULL,
     PRIMARY KEY (user_id, subject)
   )`,
+  // Закрытые данные (ссылки на онлайн-занятия, код группы) — только в базе, не в репозитории
+  `CREATE TABLE IF NOT EXISTS settings (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL,
+    updated_at INTEGER NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS link_access (
+    user_id INTEGER PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+    granted_at INTEGER NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS code_attempts (
+    user_id INTEGER PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+    n INTEGER NOT NULL DEFAULT 0
+  )`,
 ];

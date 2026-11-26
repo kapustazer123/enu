@@ -74,6 +74,11 @@ export async function renderAdmin(app) {
       </section>
 
       <section class="section">
+        <div class="section-head"><h2>Ссылки на онлайн-занятия</h2><span class="aside">хранятся только в базе, не в репозитории</span></div>
+        <div id="links-admin"><p class="muted small">Загрузка…</p></div>
+      </section>
+
+      <section class="section">
         <div class="section-head"><h2>Сброс пароля</h2></div>
         <form class="form" id="reset-form">
           <label class="field"><span class="label">Логин студента</span><input class="input" name="username" required autocapitalize="none"></label>
@@ -83,6 +88,7 @@ export async function renderAdmin(app) {
       </section>
     `;
     bind();
+    drawLinksAdmin();
   }
 
   async function open(path) {
@@ -127,6 +133,39 @@ export async function renderAdmin(app) {
       e.preventDefault(); const f = e.target; const out = app.querySelector('#reset-msg');
       try { await api.post('/api/admin/reset-password', { username: f.username.value, newPassword: f.newPassword.value }); out.textContent = 'Пароль сброшен, все сессии студента завершены.'; f.reset(); }
       catch (ex) { out.textContent = ex.message; }
+    });
+  }
+
+  async function drawLinksAdmin() {
+    const box = app.querySelector('#links-admin');
+    if (!box) return;
+    let data;
+    try { data = await api.get('/api/admin/links'); } catch (e) { box.innerHTML = `<div class="error-box">${esc(e.message)}</div>`; return; }
+    box.innerHTML = `
+      <p class="small muted">Ссылок: ${data.links.length} · доступ открыт у ${data.accessCount} студентов.</p>
+      <form class="form" id="links-form" style="max-width:none">
+        <label class="field"><span class="label">Код группы (минимум 6 символов; раздайте его в чате группы)</span>
+          <input class="input" name="code" value="${esc(data.code)}" autocomplete="off" style="max-width:420px"></label>
+        <label class="field"><span class="label">Ссылки (JSON)</span>
+          <textarea class="input mono" name="links" spellcheck="false" style="min-height:260px;font-size:.8125rem;white-space:pre;overflow-wrap:normal">${esc(JSON.stringify(data.links, null, 2))}</textarea></label>
+        <p class="hint" style="margin:0">Формат: <code>[{"subject":"otkr","type":"Лекция","day":"ср","start":"13:10","end":"14:00","platform":"Teams","url":"https://…"}]</code>. Ссылка показывается у пары с тем же предметом, днём и временем начала.</p>
+        <div class="btn-row" style="margin-top:0">
+          <button class="btn primary" type="submit">Сохранить ссылки и код</button>
+          <button class="btn quiet" type="button" id="revoke">Закрыть доступ всем</button>
+          <span class="small muted" id="links-msg" role="status"></span>
+        </div>
+      </form>`;
+    const form = box.querySelector('#links-form'); const out = box.querySelector('#links-msg');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      let links;
+      try { links = JSON.parse(form.links.value || '[]'); } catch (err) { out.textContent = `Ошибка в JSON: ${err.message}`; return; }
+      try { await api.put('/api/admin/links', { links, code: form.code.value }); out.textContent = 'Сохранено'; drawLinksAdmin(); }
+      catch (err) { out.textContent = err.message; }
+    });
+    box.querySelector('#revoke').addEventListener('click', async () => {
+      if (!confirm('Закрыть доступ к ссылкам всем студентам? Им придётся заново ввести код — поменяйте его перед этим.')) return;
+      try { await api.put('/api/admin/links', { revokeAll: true }); drawLinksAdmin(); } catch (err) { out.textContent = err.message; }
     });
   }
 

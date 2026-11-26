@@ -3,10 +3,13 @@ import { subjectStats } from '../progress.js';
 import { store } from '../store.js';
 import { esc, md, formatDate, daysUntil, daysBadge, progressBar, pct } from '../utils.js';
 import { isWeak } from './quiz.js';
+import { getLessonLinks } from '../links.js';
+import { dayIndex } from '../timetable.js';
 
 export async function renderSubject(app, id) {
   const s = await getSubject(id);
-  const st = await subjectStats(s);
+  const [st, linkData] = await Promise.all([subjectStats(s), getLessonLinks()]);
+  const myLinks = linkData.links.filter((l) => l.subject === s.id).sort((a, b) => dayIndex(a.day) - dayIndex(b.day) || a.start.localeCompare(b.start));
   const days = daysUntil(s.exam?.date);
   const weakCount = Object.values(store.allAnswerStats(s.id)).filter(isWeak).length;
 
@@ -24,6 +27,15 @@ export async function renderSubject(app, id) {
       ${s.description ? `<div class="lead" style="margin-top:var(--s4)">${md(s.description)}</div>` : ''}
       <div class="head-progress">${progressBar(st.readiness, `${st.readiness}% готов`)}</div>
     </div>
+
+    ${myLinks.length ? `<section class="section">
+      <div class="section-head"><h2>Онлайн-занятия</h2><span class="aside">только для вашей группы</span></div>
+      <ul class="rows">${myLinks.map((l) => `<li><a class="row" href="${esc(l.url)}" target="_blank" rel="noopener">
+        <span class="row-num">${['', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'][dayIndex(l.day)]}</span>
+        <span class="grow"><span class="row-title">${esc(l.type || 'Занятие')}</span><div class="row-sub mono">${esc(l.start)}${l.end ? `–${esc(l.end)}` : ''}${l.platform ? ` · ${esc(l.platform)}` : ''}</div></span>
+        <span class="row-end"><strong style="color:var(--primary)">подключиться ↗</strong></span>
+      </a></li>`).join('')}</ul>
+    </section>` : ''}
 
     <section class="section">
       <div class="section-head"><h2>Материалы</h2><span class="aside mono">${st.topics.done} из ${st.topics.total} изучено</span></div>

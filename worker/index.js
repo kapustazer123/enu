@@ -68,12 +68,17 @@ async function route(request, env, url) {
   if (path === '/api/progress' && method === 'GET') return getProgress(env, user);
   if (path === '/api/progress' && method === 'POST') return postProgress(request, env, user);
 
+  if (path === '/api/links' && method === 'GET') return getLinks(env, user);
+  if (path === '/api/links/unlock' && method === 'POST') return unlockLinks(request, env, user);
+
   if (path.startsWith('/api/admin/')) {
     if (!user.is_admin) throw new HttpError(403, 'Нужны права администратора');
     if (path === '/api/admin/file' && method === 'GET') return adminReadFile(env, url);
     if (path === '/api/admin/file' && method === 'PUT') return adminWriteFile(request, env, user);
     if (path === '/api/admin/reset-password' && method === 'POST') return adminResetPassword(request, env);
     if (path === '/api/admin/stats' && method === 'GET') return adminStats(env);
+    if (path === '/api/admin/links' && method === 'GET') return adminGetLinks(env);
+    if (path === '/api/admin/links' && method === 'PUT') return adminPutLinks(request, env);
   }
 
   throw new HttpError(404, 'Не найдено');
@@ -421,4 +426,82 @@ async function adminStats(env) {
   const users = await env.DB.prepare('SELECT COUNT(*) AS n FROM users').first();
   const active = await env.DB.prepare('SELECT COUNT(*) AS n FROM progress WHERE updated_at > ?').bind(Date.now() - 7 * 86400000).first();
   return json({ users: users.n, activeWeek: active.n, githubConfigured: !!env.GITHUB_TOKEN });
+}
+
+// ---------- ссылки на онлайн-занятия (закрытые, только для своей группы) ----------
+const MAX_CODE_ATTEMPTS = 20;
+
+async function getSetting(env, key) {
+  const row = await env.DB.prepare('SELECT value FROM settings WHERE key = ?').bind(key).first();
+  return row ? row.value : null;
+}
+function setSetting(env, key, value) {
+  return env.DB.prepare(`INSERT INTO settings (key, value, updated_at) VALUES (?, ?, ?)
+    ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`).bind(key, value, Date.now());
+}
+
+async function hasLinkAccess(env, user) {
+  if (user.is_admin) return true;
+  return !!(await env.DB.prepare('SELECT 1 FROM link_access WHERE user_id = ?').bind(user.id).first());
+}
+
+async function getLinks(env, user) {
+  if (!(await hasLinkAccess(env, user))) throw new HttpError(403, 'Нужен код группы');
+  return json({ links: JSON.parse((await getSetting(env, 'lesson_links')) || '[]') });
+}
+
+async function unlockLinks(request, env, user) {
+  if (await hasLinkAccess(env, user)) return json({ ok: true });
+  const attempts = (await env.DB.prepare('SELECT n FROM code_attempts WHERE user_id = ?').bind(user.id).first())?.n || 0;
+  if (attempts >= MAX_CODE_ATTEMPTS) throw new HttpError(429, 'Слишком много попыток. Попросите администратора открыть доступ.');
+  const b = await body(request);
+  const code = await getSetting(env, 'group_code');
+  const given = String(b.code || '').trim().toLowerCase();
+  if (!code || !given || !timingSafeEqual(await sha256(given), await sha256(code.toLowerCase()))) {
+    await env.DB.prepare(`INSERT INTO code_attempts (user_id, n) VALUES (?, 1) ON CONFLICT(user_id) DO UPDATE SET n = n + 1`).bind(user.id).run();
+    throw new HttpError(400, 'Неверный код группы');
+  }
+  await env.DB.prepare('INSERT OR IGNORE INTO link_access (user_id, granted_at) VALUES (?, ?)').bind(user.id, Date.now()).run();
+  return json({ ok: true });
+}
+
+const DAY_RE = /^(пн|вт|ср|чт|пт|сб|вс|[1-7])$/;
+const TIME_RE = /^([01]\d|2[0-3]):[0-5]\d$/;
+
+function cleanLinks(list) {
+  if (!Array.isArray(list) || list.length > 200) throw new HttpError(400, 'Ожидается массив ссылок (до 200)');
+  return list.map((l, i) => {
+    const where = `Ссылка ${i + 1}`;
+    let url;
+    try { url = new URL(String(l.url)); } catch { throw new HttpError(400, `${where}: некорректный url`); }
+    if (url.protocol !== 'https:') throw new HttpError(400, `${where}: нужен https-адрес`);
+    if (!KEY_RE.test(String(l.subject || ''))) throw new HttpError(400, `${where}: subject — id предмета`);
+    const day = String(l.day || '').toLowerCase();
+    if (!DAY_RE.test(day)) throw new HttpError(400, `${where}: day — пн…вс`);
+    if (!TIME_RE.test(String(l.start || ''))) throw new HttpError(400, `${where}: start в формате ЧЧ:ММ`);
+    return { subject: l.subject, type: cleanText(l.type, 30), day, start: l.start, end: TIME_RE.test(String(l.end || '')) ? l.end : '', platform: cleanText(l.platform, 40), url: url.href };
+  });
+}
+
+async function adminGetLinks(env) {
+  const access = await env.DB.prepare('SELECT COUNT(*) AS n FROM link_access').first();
+  return json({
+    links: JSON.parse((await getSetting(env, 'lesson_links')) || '[]'),
+    code: (await getSetting(env, 'group_code')) || '',
+    accessCount: access.n,
+  });
+}
+
+async function adminPutLinks(request, env) {
+  const b = await body(request);
+  const stmts = [];
+  if (b.links !== undefined) stmts.push(setSetting(env, 'lesson_links', JSON.stringify(cleanLinks(b.links))));
+  if (b.code !== undefined) {
+    const code = cleanText(b.code, 40);
+    if (code && code.length < 6) throw new HttpError(400, 'Код группы — минимум 6 символов');
+    stmts.push(setSetting(env, 'group_code', code));
+  }
+  if (b.revokeAll) stmts.push(env.DB.prepare('DELETE FROM link_access'), env.DB.prepare('DELETE FROM code_attempts'));
+  if (stmts.length) await env.DB.batch(stmts);
+  return adminGetLinks(env);
 }

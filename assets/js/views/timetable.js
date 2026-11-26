@@ -1,11 +1,13 @@
 import { getAllSubjects, getTimetable } from '../content.js';
 import { esc } from '../utils.js';
 import { DAY_NAMES, dayIndex, mondayOf, weekInfo, inSemester, lessonsOn, lessonState, lessonTitle, placeLabel } from '../timetable.js';
+import { getLessonLinks, linkForLesson } from '../links.js';
 
 const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 
-export function lessonHTML(l, subjectsById, state) {
+export function lessonHTML(l, subjectsById, state, links = []) {
   const title = lessonTitle(l, subjectsById);
+  const join = linkForLesson(links, l)?.url || l.link;
   const subj = subjectsById[l.subject];
   return `<li class="lesson ${state === 'past' ? 'past' : ''}" style="--subject:${esc(subj?.color || '')}">
     <span class="lesson-time">${esc(l.start)}–${esc(l.end)}</span>
@@ -17,14 +19,15 @@ export function lessonHTML(l, subjectsById, state) {
         ${placeLabel(l) ? `<span>${esc(placeLabel(l))}</span>` : ''}
         ${l.teacher ? `<span>${esc(l.teacher)}</span>` : ''}
         ${l.week ? `<span class="tag">${esc(l.week)}</span>` : ''}
-        ${l.link ? `<a href="${esc(l.link)}" target="_blank" rel="noopener">${l.online ? 'подключиться' : 'ссылка'} ↗</a>` : ''}
+        ${join ? `<a href="${esc(join)}" target="_blank" rel="noopener"><strong>подключиться ↗</strong></a>` : ''}
       </div>
     </div>
   </li>`;
 }
 
 export async function renderTimetable(app) {
-  const [tt, { subjects }] = await Promise.all([getTimetable(), getAllSubjects()]);
+  const [tt, { subjects }, linkData] = await Promise.all([getTimetable(), getAllSubjects(), getLessonLinks()]);
+  const links = linkData.links;
   const subjectsById = Object.fromEntries(subjects.map((s) => [s.id, s]));
 
   if (!tt) {
@@ -54,7 +57,7 @@ export async function renderTimetable(app) {
           <div class="day-date">${date.getDate()} ${MONTHS[date.getMonth()]}${isToday ? ' · сегодня' : ''}</div>
         </div>
         ${lessons.length
-          ? `<ul class="lessons">${lessons.map((l) => lessonHTML(l, subjectsById, isToday ? lessonState(l, today) : null)).join('')}</ul>`
+          ? `<ul class="lessons">${lessons.map((l) => lessonHTML(l, subjectsById, isToday ? lessonState(l, today) : null, links)).join('')}</ul>`
           : '<p class="small" style="margin:0">Занятий нет</p>'}
       </section>`;
     }).join('');
@@ -66,6 +69,8 @@ export async function renderTimetable(app) {
         ${wi.number ? `<p class="lead" style="margin:0">${wi.number}-я неделя${wi.type ? ` — <strong style="color:var(--ink)">${esc(wi.type)}</strong>` : ''}${tt.weeks ? ` из ${tt.weeks}` : ''}</p>` : ''}
       </div>
       ${!inSemester(tt, today) ? '<div class="notice">Семестр завершён, идёт сессия. <a href="#/schedule">Расписание экзаменов</a></div>' : ''}
+      ${linkData.access === 'guest' ? '<p class="hint" style="margin:0 0 var(--s4)">Ссылки на онлайн-пары видны после <a href="#/account">входа</a> и ввода кода группы.</p>' : ''}
+      ${linkData.access === 'need-code' ? '<p class="hint" style="margin:0 0 var(--s4)">Чтобы видеть ссылки на онлайн-пары, введите код группы в <a href="#/account">аккаунте</a>.</p>' : ''}
       <div class="tabs" role="tablist">
         <button type="button" data-week="0" class="${offset === 0 ? 'active' : ''}">Эта неделя</button>
         <button type="button" data-week="1" class="${offset === 1 ? 'active' : ''}">Следующая</button>

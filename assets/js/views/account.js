@@ -2,6 +2,7 @@ import { auth } from '../auth.js';
 import { api } from '../api.js';
 import { sync } from '../store.js';
 import { esc } from '../utils.js';
+import { getLessonLinks, resetLinksCache } from '../links.js';
 
 const STATUS_TEXT = {
   synced: 'Прогресс сохранён в аккаунте',
@@ -84,6 +85,11 @@ export async function renderAccount(app, params) {
       </section>
 
       <section class="section">
+        <div class="section-head"><h2>Онлайн-занятия</h2></div>
+        <div id="links-box"><p class="muted small">Проверяю доступ…</p></div>
+      </section>
+
+      <section class="section">
         <div class="section-head"><h2>Пароль</h2></div>
         <form class="form" id="password-form">
           ${field('oldPassword', 'Текущий пароль', 'type="password" autocomplete="current-password" required')}
@@ -115,6 +121,33 @@ export async function renderAccount(app, params) {
       } catch (err) { msg.textContent = err.message; }
     });
     app.querySelector('#logout').addEventListener('click', async () => { await auth.logout(); location.hash = '#/'; });
+    drawLinksBox();
+  }
+
+  async function drawLinksBox() {
+    const box = app.querySelector('#links-box');
+    if (!box) return;
+    const { access, links } = await getLessonLinks();
+    if (access === 'granted') {
+      box.innerHTML = `<p>Доступ открыт: ${links.length ? `ссылки на ${links.length} занятий есть в <a href="#/timetable">расписании</a> и на страницах предметов` : 'администратор ещё не добавил ссылки'}.</p>`;
+      return;
+    }
+    if (access !== 'need-code') { box.innerHTML = '<p class="muted small">Сервер недоступен, попробуйте позже.</p>'; return; }
+    box.innerHTML = `
+      <p class="lead" style="margin-bottom:var(--s4)">Ссылки на онлайн-пары видны только своей группе. Введите код группы — его даёт староста или администратор портала.</p>
+      <form class="form" id="code-form">
+        <label class="field"><span class="label">Код группы</span><input class="input" name="code" required autocomplete="off" autocapitalize="none" spellcheck="false"></label>
+        <div class="btn-row" style="margin-top:0"><button class="btn primary" type="submit">Открыть доступ</button><span class="small muted" id="code-msg" role="status"></span></div>
+      </form>`;
+    box.querySelector('#code-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const out = box.querySelector('#code-msg');
+      try {
+        await api.post('/api/links/unlock', { code: e.target.code.value });
+        resetLinksCache();
+        drawLinksBox();
+      } catch (err) { out.textContent = err.message; }
+    });
   }
 
   const draw = () => (auth.user ? drawUser() : drawGuest());
