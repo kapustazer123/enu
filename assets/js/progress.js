@@ -29,3 +29,17 @@ export async function subjectStats(subject) {
     readiness: parts.length ? Math.round(parts.reduce((a, b) => a + b, 0) / parts.length) : 0,
   };
 }
+
+/** Сводка для рейтинга: готовность по предметам с материалами и лучший «пробный экзамен» (квиз с id exam). */
+export async function summaryForRating() {
+  const { getAllSubjects } = await import('./content.js');
+  const { subjects } = await getAllSubjects();
+  const out = {};
+  for (const s of subjects) {
+    const st = await subjectStats(s);
+    const hasContent = st.topics.total || st.quizzes.total || st.cards.total || st.questions.total;
+    if (!hasContent) continue;
+    out[s.id] = { readiness: st.readiness, examBest: store.quizResult(s.id, 'exam')?.best ?? null };
+  }
+  return out;
+}

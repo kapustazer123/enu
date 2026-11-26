@@ -368,6 +368,30 @@ details.qa[open] .chev { transform: rotate(90deg); }
 .lesson-title a:hover { color: var(--primary); text-decoration: underline; }
 .lesson-meta { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); align-items: center; font-size: var(--fs-small); color: var(--ink-2); margin-top: 2px; }
 
+/* ---------- Аккаунт и формы ---------- */
+.account-link {
+  color: var(--ink); text-decoration: none; font-size: .9375rem; font-weight: 500; white-space: nowrap;
+  max-width: 14em; overflow: hidden; text-overflow: ellipsis; display: inline-flex; align-items: center; min-height: 32px;
+}
+.account-link:hover { color: var(--primary); text-decoration: underline; }
+.account-link.active { color: var(--primary); }
+.form { display: flex; flex-direction: column; gap: var(--s4); max-width: 420px; }
+.field { display: flex; flex-direction: column; gap: var(--s2); }
+.input {
+  width: 100%; min-height: 44px; padding: var(--s2) var(--s3); border: 1px solid var(--rule-strong); border-radius: var(--r1);
+  background: var(--sheet); color: var(--ink); font: inherit;
+}
+.input:focus { outline: none; border-color: var(--primary); box-shadow: inset 0 0 0 1px var(--primary); }
+.check-field { display: flex; gap: var(--s3); align-items: center; min-height: 44px; cursor: pointer; }
+.check-field input { width: 20px; height: 20px; accent-color: var(--primary); }
+textarea.input { min-height: 96px; resize: vertical; line-height: 1.5; }
+.note-box { margin-top: var(--s4); }
+.note-box .label { display: block; margin-bottom: var(--s2); }
+.table .rank { font-family: var(--font-mono); color: var(--ink-2); width: 2.5em; }
+.table tr.me td { background: var(--sheet); }
+.rating-table .num { padding-right: var(--s5); white-space: nowrap; }
+.rating-table td .muted { font-size: var(--fs-label); }
+
 /* Длинные слова при крупном тексте переносятся, а не раздвигают страницу */
 body { overflow-wrap: break-word; hyphens: auto; }
 h1, h2, .big, .row > .grow, details.qa summary .grow, .summary > *, .section-head > *, .lesson .grow, .subject-name { overflow-wrap: anywhere; }
@@ -394,12 +418,14 @@ h1, h2, .big, .row > .grow, details.qa summary .grow, .summary > *, .section-hea
   :root { --gutter: 16px; --fs-h1: 1.75rem; --fs-display: 2.75rem; }
   main.container { padding-top: var(--s5); }
   .sm-only { display: inline; }
+  div.sm-only { display: block; }
 
   /* Шапка: логотип и тема в первой строке, меню целиком во второй */
   .topbar .container { flex-wrap: wrap; gap: 0 var(--s4); padding-top: var(--s2); }
   .brand { flex: 1; }
   .brand small { display: none; }
-  .topnav { order: 3; flex: 1 0 100%; flex-wrap: wrap; overflow: visible; gap: 0 var(--s4); }
+  .topnav { order: 3; flex: 1 0 100%; flex-wrap: wrap; overflow: visible; gap: 0 var(--s3); }
+  .topnav a { font-size: .875rem; }
 
   /* Сводка: «Сегодня» во всю ширину, экзамен и готовность рядом */
   .summary { grid-auto-flow: row; grid-template-columns: 1fr 1fr; }
@@ -444,3 +470,7 @@ h1, h2, .big, .row > .grow, details.qa summary .grow, .summary > *, .section-hea
   .flashcard-face { padding-left: var(--s4); padding-right: var(--s4); font-size: 1.125rem; }
   .flashcard-face .label { left: var(--s4); }
 }
+
+.tab-link { display: inline-flex; align-items: center; min-height: 44px; padding: var(--s2) 0; color: var(--ink-2); text-decoration: none; border-bottom: 2px solid transparent; font-weight: 500; font-size: .9375rem; white-space: nowrap; }
+.tab-link:hover { color: var(--ink); text-decoration: none; }
+.tab-link.active { color: var(--ink); border-bottom-color: var(--primary); }

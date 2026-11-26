@@ -2,11 +2,13 @@ import { getSubject } from '../content.js';
 import { subjectStats } from '../progress.js';
 import { store } from '../store.js';
 import { esc, md, formatDate, daysUntil, daysBadge, progressBar, pct } from '../utils.js';
+import { isWeak } from './quiz.js';
 
 export async function renderSubject(app, id) {
   const s = await getSubject(id);
   const st = await subjectStats(s);
   const days = daysUntil(s.exam?.date);
+  const weakCount = Object.values(store.allAnswerStats(s.id)).filter(isWeak).length;
 
   app.innerHTML = `
     <div class="breadcrumbs"><a href="#/">Предметы</a></div>
@@ -45,7 +47,11 @@ export async function renderSubject(app, id) {
           <span class="grow"><span class="row-title">${esc(q.title)}</span>${q.description ? `<div class="row-sub">${esc(q.description)}</div>` : ''}</span>
           <span class="row-end">${r ? `<span class="tag ${cls}">лучший ${r.best}%</span>` : 'не пройден'}</span>
         </a></li>`;
-      }).join('')}</ul>` : '<div class="empty">Квизов пока нет.</div>'}
+      }).join('')}${weakCount ? `<li><a class="row" href="#/s/${esc(s.id)}/quiz/weak">
+          <span class="row-num" style="color:var(--bad)">!</span>
+          <span class="grow"><span class="row-title">Мои слабые места</span><div class="row-sub">Вопросы, в которых вы ошибались. Вопрос уходит из списка после двух верных ответов подряд.</div></span>
+          <span class="row-end"><span class="tag bad">${weakCount}</span></span>
+        </a></li>` : ''}</ul>` : '<div class="empty">Квизов пока нет.</div>'}
     </section>
 
     <div class="sheet-grid">

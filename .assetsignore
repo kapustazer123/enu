@@ -1,0 +1,15 @@
+# Файлы репозитория, которые не нужно отдавать как статику сайта
+.git
+.github
+.assetsignore
+.gitignore
+worker
+scripts
+node_modules
+wrangler.jsonc
+package.json
+package-lock.json
+README.md
+DESIGN.md
+.wrangler
+.dev.vars

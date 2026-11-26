@@ -45,6 +45,7 @@ export async function renderQuestions(app, subjectId) {
             <summary>
               <span class="row-num">${esc(String(q.id).padStart(2, '0'))}</span>
               <span class="grow"><span class="row-title" style="font-weight:500">${mdInline(q.q)}</span>${q.topic && topicTitle[q.topic] ? `<div class="row-sub">${esc(topicTitle[q.topic])}</div>` : ''}</span>
+              ${store.note(s.id, q.id) ? '<span class="tag">заметка</span>' : ''}
               ${stMeta ? `<span class="tag ${stMeta[2]}">${stMeta[1]}</span>` : ''}
               <span class="chev" aria-hidden="true">›</span>
             </summary>
@@ -54,6 +55,9 @@ export async function renderQuestions(app, subjectId) {
               <div class="status-btns">
                 ${STATUSES.map(([k, label, cls]) => `<button class="btn sm ${cls} ${st === k ? 'on' : ''}" type="button" data-set="${k}" data-q="${esc(q.id)}" aria-pressed="${st === k}">${label}</button>`).join('')}
               </div>
+              <label class="note-box"><span class="label">Моя заметка</span>
+                <textarea class="input" data-note="${esc(q.id)}" maxlength="5000" placeholder="Дополнение к ответу, что спросил преподаватель, что не забыть…">${esc(store.note(s.id, q.id))}</textarea>
+              </label>
             </div>
           </details>`;
         }).join('')}
@@ -66,6 +70,11 @@ export async function renderQuestions(app, subjectId) {
       openId = b.dataset.q;
       draw();
     }));
+    app.querySelectorAll('[data-note]').forEach((ta) => {
+      let t;
+      ta.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => store.setNote(s.id, ta.dataset.note, ta.value), 400); });
+      ta.addEventListener('blur', () => { clearTimeout(t); if (ta.value !== store.note(s.id, ta.dataset.note)) store.setNote(s.id, ta.dataset.note, ta.value); });
+    });
     app.querySelectorAll('details.qa').forEach((d) => d.addEventListener('toggle', () => {
       if (d.open) openId = d.dataset.id;
       else if (openId === d.dataset.id) openId = null;

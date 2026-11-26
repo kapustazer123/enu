@@ -29,11 +29,51 @@ function prepare(q, quiz) {
   return { q, type, options, correct, order };
 }
 
+/** Стабильный ключ вопроса для статистики ошибок: номер в банке или хэш текста. */
+export function questionKey(q) {
+  if (q.n) return `b${q.n}`;
+  let h = 0x811c9dc5;
+  for (const ch of String(q.q)) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); }
+  return `h${(h >>> 0).toString(36)}`;
+}
+
+/** Вопрос «слабый», если в нём ошибались и с тех пор не ответили верно дважды подряд. */
+export const isWeak = (st) => !!st && st.w > 0 && st.r < 2;
+
+/** Все вопросы предмета, в которых пользователь ошибается. */
+export async function weakQuestions(s) {
+  const stats = store.allAnswerStats(s.id);
+  if (!Object.values(stats).some(isWeak)) return [];
+  const seen = new Set(); const out = [];
+  for (const meta of s.quizzes) {
+    const quiz = await getQuiz(s, meta).catch(() => null);
+    for (const q of quiz?.questions || []) {
+      const key = questionKey(q);
+      if (seen.has(key) || !isWeak(stats[key])) continue;
+      seen.add(key); out.push(q);
+    }
+  }
+  return out;
+}
+
 export async function renderQuiz(app, subjectId, quizId) {
   const s = await getSubject(subjectId);
-  const meta = s.quizzes.find((q) => q.id === quizId);
-  if (!meta) throw new Error(`Квиз «${quizId}» не найден`);
-  const quiz = await getQuiz(s, meta);
+  const weakMode = quizId === 'weak';
+  let quiz;
+  if (weakMode) {
+    quiz = { title: 'Мои слабые места', shuffle: true, questions: await weakQuestions(s) };
+    if (!quiz.questions.length) {
+      app.innerHTML = `<div class="breadcrumbs"><a href="#/">Предметы</a> / <a href="#/s/${esc(s.id)}">${esc(s.title)}</a></div>
+        <div class="page-head"><span class="label">Слабые места</span><h1>Ошибок пока нет</h1>
+        <p class="lead">Сюда попадают вопросы квизов, в которых вы ошиблись. Вопрос уходит отсюда, когда вы ответите на него верно два раза подряд.</p></div>
+        <a class="btn" href="#/s/${esc(s.id)}">К предмету</a>`;
+      return;
+    }
+  } else {
+    const meta = s.quizzes.find((q) => q.id === quizId);
+    if (!meta) throw new Error(`Квиз «${quizId}» не найден`);
+    quiz = await getQuiz(s, meta);
+  }
   const all = quiz.questions || [];
   if (!all.length) throw new Error('В квизе нет вопросов');
 
@@ -57,7 +97,9 @@ export async function renderQuiz(app, subjectId, quizId) {
     if (run.checked) return;
     if (item.type === 'text' ? !run.text.trim() : !run.sel.size) return;
     run.checked = true;
-    run.results.push({ item, ok: isCorrect(item), given: item.type === 'text' ? run.text : [...run.sel] });
+    const ok = isCorrect(item);
+    run.results.push({ item, ok, given: item.type === 'text' ? run.text : [...run.sel] });
+    store.recordAnswer(s.id, questionKey(item.q), ok);
     draw();
   }
 
@@ -150,7 +192,7 @@ export async function renderQuiz(app, subjectId, quizId) {
   function drawResults() {
     const ok = run.results.filter((r) => r.ok).length;
     const score = pct(ok, run.results.length);
-    if (run.isFull) store.saveQuizResult(s.id, quizId, score);
+    if (run.isFull && !weakMode) store.saveQuizResult(s.id, quizId, score);
     const best = store.quizResult(s.id, quizId)?.best;
     const wrong = run.results.filter((r) => !r.ok);
 
@@ -163,7 +205,7 @@ export async function renderQuiz(app, subjectId, quizId) {
         <div class="big">${score}<span class="unit">%</span></div>
         <div>
           <p style="margin-bottom:var(--s1)"><strong>${ok} из ${run.results.length}</strong> правильно. ${verdict}</p>
-          ${run.isFull && best != null ? `<p class="small muted mono" style="margin:0">лучший результат: ${best}%</p>` : ''}
+          ${run.isFull && !weakMode && best != null ? `<p class="small muted mono" style="margin:0">лучший результат: ${best}%</p>` : ''}
           <div class="btn-row" style="margin-top:var(--s4)">
             ${wrong.length ? `<button class="btn primary" type="button" id="mistakes">Повторить ошибки (${wrong.length})</button>` : ''}
             <button class="btn ${wrong.length ? '' : 'primary'}" type="button" id="again">Пройти заново</button>
@@ -186,7 +228,11 @@ export async function renderQuiz(app, subjectId, quizId) {
           }).join('')}
         </section>` : ''}
     `;
-    app.querySelector('#again').addEventListener('click', () => start(all, true));
+    app.querySelector('#again').addEventListener('click', async () => {
+      const pool = weakMode ? await weakQuestions(s) : all;
+      if (!pool.length) { renderQuiz(app, subjectId, quizId); return; }
+      start(pool, true);
+    });
     app.querySelector('#mistakes')?.addEventListener('click', () => start(wrong.map((w) => w.item.q), false));
   }
 

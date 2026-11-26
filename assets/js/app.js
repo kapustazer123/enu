@@ -1,4 +1,4 @@
-// Точка входа: роутер по hash (#/...), работает на GitHub Pages без сборки.
+// Точка входа: роутер по hash (#/...). Статика + API аккаунтов на Cloudflare Workers (worker/).
 
 import { esc } from './utils.js';
 import { getTheme, setTheme } from './store.js';
@@ -11,12 +11,19 @@ import { renderQuestions } from './views/questions.js';
 import { renderSchedule } from './views/schedule.js';
 import { renderSearch } from './views/search.js';
 import { renderTimetable } from './views/timetable.js';
+import { renderAccount } from './views/account.js';
+import { renderRating } from './views/rating.js';
+import { auth } from './auth.js';
+import { setSummaryProvider } from './store.js';
+import { summaryForRating } from './progress.js';
 
 const routes = [
   [/^\/?$/, renderHome, 'home'],
   [/^\/schedule$/, renderSchedule, 'schedule'],
   [/^\/timetable$/, renderTimetable, 'timetable'],
   [/^\/search$/, renderSearch, 'search'],
+  [/^\/account$/, renderAccount, 'account'],
+  [/^\/rating$/, renderRating, 'rating'],
   [/^\/s\/([\w-]+)$/, renderSubject],
   [/^\/s\/([\w-]+)\/topic\/([\w-]+)$/, renderTopic],
   [/^\/s\/([\w-]+)\/quiz\/([\w-]+)$/, renderQuiz],
@@ -46,16 +53,20 @@ async function router() {
 
   const [re, view] = match;
   const args = path.match(re).slice(1);
-  app.innerHTML = '<p class="muted">Загрузка…</p>';
+  // Каждая отрисовка — в свой контейнер. Если пользователь ушёл на другую страницу раньше,
+  // чем закончилась загрузка, опоздавшая отрисовка пишет в отсоединённый блок и ничего не затирает.
+  const root = document.createElement('div');
+  root.innerHTML = '<p class="muted">Загрузка…</p>';
+  app.replaceChildren(root);
   try {
-    const result = await view(app, ...args, params);
+    const result = await view(root, ...args, params);
     if (id !== renderId) { if (typeof result === 'function') result(); return; }
     cleanup = result;
     if (!params.has('keep-scroll')) window.scrollTo(0, 0);
   } catch (err) {
     if (id !== renderId) return;
     console.error(err);
-    app.innerHTML = `<div class="page-head"><span class="label">Ошибка</span><h1>Не удалось открыть страницу</h1></div><div class="error-box"><p>${esc(err.message)}</p><p><a href="#/">На главную</a></p></div>`;
+    root.innerHTML = `<div class="page-head"><span class="label">Ошибка</span><h1>Не удалось открыть страницу</h1></div><div class="error-box"><p>${esc(err.message)}</p><p><a href="#/">На главную</a></p></div>`;
   }
 }
 
@@ -82,5 +93,19 @@ if (!window.marked) {
   window.marked.setOptions({ gfm: true, breaks: false });
 }
 
+// Аккаунт: ссылка в шапке
+const accountLink = document.getElementById('account-link');
+function drawAccountLink(user) {
+  accountLink.textContent = user ? user.displayName : 'Войти';
+  accountLink.title = user ? `Аккаунт: ${user.username}` : 'Войти или зарегистрироваться';
+}
+auth.onChange((user) => {
+  drawAccountLink(user);
+  // Прогресс сменился (вход/выход) — перерисуем текущую страницу, кроме самой страницы аккаунта
+  if (!location.hash.startsWith('#/account')) router();
+});
+setSummaryProvider(summaryForRating);
+
 window.addEventListener('hashchange', router);
-router();
+drawAccountLink(null);
+auth.init().finally(() => { if (!renderId) router(); });
