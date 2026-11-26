@@ -1,0 +1,202 @@
+[
+ {
+  "front": "Local history work",
+  "back": "The study of the history, culture, nature and people of one specific place, and the practical use of this knowledge in museums, education and tourism.",
+  "topic": "intro"
+ },
+ {
+  "front": "Collective memory",
+  "back": "The way a group of people remembers its past together; it decides which events, people and places are seen as important.",
+  "topic": "intro"
+ },
+ {
+  "front": "Heritage tourist",
+  "back": "A visitor whose main reason to travel is to experience the history, culture and traditions of a place. Studied through demographics, motivations and psychological drivers.",
+  "topic": "heritage-tourist"
+ },
+ {
+  "front": "Three evaluation criteria for heritage resources (Topic 3)",
+  "back": "Integrity (how intact), significance (why important), authenticity (how truthful to the original). The seminar audit also uses accessibility.",
+  "topic": "inventory"
+ },
+ {
+  "front": "Cultural landscape",
+  "back": "An area shaped by the interaction of people and nature over time, seen as one whole rather than as separate objects.",
+  "topic": "inventory"
+ },
+ {
+  "front": "Main parts of a funding proposal",
+  "back": "Objectives, beneficiaries, activities, budget breakdown and timeline. The budget must be realistic.",
+  "topic": "financing"
+ },
+ {
+  "front": "Vision vs. mission",
+  "back": "Vision: a short picture of the desired future of a destination. Mission: its purpose and what it does to reach the vision.",
+  "topic": "strategic-planning"
+ },
+ {
+  "front": "Tourism Carrying Capacity (TCC): three levels",
+  "back": "Physical – maximum spatial density within safety limits. Ecological – reversible threshold of environmental and fabric damage. Social – crowding limit for visitor appreciation and resident comfort.",
+  "topic": "site-management"
+ },
+ {
+  "front": "LAC framework – four steps",
+  "back": "1 Define values (core assets) → 2 Set indicators (abrasion, humidity) → 3 Fix standards (critical limits) → 4 Take action (entry caps, routing).",
+  "topic": "site-management"
+ },
+ {
+  "front": "Visitor flow management controls",
+  "back": "Timed entry reservation (hourly quotas), dynamic tariff pricing (peak-hour prices shift demand), spatial micro-zoning (fragile core vs. buffer zones).",
+  "topic": "site-management"
+ },
+ {
+  "front": "Conservation Management Plan (CMP)",
+  "back": "Significance assessment (mapping OUV), vulnerability analysis (environmental and human risks), policy formulation (restoration and usage protocols).",
+  "topic": "site-management"
+ },
+ {
+  "front": "Smart site monitoring technologies",
+  "back": "IoT climate sensors (humidity, vibration), heatmap crowd tracking via Wi-Fi telemetry (bottlenecks), BIM digital twins (predicting structural strain and wear).",
+  "topic": "site-management"
+ },
+ {
+  "front": "Heritage site KPIs (Topic 6)",
+  "back": "100% LAC threshold compliance; peak gate queue under 15 minutes; 85%+ local community approval; 0% irreversible fabric damage.",
+  "topic": "site-management"
+ },
+ {
+  "front": "Tilden's principle",
+  "back": "\"Through interpretation, understanding; through understanding, appreciation; through appreciation, protection.\" Interpretation reveals meanings through first-hand experience, not just facts.",
+  "topic": "interpretation"
+ },
+ {
+  "front": "Three pillars of heritage storytelling",
+  "back": "Human connection (personal struggles over timelines), universal themes (local history linked to global values), provocative arc (raise questions, not dry answers).",
+  "topic": "interpretation"
+ },
+ {
+  "front": "Eco-museum approach",
+  "back": "Living heritage: territory over trophy cases (heritage in its original setting), community ownership (residents as narrators), focus on intangible traditions (crafts, folklore, oral history).",
+  "topic": "interpretation"
+ },
+ {
+  "front": "Four steps of an interpretive plan",
+  "back": "1 Asset audit → 2 Theme framing (big-idea statement) → 3 Medium selection (guides, signage, AR/VR, workshops) → 4 Visitor evaluation (emotional resonance, retention).",
+  "topic": "interpretation"
+ },
+ {
+  "front": "Tourism as experience (product design)",
+  "back": "Heritage products should be holistic, immersive and place-based, with emotional connection, narrative design and cultural and human elements in the tour package.",
+  "topic": "product-design"
+ },
+ {
+  "front": "Heritage marketing segments",
+  "back": "Cultural explorers – depth and accuracy. Experience seekers – visuals, atmosphere, shareability. Family groups – interactive learning, games, accessible amenities.",
+  "topic": "marketing"
+ },
+ {
+  "front": "Core dilemma of heritage marketing",
+  "back": "Cultural preservation (authenticity, carrying capacity, community respect) vs. commercial growth (monetization, audience expansion, reinvestment in conservation).",
+  "topic": "marketing"
+ },
+ {
+  "front": "De-seasonalization tactics",
+  "back": "Dynamic pricing for off-peak visits, exclusive night tours, off-season (winter) festivals.",
+  "topic": "marketing"
+ },
+ {
+  "front": "Heritage marketing KPIs (Topic 9)",
+  "back": "85% visitor satisfaction rate, 2.5x repeat visit growth, 60% advance online bookings. Immersive audio tours and evening programs: +40% average spend.",
+  "topic": "marketing"
+ },
+ {
+  "front": "Multi-tiered legal architecture",
+  "back": "International (treaties, soft-law conventions) → National (statutes, registries) → State/regional (preservation offices, park districts) → Local (zoning, historic district commissions, building codes).",
+  "topic": "legal"
+ },
+ {
+  "front": "Three international charters (Topic 10)",
+  "back": "Venice Charter 1964 – authenticity and integrity. UNESCO World Heritage Convention 1972 – OUV, cultural and natural. ICOMOS Cultural Tourism Charter 1999 – visitor management, host communities.",
+  "topic": "legal"
+ },
+ {
+  "front": "Conservation easement",
+  "back": "Voluntary, binding agreement restricting development rights forever. Property stays private; restrictions pass to future buyers; owners get tax deductions. Limitation: needs owner consent.",
+  "topic": "legal"
+ },
+ {
+  "front": "Overlay zoning and Certificate of Appropriateness",
+  "back": "Overlay zoning: special rules over existing zoning for scale, materials, alterations. Certificate of Appropriateness: mandatory review of exterior changes in historic zones.",
+  "topic": "legal"
+ },
+ {
+  "front": "National Register: what it does and its limit",
+  "back": "Official list of historic places; gives recognition and financial incentives. Listing alone does not restrict private owners unless federal funding or permits are involved.",
+  "topic": "legal"
+ },
+ {
+  "front": "Core triad of heritage economics",
+  "back": "Economic driver (GDP, jobs, multipliers), commercialization risk (overtourism, costs, displacement), sustainable balance (revenue aligned with conservation and social equity).",
+  "topic": "economics"
+ },
+ {
+  "front": "Heritage economic multiplier",
+  "back": "1.8x–2.5x on average: every $1 invested in heritage conservation yields up to $2.50 in indirect regional returns.",
+  "topic": "economics"
+ },
+ {
+  "front": "Four pillars of sustainable heritage management",
+  "back": "Carrying capacity limits, adaptive reuse models, re-investive revenue loops (earmarked visitor taxes), community co-governance (shared decisions and profits).",
+  "topic": "economics"
+ },
+ {
+  "front": "Adaptive reuse lifecycle",
+  "back": "1 Assessment (integrity, significance) → 2 Co-design (community) → 3 Retrofitting (eco-efficiency without losing identity) → 4 Operations (self-sustaining activities).",
+  "topic": "economics"
+ },
+ {
+  "front": "Target heritage revenue allocation",
+  "back": "40% site conservation and restoration, 30% local community and infrastructure fund, 20% visitor management and education, 10% administration.",
+  "topic": "economics"
+ },
+ {
+  "front": "Four core formats of heritage events",
+  "back": "Cultural festivals (living traditions), reenactments (on-site reconstructions), exhibitions (curated narratives around artifacts), installations (temporary artistic interventions).",
+  "topic": "events"
+ },
+ {
+  "front": "Five-stage event production lifecycle",
+  "back": "Research → Co-design → Logistics (permits, staging, crowd routing) → Delivery (live interpretation, flow) → Legacy (site restoration, impact review).",
+  "topic": "events"
+ },
+ {
+  "front": "Meaningful interpretation vs. staged commodification",
+  "back": "Co-creation, educational depth, living evolution vs. commercial packaging of rituals, frozen stereotypes, resident alienation.",
+  "topic": "events"
+ },
+ {
+  "front": "Authorized discourse vs. emotional turn",
+  "back": "Object-centered (materiality, expert monopoly, passive visitor) vs. experience-centered (performance, co-creation, affectivity – emotions govern perception).",
+  "topic": "emotions"
+ },
+ {
+  "front": "Registers of emotional engagement",
+  "back": "Affirmation (reinforcing values), empathy (connecting with past lives), re-evaluation (discomfort from difficult truths).",
+  "topic": "emotions"
+ },
+ {
+  "front": "How the heritage experience forms",
+  "back": "1 Expectation (memory baggage) → 2 Encounter (embodied, sensory) → 3 Resonance (emotion tests the narrative) → 4 Meaning (renewed stance in the present).",
+  "topic": "emotions"
+ },
+ {
+  "front": "Immersion in heritage tourism (Topic 14)",
+  "back": "Sensory and interactive engagement: immersive storytelling, augmented reality, food heritage and participatory methods that raise engagement and reinforce identity.",
+  "topic": "immersive"
+ },
+ {
+  "front": "Four trends shaping the future of heritage tourism",
+  "back": "Climate change, digitalization, inclusivity and community empowerment – each brings challenges and opportunities.",
+  "topic": "future"
+ }
+]
