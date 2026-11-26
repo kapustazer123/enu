@@ -3,7 +3,7 @@
   "code": "OTKR 2207",
   "color": "#1d5a47",
   "teacher": "Есимова Д.Д.",
-  "description": "*Fundamentals of tourist and local history work* — in practice a course on **heritage tourism**: resources, interpretation, marketing, law, economics and visitor experience. Content in English. Notes for weeks 6, 7, 9–13 are based on the lecture slides; the rest are short notes from the syllabus until the slides arrive. The exam schedule says written, the syllabus says oral — check with the teacher.",
+  "description": "*Fundamentals of tourist and local history work* — in practice a course on **heritage tourism**: resources, interpretation, marketing, law, economics and visitor experience. Content in English. Notes for weeks 6, 7, 9–13 are based on the lecture slides; weeks 1–5, 8, 14, 15 — on the syllabus annotation and open sources (marked). The exam schedule says written, the syllabus says oral — check with the teacher.",
   "exam": {
     "type": "Письменный экзамен",
     "date": "2026-12-19T17:00",
@@ -13,31 +13,31 @@
     {
       "id": "intro",
       "title": "Introduction to tourist and local history work",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/01-intro.md"
     },
     {
       "id": "heritage-tourist",
       "title": "Understanding the cultural heritage tourist",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/02-heritage-tourist.md"
     },
     {
       "id": "inventory",
       "title": "Inventory and evaluation of heritage resources",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/03-inventory.md"
     },
     {
       "id": "financing",
       "title": "Funding heritage tourism",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/04-financing.md"
     },
     {
       "id": "strategic-planning",
       "title": "Strategic planning for heritage tourism",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/05-strategic-planning.md"
     },
     {
@@ -53,7 +53,7 @@
     {
       "id": "product-design",
       "title": "Designing the heritage tourism product",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/08-product-design.md"
     },
     {
@@ -84,13 +84,13 @@
     {
       "id": "immersive",
       "title": "Immersion, identity and innovation",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/14-immersive.md"
     },
     {
       "id": "future",
       "title": "The future of heritage tourism",
-      "summary": "Short note · no slides yet",
+      "summary": "From the syllabus annotation and open sources",
       "file": "topics/15-future.md"
     }
   ],

@@ -52,7 +52,7 @@ Capital from donations or grants → the fund buys an endangered building or len
 - Costs must match activities – funders check this.
 
 **5. Working with agencies**
-Read eligibility rules and priorities carefully, use the funder's own forms, meet deadlines, build partnerships (akimat, museum, NGO, university), keep evidence and report honestly. UNESCO funds usually go through national authorities, not to individuals.
+Check eligibility and priorities, use the funder's forms, meet deadlines, build partnerships (akimat, museum, NGO, university) and report honestly. UNESCO funds usually go through national authorities, not individuals.
 
 ## Examples
 
