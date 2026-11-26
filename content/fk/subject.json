@@ -9,7 +9,56 @@
     "date": "",
     "place": ""
   },
-  "topics": [],
-  "quizzes": [],
+  "topics": [
+    {
+      "id": "healthy-lifestyle",
+      "title": "PE and a healthy lifestyle",
+      "file": "topics/01-healthy-lifestyle.md"
+    },
+    {
+      "id": "safety",
+      "title": "Safety and injury prevention",
+      "file": "topics/02-safety.md"
+    },
+    {
+      "id": "self-monitoring",
+      "title": "Self-monitoring: pulse, pressure, fatigue",
+      "file": "topics/03-self-monitoring.md"
+    },
+    {
+      "id": "physical-development",
+      "title": "Assessing physical development",
+      "file": "topics/04-physical-development.md"
+    },
+    {
+      "id": "morning-gymnastics",
+      "title": "Morning gymnastics complex (midterm 1)",
+      "file": "topics/05-morning-gymnastics.md"
+    },
+    {
+      "id": "games",
+      "title": "Movement games and Kazakh national games",
+      "file": "topics/06-games.md"
+    },
+    {
+      "id": "athletics",
+      "title": "Athletics: running and long jump",
+      "file": "topics/07-athletics.md"
+    },
+    {
+      "id": "normatives",
+      "title": "Fitness standards and the credit (midterm 2)",
+      "file": "topics/08-normatives.md"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "theory",
+      "title": "PE theory",
+      "description": "Topics 1–8",
+      "file": "quizzes/theory.json"
+    }
+  ],
+  "flashcards": "flashcards.json",
   "links": []
 }
