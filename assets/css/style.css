@@ -32,7 +32,8 @@
   --fs-label: .75rem;
 
   --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
-  --content: 880px;
+  --content: 1200px;
+  --reading: 920px;
   --measure: 68ch;
   --gutter: 24px;
 
@@ -237,6 +238,9 @@ a.sheet:hover h3 { color: var(--primary); }
 .prose { max-width: var(--measure); overflow-wrap: break-word; }
 .prose.sheet { max-width: none; }
 .prose.sheet > * { max-width: var(--measure); }
+/* Страницы для чтения (конспект, квиз) — узкая колонка, даже на широкой сетке */
+#app > div:has(> article.prose), #app > div:has(> .quiz-head), #app > div:has(> .sheet.result) { max-width: var(--reading); }
+.nowrap { white-space: nowrap; }
 .prose > :first-child { margin-top: 0; }
 .prose h1 { font-size: var(--fs-h1); }
 .prose h2 { margin-top: var(--s6); }

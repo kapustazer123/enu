@@ -80,8 +80,8 @@ export async function renderHome(app) {
               <div class="small muted" style="font-weight:400">${contentSummary(st)}</div>
             </span></div></td>
             <td class="hide-sm">${esc(s.exam?.type || 'Экзамен')}</td>
-            <td class="small"><span class="mono">${esc(formatDate(s.exam?.date, false))}</span><span class="sm-only muted"> · ${esc(s.exam?.type || 'Экзамен').toLowerCase()} · ${daysShort(days)}</span></td>
-            <td class="hide-sm small">${daysShort(days)}</td>
+            <td class="small"><span class="mono nowrap">${esc(formatDate(s.exam?.date, false))}</span><span class="sm-only muted"> · ${esc(s.exam?.type || 'Экзамен').toLowerCase()} · ${daysShort(days)}</span></td>
+            <td class="hide-sm small nowrap">${daysShort(days)}</td>
             <td>${progressBar(st.readiness)}</td>
           </tr>`).join('')}
         </tbody>
