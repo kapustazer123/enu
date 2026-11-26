@@ -68,6 +68,14 @@ async function route(request, env, url) {
   if (path === '/api/progress' && method === 'GET') return getProgress(env, user);
   if (path === '/api/progress' && method === 'POST') return postProgress(request, env, user);
 
+  if (path.startsWith('/api/admin/')) {
+    if (!user.is_admin) throw new HttpError(403, 'Нужны права администратора');
+    if (path === '/api/admin/file' && method === 'GET') return adminReadFile(env, url);
+    if (path === '/api/admin/file' && method === 'PUT') return adminWriteFile(request, env, user);
+    if (path === '/api/admin/reset-password' && method === 'POST') return adminResetPassword(request, env);
+    if (path === '/api/admin/stats' && method === 'GET') return adminStats(env);
+  }
+
   throw new HttpError(404, 'Не найдено');
 }
 
@@ -327,4 +335,84 @@ async function leaderboard(env, url, me) {
   }).sort((a, b) => b.overall - a.overall).slice(0, 200);
   const groups = (await env.DB.prepare(`SELECT grp, COUNT(*) AS n FROM users WHERE show_in_rating = 1 AND grp != '' GROUP BY grp COLLATE NOCASE ORDER BY n DESC LIMIT 50`).all()).results;
   return json({ list, groups: groups.map((g) => g.grp) });
+}
+
+// ---------- админка: правка контента коммитом в GitHub ----------
+const CONTENT_PATH_RE = /^content\/[\w-]+(\/[\w-]+)*\.(json|md)$/;
+
+function githubConfig(env) {
+  if (!env.GITHUB_TOKEN) throw new HttpError(503, 'Не настроен GITHUB_TOKEN — правка контента недоступна');
+  return { token: env.GITHUB_TOKEN, repo: env.GITHUB_REPO || 'kapustazer123/enu', branch: env.GITHUB_BRANCH || 'main' };
+}
+
+async function github(env, method, apiPath, payload) {
+  const { token } = githubConfig(env);
+  const res = await fetch(`${env.GITHUB_API || 'https://api.github.com'}${apiPath}`, {
+    method,
+    headers: {
+      authorization: `Bearer ${token}`,
+      accept: 'application/vnd.github+json',
+      'x-github-api-version': '2022-11-28',
+      'user-agent': 'prep-portal-worker',
+      ...(payload ? { 'content-type': 'application/json' } : {}),
+    },
+    body: payload ? JSON.stringify(payload) : undefined,
+  });
+  const data = await res.json().catch(() => ({}));
+  return { status: res.status, data };
+}
+
+const utf8ToB64 = (text) => { const bytes = new TextEncoder().encode(text); let bin = ''; for (const b of bytes) bin += String.fromCharCode(b); return btoa(bin); };
+const b64ToUtf8 = (b) => new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\n/g, '')), (c) => c.charCodeAt(0)));
+
+function checkContentPath(p) {
+  const path = String(p || '');
+  if (!CONTENT_PATH_RE.test(path) || path.includes('..')) throw new HttpError(400, 'Можно править только .json и .md внутри content/');
+  return path;
+}
+
+async function adminReadFile(env, url) {
+  const path = checkContentPath(url.searchParams.get('path'));
+  const { repo, branch } = githubConfig(env);
+  const r = await github(env, 'GET', `/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`);
+  if (r.status === 404) return json({ path, exists: false, content: '', sha: null });
+  if (r.status !== 200) throw new HttpError(502, `GitHub: ${r.data.message || r.status}`);
+  return json({ path, exists: true, content: b64ToUtf8(r.data.content || ''), sha: r.data.sha });
+}
+
+async function adminWriteFile(request, env, user) {
+  const b = await body(request);
+  const path = checkContentPath(b.path);
+  const content = String(b.content ?? '');
+  if (content.length > 900_000) throw new HttpError(413, 'Файл слишком большой');
+  if (path.endsWith('.json')) {
+    try { JSON.parse(content); } catch (e) { throw new HttpError(400, `Ошибка в JSON: ${e.message}`); }
+  }
+  const { repo, branch } = githubConfig(env);
+  const message = `${cleanText(b.message, 120) || `Правка ${path}`}\n\nЧерез админку портала: ${user.username}`;
+  const r = await github(env, 'PUT', `/repos/${repo}/contents/${path}`, {
+    message, content: utf8ToB64(content), branch, ...(b.sha ? { sha: b.sha } : {}),
+  });
+  if (r.status === 409 || r.status === 422) throw new HttpError(409, 'Файл успел измениться — откройте его заново и повторите правку');
+  if (r.status !== 200 && r.status !== 201) throw new HttpError(502, `GitHub: ${r.data.message || r.status}`);
+  return json({ ok: true, sha: r.data.content?.sha, commit: r.data.commit?.html_url });
+}
+
+async function adminResetPassword(request, env) {
+  const b = await body(request);
+  checkPassword(b.newPassword);
+  const target = await env.DB.prepare('SELECT id FROM users WHERE username = ? COLLATE NOCASE').bind(String(b.username || '').trim()).first();
+  if (!target) throw new HttpError(404, 'Пользователь не найден');
+  const { hash, salt } = await hashPassword(b.newPassword);
+  await env.DB.batch([
+    env.DB.prepare('UPDATE users SET pass_hash = ?, pass_salt = ?, failed_logins = 0, locked_until = 0 WHERE id = ?').bind(hash, salt, target.id),
+    env.DB.prepare('DELETE FROM sessions WHERE user_id = ?').bind(target.id),
+  ]);
+  return json({ ok: true });
+}
+
+async function adminStats(env) {
+  const users = await env.DB.prepare('SELECT COUNT(*) AS n FROM users').first();
+  const active = await env.DB.prepare('SELECT COUNT(*) AS n FROM progress WHERE updated_at > ?').bind(Date.now() - 7 * 86400000).first();
+  return json({ users: users.n, activeWeek: active.n, githubConfigured: !!env.GITHUB_TOKEN });
 }

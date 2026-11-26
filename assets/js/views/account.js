@@ -93,6 +93,7 @@ export async function renderAccount(app, params) {
       </section>
 
       <div class="btn-row" style="margin-top:var(--s7)">
+        ${u.isAdmin ? '<a class="btn" href="#/admin">Админка</a>' : ''}
         <button class="btn quiet" type="button" id="logout">Выйти из аккаунта</button>
       </div>
     `;

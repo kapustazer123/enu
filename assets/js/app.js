@@ -13,6 +13,7 @@ import { renderSearch } from './views/search.js';
 import { renderTimetable } from './views/timetable.js';
 import { renderAccount } from './views/account.js';
 import { renderRating } from './views/rating.js';
+import { renderAdmin } from './views/admin.js';
 import { auth } from './auth.js';
 import { setSummaryProvider } from './store.js';
 import { summaryForRating } from './progress.js';
@@ -24,6 +25,7 @@ const routes = [
   [/^\/search$/, renderSearch, 'search'],
   [/^\/account$/, renderAccount, 'account'],
   [/^\/rating$/, renderRating, 'rating'],
+  [/^\/admin$/, renderAdmin, 'account'],
   [/^\/s\/([\w-]+)$/, renderSubject],
   [/^\/s\/([\w-]+)\/topic\/([\w-]+)$/, renderTopic],
   [/^\/s\/([\w-]+)\/quiz\/([\w-]+)$/, renderQuiz],
