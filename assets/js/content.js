@@ -41,7 +41,19 @@ export async function getAllSubjects() {
   };
 }
 
-export const getTopicText = (subject, topic) => fetchText(subject.base + topic.file);
+/** Расписание занятий (content/timetable.json). Если файла нет — null. */
+export async function getTimetable() {
+  const r = await fetch('content/timetable.json', { cache: 'no-cache' });
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error(`Не удалось загрузить content/timetable.json (${r.status})`);
+  try {
+    return await r.json();
+  } catch (e) {
+    throw new Error(`Ошибка в JSON-файле content/timetable.json: ${e.message}`);
+  }
+}
+
+export const getTopicText =(subject, topic) => fetchText(subject.base + topic.file);
 export const getQuiz = (subject, quiz) => fetchJSON(subject.base + quiz.file);
 
 export async function getFlashcards(subject) {

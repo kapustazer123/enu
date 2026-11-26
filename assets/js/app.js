@@ -10,10 +10,12 @@ import { renderCards } from './views/cards.js';
 import { renderQuestions } from './views/questions.js';
 import { renderSchedule } from './views/schedule.js';
 import { renderSearch } from './views/search.js';
+import { renderTimetable } from './views/timetable.js';
 
 const routes = [
   [/^\/?$/, renderHome, 'home'],
   [/^\/schedule$/, renderSchedule, 'schedule'],
+  [/^\/timetable$/, renderTimetable, 'timetable'],
   [/^\/search$/, renderSearch, 'search'],
   [/^\/s\/([\w-]+)$/, renderSubject],
   [/^\/s\/([\w-]+)\/topic\/([\w-]+)$/, renderTopic],

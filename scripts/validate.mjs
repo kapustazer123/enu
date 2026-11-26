@@ -99,9 +99,35 @@ if (portal) {
   }
 }
 
+// Расписание занятий (необязательный файл)
+const ttPath = join(root, 'timetable.json');
+if (existsSync(ttPath)) {
+  const tt = readJSON(ttPath);
+  const subjectIds = new Set(portal?.subjects || []);
+  const DAYS = { пн: 1, вт: 2, ср: 3, чт: 4, пт: 5, сб: 6, вс: 7 };
+  const time = /^([01]\d|2[0-3]):[0-5]\d$/;
+  if (tt) {
+    for (const k of ['semesterStart', 'semesterEnd']) {
+      if (tt[k] && isNaN(new Date(tt[k]))) errors.push(`timetable.json: неверная дата ${k} «${tt[k]}» (формат 2026-09-01)`);
+    }
+    if (!tt.semesterStart) warnings.push('timetable.json: не указан semesterStart — числитель/знаменатель не определятся');
+    (tt.lessons || []).forEach((l, i) => {
+      const w = `timetable.json, занятие ${i + 1}`;
+      stats.lessons = (stats.lessons || 0) + 1;
+      const day = typeof l.day === 'number' ? l.day : DAYS[String(l.day ?? '').toLowerCase().slice(0, 2)];
+      if (!(day >= 1 && day <= 7)) errors.push(`${w}: неверный day «${l.day}» (1–7 или пн, вт, …)`);
+      if (!time.test(l.start || '') || !time.test(l.end || '')) errors.push(`${w}: start/end в формате ЧЧ:ММ, например "08:00"`);
+      else if (l.start >= l.end) errors.push(`${w}: start позже end`);
+      if (!l.subject && !l.title) errors.push(`${w}: нужен subject (id предмета) или title`);
+      if (l.subject && !subjectIds.has(l.subject)) warnings.push(`${w}: предмет «${l.subject}» не найден в subjects.json — укажите title или добавьте предмет`);
+      if (l.week && !['числитель', 'знаменатель'].includes(String(l.week).toLowerCase())) errors.push(`${w}: week — "числитель" или "знаменатель"`);
+    });
+  }
+}
+
 for (const w of warnings) console.log(`⚠️  ${w}`);
 for (const e of errors) console.log(`❌ ${e}`);
-console.log(`\nПредметов: ${stats.subjects}, тем: ${stats.topics}, квизов: ${stats.quizzes} (вопросов: ${stats.questions}), карточек: ${stats.cards}, экзаменационных вопросов: ${stats.examQuestions}`);
+console.log(`\nПредметов: ${stats.subjects}, тем: ${stats.topics}, квизов: ${stats.quizzes} (вопросов: ${stats.questions}), карточек: ${stats.cards}, экзаменационных вопросов: ${stats.examQuestions}, занятий в расписании: ${stats.lessons || 0}`);
 if (errors.length) {
   console.log(`\nНайдено ошибок: ${errors.length}`);
   process.exit(1);

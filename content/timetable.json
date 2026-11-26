@@ -1,0 +1,14 @@
+{
+  "group": "Пример группы",
+  "semesterStart": "2026-09-01",
+  "semesterEnd": "2026-12-27",
+  "firstWeek": "числитель",
+  "lessons": [
+    { "day": 1, "start": "08:00", "end": "08:50", "subject": "calculus-example", "type": "Лекция", "room": "301", "teacher": "Иванов И. И." },
+    { "day": 1, "start": "09:00", "end": "09:50", "subject": "calculus-example", "type": "Практика", "room": "214" },
+    { "day": 3, "start": "11:00", "end": "11:50", "title": "Физическая культура", "type": "Практика", "room": "Спортзал" },
+    { "day": 4, "start": "10:00", "end": "10:50", "subject": "calculus-example", "type": "СРСП", "room": "301", "week": "числитель" },
+    { "day": 4, "start": "10:00", "end": "10:50", "title": "Пример: предмет по знаменателю", "type": "Лабораторная", "room": "105", "week": "знаменатель" },
+    { "day": 5, "start": "14:00", "end": "14:50", "subject": "calculus-example", "type": "Лекция", "link": "https://example.com/zoom" }
+  ]
+}

@@ -243,6 +243,18 @@ table.schedule th { font-size: .8rem; text-transform: uppercase; letter-spacing:
 table.schedule tr:last-child td { border-bottom: 0; }
 .table-wrap { overflow-x: auto; }
 
+/* Timetable */
+.week-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.day-card { padding: 14px; }
+.day-card.today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.day-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+.lessons { gap: 6px; }
+.lesson { display: flex; gap: 12px; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); border-left: 4px solid var(--subject, var(--border)); }
+.lesson.now { background: var(--ok-soft); }
+.lesson.past { opacity: .55; }
+.lesson-time { flex: none; width: 44px; font-size: .85rem; font-variant-numeric: tabular-nums; line-height: 1.35; }
+.lesson-meta { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; margin-top: 2px; }
+
 .empty { text-align: center; padding: 32px 16px; color: var(--muted); border: 1px dashed var(--border); border-radius: var(--radius); }
 
 @media (max-width: 600px) {
