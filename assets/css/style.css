@@ -461,6 +461,7 @@ h1, h2, .big, .row > .grow, details.qa summary .grow, .summary > *, .section-hea
   .lesson { flex-wrap: wrap; column-gap: var(--s3); row-gap: 0; }
   .lesson-time { width: 100%; }
 
+  .prose th, .prose td { min-width: 8.5em; }
   .pager { flex-direction: column; }
   .pager a { max-width: 100%; overflow-wrap: anywhere; }
   .pager .next { text-align: left; margin-left: 0; }

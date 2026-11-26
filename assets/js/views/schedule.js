@@ -23,14 +23,15 @@ function calendarHTML(calendar) {
   return `
     <section class="section">
       <div class="section-head"><h2>Академический календарь</h2></div>
-      <div class="table-wrap"><table class="table">
+      <div class="table-wrap"><table class="table stack">
         <thead><tr><th>Период</th><th>Даты</th><th class="num">Статус</th></tr></thead>
         <tbody>${calendar.map((c) => {
           const past = (daysUntil(c.end || c.start) ?? 0) < 0;
           return `<tr class="${past ? 'past' : ''}">
-            <td>${c.important ? `<strong>${esc(c.title)}</strong>` : esc(c.title)}</td>
-            <td class="mono small" style="white-space:nowrap">${esc(range(c.start, c.end))}</td>
-            <td class="num small" style="white-space:nowrap">${rangeStatus(c.start, c.end)}</td>
+            <td class="cell-main">${c.important ? `<strong>${esc(c.title)}</strong>` : esc(c.title)}
+              <div class="sm-only small muted"><span class="mono">${esc(range(c.start, c.end))}</span> · ${rangeStatus(c.start, c.end)}</div></td>
+            <td class="mono small hide-sm" style="white-space:nowrap">${esc(range(c.start, c.end))}</td>
+            <td class="num small hide-sm" style="white-space:nowrap">${rangeStatus(c.start, c.end)}</td>
           </tr>`;
         }).join('')}</tbody>
       </table></div>
@@ -54,16 +55,22 @@ export async function renderSchedule(app) {
       <h1>Расписание экзаменов</h1>
       <p class="lead">Экзамены, зачёты и консультации по всем предметам.</p>
     </div>
-    ${events.length ? `<div class="table-wrap"><table class="table">
+    ${events.length ? `<div class="table-wrap"><table class="table stack">
       <thead><tr><th>Дата</th><th>Предмет</th><th>Что</th><th class="hide-sm">Где</th><th class="num">Осталось</th></tr></thead>
       <tbody>${events.map((e) => {
         const days = daysUntil(e.date);
         return `<tr class="${days != null && days < 0 ? 'past' : ''}">
-          <td class="mono small" style="white-space:nowrap">${esc(formatDate(e.date))}</td>
-          <td><div class="subject-name" style="--subject:${esc(e.s.color || '')}"><span class="swatch"></span><a href="#/s/${esc(e.s.id)}">${esc(e.s.title)}</a></div></td>
-          <td>${e.main ? `<strong>${esc(e.type)}</strong>` : esc(e.type)}</td>
+          <td class="mono small hide-sm" style="white-space:nowrap">${esc(formatDate(e.date))}</td>
+          <td class="cell-main"><div class="subject-name" style="--subject:${esc(e.s.color || '')}"><span class="swatch"></span><span>
+            <a href="#/s/${esc(e.s.id)}">${esc(e.s.title)}</a>
+            <div class="sm-only small muted" style="font-weight:400">
+              <div><span class="mono">${esc(formatDate(e.date))}</span> · ${daysShort(days)}</div>
+              <div>${esc(e.type)}${e.place ? ` · ${esc(e.place)}` : ''}</div>
+            </div>
+          </span></div></td>
+          <td class="hide-sm">${e.main ? `<strong>${esc(e.type)}</strong>` : esc(e.type)}</td>
           <td class="hide-sm">${esc(e.place || '—')}</td>
-          <td class="num small" style="white-space:nowrap">${daysShort(days)}</td>
+          <td class="num small hide-sm" style="white-space:nowrap">${daysShort(days)}</td>
         </tr>`;
       }).join('')}</tbody>
     </table></div>` : '<div class="empty">Даты пока не добавлены. Укажите <code>exam.date</code> в <code>subject.json</code> предмета.</div>'}
