@@ -52,3 +52,5 @@ Protected natural areas (PNAs) keep valuable ecosystems, landscapes and species 
 - List the principles of ecotourism.
 - Name several Kazakhstan PNAs with their features.
 - Mention problems and how zoning and fees help solve them.
+
+**Facts to check:** the exact list of PNA types in the current Kazakhstan Law "On Specially Protected Natural Areas" (2006).
