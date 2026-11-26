@@ -128,6 +128,10 @@ export async function renderAccount(app, params) {
     const box = app.querySelector('#links-box');
     if (!box) return;
     const { access, links } = await getLessonLinks();
+    if (access === 'public') {
+      box.innerHTML = '<p>Ссылки на онлайн-пары открыты всем: они есть в <a href="#/timetable">расписании</a> и на страницах предметов.</p>';
+      return;
+    }
     if (access === 'granted') {
       box.innerHTML = `<p>Доступ открыт: ${links.length ? `ссылки на ${links.length} занятий есть в <a href="#/timetable">расписании</a> и на страницах предметов` : 'администратор ещё не добавил ссылки'}.</p>`;
       return;

@@ -11,7 +11,9 @@
       "subject": "otkr",
       "type": "Практика",
       "teacher": "Есимова Д.Д.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/475103643611829?p=ajQzoo1HJnHpjs7Jvt",
+      "platform": "Teams"
     },
     {
       "day": "пн",
@@ -20,7 +22,9 @@
       "subject": "edt",
       "type": "Лекция",
       "teacher": "Мукатова Р.А.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/497881969524044?p=tJarSTrkNFVL3IAeW8",
+      "platform": "Teams"
     },
     {
       "day": "вт",
@@ -29,7 +33,9 @@
       "subject": "ikt",
       "type": "Лекция",
       "teacher": "Ермаганбетова М.А.",
-      "online": true
+      "online": true,
+      "link": "https://mooc.enu.kz/course/view.php?id=1369",
+      "platform": "Moodle"
     },
     {
       "day": "вт",
@@ -38,7 +44,9 @@
       "subject": "rt",
       "type": "Лекция",
       "teacher": "Абилхаир Б.К.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/46685101395791?p=PI6IMK8nFCII9QONxB",
+      "platform": "Teams"
     },
     {
       "day": "вт",
@@ -57,7 +65,9 @@
       "subject": "rt",
       "type": "Практика",
       "teacher": "Абилхаир Б.К.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/463079264025986?p=T97YU6rxYFWP137YzX",
+      "platform": "Teams"
     },
     {
       "day": "ср",
@@ -66,7 +76,9 @@
       "subject": "otkr",
       "type": "Лекция",
       "teacher": "Есимова Д.Д.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/451939424599568?p=8hc6NXBjT4WIss6VAW",
+      "platform": "Teams"
     },
     {
       "day": "чт",
@@ -85,7 +97,9 @@
       "subject": "eog",
       "type": "Лекция",
       "teacher": "Исатай Ә.А.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/493163937597154?p=wfBUPaAUbnLyJyycpe",
+      "platform": "Teams"
     },
     {
       "day": "сб",
@@ -104,7 +118,9 @@
       "subject": "eog",
       "type": "Практика",
       "teacher": "Исатай Ә.А.",
-      "online": true
+      "online": true,
+      "link": "https://teams.microsoft.com/meet/446698411563599?p=FsXlQsZdaHa7iNzzHN",
+      "platform": "Teams"
     }
   ]
 }

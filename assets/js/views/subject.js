@@ -29,7 +29,7 @@ export async function renderSubject(app, id) {
     </div>
 
     ${myLinks.length ? `<section class="section">
-      <div class="section-head"><h2>Онлайн-занятия</h2><span class="aside">только для вашей группы</span></div>
+      <div class="section-head"><h2>Онлайн-занятия</h2></div>
       <ul class="rows">${myLinks.map((l) => `<li><a class="row" href="${esc(l.url)}" target="_blank" rel="noopener">
         <span class="row-num">${['', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'][dayIndex(l.day)]}</span>
         <span class="grow"><span class="row-title">${esc(l.type || 'Занятие')}</span><div class="row-sub mono">${esc(l.start)}${l.end ? `–${esc(l.end)}` : ''}${l.platform ? ` · ${esc(l.platform)}` : ''}</div></span>
