@@ -1,4 +1,4 @@
-/* Дизайн-система «Зачётка» — описание в DESIGN.md. В правилах ниже только токены. */
+/* Дизайн-система «+90%» — описание в DESIGN.md. В правилах ниже только токены. */
 
 :root {
   --paper: #f6f3ec;
@@ -410,7 +410,7 @@ h1, h2, .big, .row > .grow, details.qa summary .grow, .summary > *, .section-hea
   .summary .big { font-size: 2.25rem; }
   .summary .big .unit { font-size: 1rem; }
 
-  /* Таблица-зачётка: строки вместо колонок */
+  /* Таблица предметов: строки вместо колонок */
   .table.stack thead { display: none; }
   .table.stack, .table.stack tbody { display: block; }
   .table.stack tr { display: grid; grid-template-columns: 1fr; gap: var(--s2); padding: var(--s4) 0; border-bottom: 1px solid var(--rule); }

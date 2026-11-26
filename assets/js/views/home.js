@@ -39,7 +39,7 @@ export async function renderHome(app) {
   const next = upcoming[0];
   const overall = stats.length ? Math.round(stats.reduce((a, st) => a + st.readiness, 0) / stats.length) : 0;
 
-  // Зачётка: по дате экзамена, без даты — в конце
+  // Таблица предметов: по дате экзамена, без даты — в конце
   const rows = subjects.map((s, i) => ({ s, st: stats[i], days: daysUntil(s.exam?.date) }))
     .sort((a, b) => (a.days ?? 1e9) - (b.days ?? 1e9));
 
