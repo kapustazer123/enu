@@ -1,0 +1,179 @@
+{
+  "title": "Module 1: Excursion basics (topics 1–7)",
+  "shuffle": true,
+  "questions": [
+    {
+      "type": "single",
+      "q": "Why are excursions said to form the *first and lasting impression* of a destination?",
+      "options": [
+        "Because they are always the cheapest tourist service",
+        "Because tourists often have limited time, so one excursion can define their whole perception of a country or city",
+        "Because excursions are compulsory for all tourists",
+        "Because excursions replace accommodation services"
+      ],
+      "answer": 1,
+      "explain": "Topic 1: tourists spend limited time in one place, so a good or bad excursion strongly shapes the destination's image and word-of-mouth."
+    },
+    {
+      "type": "multiple",
+      "q": "Which of the following are functions of excursions named in the lecture on their importance?",
+      "options": [
+        "Education and interpretation",
+        "Spreading tourist flows beyond city centres",
+        "Destination branding and differentiation",
+        "Replacing transport services"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "Topic 1: excursions educate, spread tourism spatially and brand the destination; they do not replace transport."
+    },
+    {
+      "type": "truefalse",
+      "q": "According to the lecture, promoting excursions to rural and ecological destinations beyond Almaty and Astana can stimulate regional development in Kazakhstan.",
+      "answer": true,
+      "explain": "Topic 1 (and 15): this is the lecture's Kazakhstan example of using excursions to reduce spatial tourism inequality."
+    },
+    {
+      "type": "single",
+      "q": "Who organised the first package tours in Britain in the 1840s, including transport, meals and guided interpretation?",
+      "options": ["Dean MacCannell", "Erik Cohen", "Thomas Cook", "Antoni Gaudí"],
+      "answer": 2,
+      "explain": "Topic 2: Thomas Cook's model set a template for future excursion services during the Industrial Revolution."
+    },
+    {
+      "type": "single",
+      "q": "What was the **Grand Tour**?",
+      "options": [
+        "A medieval pilgrimage to Santiago de Compostela",
+        "Renaissance-era educational travel of wealthy European aristocrats, mainly to Italy and France",
+        "A Soviet state system of excursion planning",
+        "A 19th-century German school walk to factories"
+      ],
+      "answer": 1,
+      "explain": "Topic 2: the Grand Tour included visits to galleries, ruins and universities guided by tutors; it was a precursor of cultural excursions."
+    },
+    {
+      "type": "single",
+      "q": "Which statement best describes excursion studies in the Soviet Union?",
+      "options": [
+        "Market-oriented and based on private tour companies",
+        "Highly formalised and integrated into state ideological and cultural policy, with systematic classification and textbooks",
+        "Focused only on religious pilgrimage",
+        "Not developed at all"
+      ],
+      "answer": 1,
+      "explain": "Topic 2: Soviet excursion studies became a centralised applied discipline and a form of mass education."
+    },
+    {
+      "type": "single",
+      "q": "What is described as the **core** of excursion service?",
+      "options": [
+        "Physical movement of the group between sites",
+        "The price of entrance tickets",
+        "The guide's knowledge, storytelling ability and communicative skill",
+        "The comfort of the bus"
+      ],
+      "answer": 2,
+      "explain": "Topic 3: the essence of an excursion is the narrative; an unprofessional guide can spoil even a valuable attraction."
+    },
+    {
+      "type": "truefalse",
+      "q": "In Kazakhstan, certified guides must complete specialised training and show knowledge of history, culture and foreign languages before leading groups.",
+      "answer": true,
+      "explain": "Topic 3: this is the lecture's example of the legal and professional framework of excursion service."
+    },
+    {
+      "type": "single",
+      "q": "A street is suddenly closed during a city tour and the guide changes the route on the spot. Which peculiarity of excursion service does this illustrate?",
+      "options": [
+        "Its time-limited and mobile nature, requiring real-time decisions",
+        "Its dependence on legislation",
+        "Technology integration",
+        "Thematic diversity"
+      ],
+      "answer": 0,
+      "explain": "Topic 3: excursions move between sites in limited time, so the guide needs situational awareness and adaptability."
+    },
+    {
+      "type": "single",
+      "q": "What is the correct order of the phases in the structure of an excursion?",
+      "options": [
+        "Introduction – preparation – conclusion – main body",
+        "Preparation – introduction – main body – conclusion",
+        "Main body – introduction – preparation – conclusion",
+        "Preparation – main body – introduction – conclusion"
+      ],
+      "answer": 1,
+      "explain": "Topic 4: the structured phases are preparation, introduction, main body and conclusion."
+    },
+    {
+      "type": "single",
+      "q": "According to the classification by duration, a *short* excursion lasts:",
+      "options": ["Up to 2 hours", "Half a day", "A full day", "Several days"],
+      "answer": 0,
+      "explain": "Topic 4: duration types are short (up to 2 hours), half-day, full-day and multi-day."
+    },
+    {
+      "type": "multiple",
+      "q": "Which of these are types of excursions **by purpose**?",
+      "options": ["Commemorative", "Walking", "Aesthetic", "Educational"],
+      "answer": [0, 2, 3],
+      "explain": "Topic 4: by purpose excursions are educational, recreational, aesthetic, religious/pilgrimage and commemorative; 'walking' is a form of movement."
+    },
+    {
+      "type": "single",
+      "q": "Which definition of **excursion objects** matches the lecture?",
+      "options": [
+        "Only buildings older than 100 years",
+        "Material and immaterial components of a destination with cultural, historical, natural, aesthetic, scientific or symbolic significance, selected for interpretation",
+        "Any place where tourists can buy souvenirs",
+        "Only objects on the UNESCO list"
+      ],
+      "answer": 1,
+      "explain": "Topic 5: excursion objects can be tangible or intangible and are chosen for interpretation and presentation to visitors."
+    },
+    {
+      "type": "single",
+      "q": "The ALZHIR complex near Astana is an example of which type of excursion object?",
+      "options": ["Industrial and technological", "Natural", "Memorial and commemorative", "Contemporary urban"],
+      "answer": 2,
+      "explain": "Topic 5: ALZHIR commemorates women imprisoned during Stalin's repressions and needs empathetic, careful interpretation."
+    },
+    {
+      "type": "single",
+      "q": "Which Kazakhstan site does the lecture give as an example of an **industrial and technological** excursion object?",
+      "options": ["Charyn Canyon", "Baikonur Cosmodrome", "Beket-Ata underground mosque", "Mausoleum of Khoja Ahmed Yasawi"],
+      "answer": 1,
+      "explain": "Topic 5: Baikonur is an active technological site, which requires coordination with the host and strict safety rules."
+    },
+    {
+      "type": "single",
+      "q": "In the methodology of excursion preparation, what is the **excursion plan**?",
+      "options": [
+        "The interpretive text spoken at each stop",
+        "A document with the structure, timing, logistics, emergency contacts, permissions and backup scenarios of the tour",
+        "An advertising brochure for tourists",
+        "A list of legends about the city"
+      ],
+      "answer": 1,
+      "explain": "Topic 6: the plan is the organisational document; the script (commentary) is the text delivered at each stop."
+    },
+    {
+      "type": "truefalse",
+      "q": "According to the methodology, evaluation and feedback are optional and are not part of excursion preparation.",
+      "answer": false,
+      "explain": "Topic 6: evaluation and feedback (surveys, discussions, observation) are a key, though often overlooked, stage used to improve future excursions."
+    },
+    {
+      "type": "multiple",
+      "q": "Which of the following does the lecture treat as components of the **quality** of excursion service?",
+      "options": [
+        "Accuracy and relevance of content",
+        "Logistical organisation (punctuality, breaks, crowd control)",
+        "Ethical standards such as fair wages for guides and transparent pricing",
+        "Presenting legends as facts to make the tour more exciting"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "Topic 7: content accuracy, logistics and ethics are all quality components; legends presented as facts reduce quality."
+    }
+  ]
+}
