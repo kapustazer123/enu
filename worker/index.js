@@ -118,11 +118,16 @@ async function createSession(env, userId) {
   return sessionCookie(token, SESSION_DAYS * 86400);
 }
 
+const adminList = (env) => String(env.ADMIN_USERNAMES || '').toLowerCase().split(',').map((s) => s.trim()).filter(Boolean);
+
 async function currentUser(request, env) {
   const token = cookie(request, 'sid');
   if (!token) return null;
-  return env.DB.prepare(`SELECT u.* FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token_hash = ? AND s.expires_at > ?`)
+  const u = await env.DB.prepare(`SELECT u.* FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token_hash = ? AND s.expires_at > ?`)
     .bind(await sha256(token), Date.now()).first();
+  // Права администратора: флаг в базе или логин в ADMIN_USERNAMES (проверяется при каждом запросе)
+  if (u && adminList(env).includes(u.username.toLowerCase())) u.is_admin = 1;
+  return u;
 }
 
 function publicUser(u) {
@@ -150,7 +155,7 @@ async function register(request, env) {
   const exists = await env.DB.prepare('SELECT 1 FROM users WHERE username = ? COLLATE NOCASE').bind(username).first();
   if (exists) throw new HttpError(409, 'Такой логин уже занят');
   const { hash, salt } = await hashPassword(b.password);
-  const admins = String(env.ADMIN_USERNAMES || '').toLowerCase().split(',').map((s) => s.trim()).filter(Boolean);
+  const admins = adminList(env);
   const res = await env.DB.prepare(`INSERT INTO users (username, display_name, grp, pass_hash, pass_salt, is_admin, show_in_rating, created_at)
       VALUES (?, ?, ?, ?, ?, ?, 1, ?)`)
     .bind(username, displayName, group, hash, salt, admins.includes(username.toLowerCase()) ? 1 : 0, Date.now()).run();
@@ -178,6 +183,7 @@ async function login(request, env) {
     throw new HttpError(401, 'Неверный логин или пароль');
   }
   await env.DB.prepare('UPDATE users SET failed_logins = 0, locked_until = 0 WHERE id = ?').bind(user.id).run();
+  if (adminList(env).includes(user.username.toLowerCase())) user.is_admin = 1;
   await env.DB.prepare('DELETE FROM sessions WHERE expires_at < ?').bind(now).run();
   return json({ user: publicUser(user) }, 200, { 'set-cookie': await createSession(env, user.id) });
 }
