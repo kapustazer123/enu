@@ -37,7 +37,7 @@ export async function renderCards(app, subjectId) {
       <div class="page-head" style="margin-bottom:var(--s5)">
         <span class="label">Карточки</span>
         <h1>Термины и формулы</h1>
-        <div style="max-width:420px">${progressBar(pct(known(), cards.length), `${known()}/${cards.length}`)}</div>
+        <div class="head-progress">${progressBar(pct(known(), cards.length), `${known()}/${cards.length}`)}</div>
       </div>
       <div class="toolbar">
         <div class="tabs" role="tablist">
@@ -107,7 +107,7 @@ export async function renderCards(app, subjectId) {
 
   function onKey(e) {
     if (e.target.matches?.('input, textarea') || !deck[i]) return;
-    if (e.key === ' ') { e.preventDefault(); flip(); }
+    if (e.key === ' ' || (e.key === 'Enter' && e.target.id === 'flashcard')) { e.preventDefault(); flip(); }
     else if (e.key === '1') mark('again');
     else if (e.key === '2') mark('known');
     else if (e.key === 'ArrowLeft') go(-1);

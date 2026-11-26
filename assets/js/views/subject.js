@@ -15,11 +15,11 @@ export async function renderSubject(app, id) {
       <h1>${esc(s.title)}</h1>
       <div class="meta">
         ${daysBadge(days)}
-        ${s.exam?.place ? `<span>Аудитория ${esc(s.exam.place)}</span>` : ''}
+        ${s.exam?.place ? `<span>${esc(s.exam.place)}</span>` : ''}
         ${s.teacher ? `<span>${esc(s.teacher)}</span>` : ''}
       </div>
       ${s.description ? `<div class="lead" style="margin-top:var(--s4)">${md(s.description)}</div>` : ''}
-      <div style="max-width:420px;margin-top:var(--s4)">${progressBar(st.readiness, `${st.readiness}% готов`)}</div>
+      <div class="head-progress">${progressBar(st.readiness, `${st.readiness}% готов`)}</div>
     </div>
 
     <section class="section">

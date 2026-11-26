@@ -26,7 +26,7 @@ export async function renderQuestions(app, subjectId) {
       <div class="page-head" style="margin-bottom:var(--s5)">
         <span class="label">Билеты</span>
         <h1>Вопросы к экзамену</h1>
-        <div style="max-width:420px">${progressBar(pct(known, questions.length), `${known}/${questions.length}`)}</div>
+        <div class="head-progress">${progressBar(pct(known, questions.length), `${known}/${questions.length}`)}</div>
       </div>
       <div class="toolbar">
         <div class="tabs" role="tablist">

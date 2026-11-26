@@ -22,7 +22,7 @@ function todayCell(tt, subjects) {
     <div>${current ? '<span class="hl">идёт сейчас</span> · ' : ''}<strong>${esc(lessonTitle(next, byId))}</strong></div>
     <div class="small muted">${[next.type, next.room && `ауд. ${next.room}`].filter(Boolean).map(esc).join(' · ')}${upcoming.length > 1 ? ` · ещё ${upcoming.length - 1} после` : ''}</div>`;
 
-  return `<a class="summary-cell" href="#/timetable">
+  return `<a class="summary-cell wide" href="#/timetable">
     <span class="label">Сегодня${wi.type ? ` · ${esc(wi.type)}` : ''}</span>
     ${body}
   </a>`;
@@ -69,18 +69,18 @@ export async function renderHome(app) {
 
     <section class="section">
       <div class="section-head"><h2>Предметы</h2><span class="aside"><a href="#/schedule">Расписание сессии</a></span></div>
-      ${subjects.length ? `<div class="table-wrap"><table class="table">
+      ${subjects.length ? `<div class="table-wrap"><table class="table stack">
         <thead><tr>
           <th>Предмет</th><th class="hide-sm">Контроль</th><th>Дата</th><th class="hide-sm">Осталось</th><th style="width:28%">Готовность</th>
         </tr></thead>
         <tbody>${rows.map(({ s, st, days }) => `
           <tr class="${days != null && days < 0 ? 'past' : ''}">
-            <td><div class="subject-name" style="--subject:${esc(s.color || '')}"><span class="swatch"></span><span>
+            <td class="cell-main"><div class="subject-name" style="--subject:${esc(s.color || '')}"><span class="swatch"></span><span>
               <a href="#/s/${esc(s.id)}">${esc(s.title)}</a>
               <div class="small muted" style="font-weight:400">${contentSummary(st)}</div>
             </span></div></td>
             <td class="hide-sm">${esc(s.exam?.type || 'Экзамен')}</td>
-            <td class="mono small">${esc(formatDate(s.exam?.date, false))}</td>
+            <td class="small"><span class="mono">${esc(formatDate(s.exam?.date, false))}</span><span class="sm-only muted"> · ${esc(s.exam?.type || 'Экзамен').toLowerCase()} · ${daysShort(days)}</span></td>
             <td class="hide-sm small">${daysShort(days)}</td>
             <td>${progressBar(st.readiness)}</td>
           </tr>`).join('')}
