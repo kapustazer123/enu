@@ -1,0 +1,16 @@
+{
+  "title": "Название предмета",
+  "color": "#2b9e8f",
+  "teacher": "",
+  "description": "",
+  "exam": { "type": "Экзамен", "date": "", "place": "" },
+  "topics": [
+    { "id": "topic-1", "title": "Тема 1", "summary": "", "file": "topics/01-topic.md" }
+  ],
+  "quizzes": [
+    { "id": "quiz-1", "title": "Квиз по теме 1", "topic": "topic-1", "file": "quizzes/quiz-1.json" }
+  ],
+  "flashcards": "flashcards.json",
+  "questions": "questions.json",
+  "links": []
+}
