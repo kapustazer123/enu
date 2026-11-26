@@ -1,30 +1,67 @@
 # Topic 14. Experiencing Heritage: Immersion, Identity, and Innovation
 
-> **Short note** — no lecture slides yet; based on the syllabus summary. Will be expanded when the slides arrive.
+> **Based on the course annotation and open sources** — not the teacher's lecture. Check key points against the lectures.
 
-This lecture focuses on the sensory and interactive side of heritage tourism: immersive storytelling, augmented reality, food heritage and participatory methods that increase tourist engagement and reinforce identity.
+Visitors engage more deeply when they use several senses and take part instead of only looking. Immersive storytelling, digital technologies (AR, VR), food heritage and participatory methods raise engagement and strengthen the identity of both visitors and hosts.
 
 ## Key definitions
 
-- **Immersion** – the feeling of being "inside" a place or story, created through the senses, emotions and active participation.
-- **Immersive storytelling** – telling a story so that the visitor experiences it, for example through an audio walk or a staged environment.
-- **Augmented reality (AR)** – technology that adds digital images or information on top of the real view, usually through a phone or tablet.
-- **Food heritage** – traditional dishes, ingredients and food practices that are part of a community's culture.
-- **Participatory methods** – activities where visitors take part (cooking, crafts, games), not only watch or listen.
-- **Identity reinforcement** – strengthening the sense of who a community is, for both visitors and locals.
+- **Immersion** – the feeling of being "inside" a place, time or story, created through the senses, emotions and active participation.
+- **Immersive storytelling** – a story the visitor experiences, e.g. an audio walk, a staged room, a living-history performance.
+- **Augmented reality (AR)** – digital images or information added on top of the real view (phone, tablet, glasses).
+- **Virtual reality (VR)** – a fully digital environment experienced with a headset.
+- **Digital twin / 3D model** – an exact digital copy of a site used for documentation, virtual visits and monitoring.
+- **Gamification** – game elements (quests, points, roles) used in learning and visiting.
+- **Food heritage** – traditional dishes, ingredients and eating customs that are part of a community's culture.
+- **Participatory methods** – visitors do things: cook, craft, play, perform, co-create stories.
+- **Identity reinforcement** – strengthening the sense of "who we are", for local people and diaspora visitors.
 
 ## Main points
 
-- Engagement grows when visitors use **several senses** and **act**, not only look.
-- Technology such as AR can enrich interpretation, but needs good content and usability.
-- Food heritage is a strong, sensory way to connect visitors with local culture.
-- Participation helps visitors connect with the place and supports local identity.
-- Students test and review a digital heritage tool – a mobile app, AR experience or virtual museum – for usability, content and audience (independent work for week 14).
-- Seminar task: a **15-minute immersive experience prototype** (for example an audio walk, digital exhibit or culinary demo) with script, materials list and mock-up.
+**1. Why immersion works**
+Multi-sensory and active experiences create emotions, and emotions make memories (Topic 13). Participation also gives visitors a feeling of connection and respect for the culture.
+
+**2. Three ways technology enhances heritage tourism**
+1. **Interpretation** – AR/VR reconstructions of lost buildings, multilingual apps, audio guides, interactive exhibits.
+2. **Access and marketing** – virtual tours, 3D models, online booking and timed tickets, social media content; access for people who cannot travel.
+3. **Site management** – sensors, visitor counting, crowd heatmaps, digital documentation for conservation.
+
+**3. Challenges of AR and VR**
+
+| Challenge | Explanation |
+|---|---|
+| Cost | content, devices, updates, staff training |
+| Accuracy | reconstructions involve guesses; risk of a "false history" |
+| Distraction | screens instead of the real site and the guide |
+| Digital divide | elderly or visitors without smartphones excluded; VR motion sickness |
+| Technical | weak internet, batteries, sunlight on screens outdoors |
+| Ethics | sacred sites and memorials do not suit game-like content; data privacy |
+
+Solutions: research-based content, technology as an addition to the guide, non-digital alternatives, testing with users.
+
+**4. Non-digital immersion**
+- **Food heritage** – tastings, cooking classes, family dinners; strong because it involves taste, smell and hospitality.
+- **Crafts** – felt-making, pottery, jewellery workshops.
+- **Living history** – costumes, reenactments, traditional games.
+- **Audio walks and soundscapes** – music, ambient sounds, voices.
+
+**5. Evaluating a digital heritage tool (independent work)**
+Usability (easy navigation, speed, languages), content (accuracy, storytelling, depth), audience (who it is for, accessibility), added value compared with a visit.
+
+**6. Designing a 15-minute immersive prototype (seminar)**
+Theme and audience → story script or storyboard with 3–5 scenes → sensory elements for each scene → visitor actions → materials list → mock-up of the interface (if digital) → feedback questions.
+
+## Examples
+
+- **AR at Tamgaly:** an app could explain the petroglyphs and their possible meanings while visitors stand in front of the real rocks.
+- **VR reconstruction** of medieval Otrar or Sauran – impressive, but experts must agree on the appearance of the city.
+- **Food heritage:** a Nauryz table with *nauryz kozhe*, *baursak* and *beshbarmak*; tasting *kumys* in a yurt.
+- **Participation:** a felt-making workshop where visitors make a small *syrmak* pattern and learn its symbols; a kokpar show explained by local riders.
 
 ## How to answer in the exam
 
-- Define immersion and explain why sensory and interactive elements raise engagement.
-- Describe three ways technology can enhance heritage tourism (exam question 71).
-- Discuss challenges of AR and VR in interpretation (question 72).
-- Add food heritage and participation as non-digital immersive methods.
+- Define immersion and explain why sensory and active elements raise engagement.
+- Describe three ways technology enhances heritage tourism with examples (question 71).
+- Discuss AR/VR challenges using the table, then give solutions (question 72).
+- Add non-digital immersion: food heritage, crafts, participation, and link to identity.
+- Conclude: technology should support the authentic site and the human guide, not replace them.
