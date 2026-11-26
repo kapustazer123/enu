@@ -1,0 +1,180 @@
+{
+  "title": "Module 2: Marketing, law, economics, experience (topics 8–15)",
+  "shuffle": true,
+  "questions": [
+    {
+      "type": "single",
+      "q": "Topic 8 describes heritage tourism as \"tourism as experience\". Which qualities should a heritage tourism product have?",
+      "options": [
+        "Cheap, fast and standardised",
+        "Holistic, immersive and place-based",
+        "Online-only and self-guided",
+        "Seasonal, exclusive and luxury"
+      ],
+      "answer": 1,
+      "explain": "Topic 8: the lecture examines how to build holistic, immersive and place-based tourism products with emotional connection and narrative design."
+    },
+    {
+      "type": "single",
+      "q": "Which visitor segment in heritage marketing seeks deep historical context and academic accuracy?",
+      "options": [
+        "Experience seekers",
+        "Family groups",
+        "Cultural explorers",
+        "Business travelers"
+      ],
+      "answer": 2,
+      "explain": "Topic 9: cultural explorers want depth and accuracy; experience seekers want visuals and shareability; families want interactive learning and amenities."
+    },
+    {
+      "type": "multiple",
+      "q": "Which tactics are named in Topic 9 for flow management and de-seasonalization? (Choose all that apply.)",
+      "options": [
+        "Dynamic pricing for off-peak visits",
+        "Exclusive night tours",
+        "Off-season festivals",
+        "Closing the site in winter"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "Topic 9: dynamic pricing, after-hours night tours and off-season (winter) festivals balance the visitor load."
+    },
+    {
+      "type": "truefalse",
+      "q": "The final lecture (Topic 15) names climate change, digitalization, inclusivity and community empowerment as key trends for heritage tourism.",
+      "answer": true,
+      "explain": "Topic 15: these four trends are listed in the syllabus summary of the lecture on the future of heritage tourism."
+    },
+    {
+      "type": "single",
+      "q": "Which document (1972) links cultural and natural site protection under Outstanding Universal Value (OUV)?",
+      "options": [
+        "Venice Charter",
+        "ICOMOS Cultural Tourism Charter",
+        "UNESCO World Heritage Convention",
+        "Section 106 Review"
+      ],
+      "answer": 2,
+      "explain": "Topic 10: Venice Charter (1964) – authenticity and integrity; UNESCO World Heritage Convention (1972) – OUV; ICOMOS Cultural Tourism Charter (1999) – sustainable visitor management."
+    },
+    {
+      "type": "truefalse",
+      "q": "Listing a property on the National Register automatically stops a private owner from changing or demolishing it.",
+      "answer": false,
+      "explain": "Topic 10: listing alone does not restrict private owner actions unless federal funding or permits are involved."
+    },
+    {
+      "type": "single",
+      "q": "What is a conservation easement?",
+      "options": [
+        "A tax on hotel guests in a historic district",
+        "A voluntary, binding agreement that restricts development rights in perpetuity while the property stays private",
+        "A temporary permit to hold a festival at a monument",
+        "A ban on private vehicles in a historic core"
+      ],
+      "answer": 1,
+      "explain": "Topic 10: easements are voluntary and perpetual, run with the land deed, keep private ownership and give tax benefits."
+    },
+    {
+      "type": "single",
+      "q": "In the framework comparison (Topic 10), what is the main limitation of local zoning and design commissions?",
+      "options": [
+        "Vulnerable to local political pressure",
+        "Relies on national enforcement",
+        "Requires voluntary owner consent",
+        "Has no binding power"
+      ],
+      "answer": 0,
+      "explain": "Topic 10: local tools have direct binding architectural power but are vulnerable to local political pressure."
+    },
+    {
+      "type": "truefalse",
+      "q": "The legal lecture gives Machu Picchu as an example of a daily visitor cap of 2,500 under UNESCO protection guidelines.",
+      "answer": true,
+      "explain": "Topic 10: the visitor policy slide shows a 2,500 daily visitor cap at Machu Picchu."
+    },
+    {
+      "type": "single",
+      "q": "What is the average economic multiplier for cultural heritage investment given in Topic 11?",
+      "options": [
+        "0.5x – 1x",
+        "1.8x – 2.5x",
+        "5x – 10x",
+        "There is no multiplier effect"
+      ],
+      "answer": 1,
+      "explain": "Topic 11: 1.8x–2.5x; every $1 in conservation yields up to $2.50 in indirect regional returns."
+    },
+    {
+      "type": "multiple",
+      "q": "Which of these are risks of over-commercialization of heritage (Topic 11)? (Choose all that apply.)",
+      "options": [
+        "Physical degradation",
+        "Authenticity loss (Disneyfication)",
+        "Economic displacement of residents",
+        "Higher local employment in crafts"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "Topic 11: the three risks are physical degradation, authenticity loss and economic displacement. Craft jobs are a benefit, not a risk."
+    },
+    {
+      "type": "single",
+      "q": "In the target revenue allocation model (Topic 11), which share goes to direct site conservation and restoration?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "40%"
+      ],
+      "answer": 3,
+      "explain": "Topic 11: 40% conservation, 30% community and infrastructure fund, 20% visitor management and education, 10% administration."
+    },
+    {
+      "type": "single",
+      "q": "What is the last stage of the five-stage heritage event production lifecycle?",
+      "options": [
+        "Legacy – site restoration and impact review",
+        "Delivery – live interpretation and visitor flow",
+        "Logistics – permits, staging and crowd routing",
+        "Research – archive audit and theme definition"
+      ],
+      "answer": 0,
+      "explain": "Topic 12: Research → Co-design → Logistics → Delivery → Legacy."
+    },
+    {
+      "type": "multiple",
+      "q": "Which measures protect fragile heritage spaces during events (Topic 12)? (Choose all that apply.)",
+      "options": [
+        "Drilling stage fixings into historic masonry for stability",
+        "Timed entry to respect carrying capacity",
+        "Zero-trace staging with freestanding rigs",
+        "Acoustic and light limits"
+      ],
+      "answer": [1, 2, 3],
+      "explain": "Topic 12: carrying capacity (timed entry), zero-trace staging (freestanding rigs, no drilling into masonry) and controlled sound and light levels."
+    },
+    {
+      "type": "single",
+      "q": "What was the main finding of Laurajane Smith's study (4,502 interviews in 45 museums)?",
+      "options": [
+        "Visitors come mainly to buy souvenirs",
+        "Visitors prefer text-heavy plaques",
+        "Visitors come primarily to feel, not merely to learn",
+        "Visitors do not care about emotions"
+      ],
+      "answer": 2,
+      "explain": "Topic 13: the study showed that visitors come primarily to feel, not merely to learn."
+    },
+    {
+      "type": "single",
+      "q": "Which register of emotional engagement means discomfort from confronting difficult truths?",
+      "options": [
+        "Affirmation",
+        "Empathy",
+        "Nostalgia",
+        "Re-evaluation"
+      ],
+      "answer": 3,
+      "explain": "Topic 13: affirmation reinforces values, empathy connects with past lives, re-evaluation is discomfort from difficult truths."
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "title": "Module 1: Heritage tourism foundations (topics 1–7)",
+  "shuffle": true,
+  "questions": [
+    {
+      "type": "single",
+      "q": "Which three building blocks does the introductory lecture say shape tourism practices in local history work?",
+      "options": [
+        "Hotels, transport and souvenirs",
+        "Historical identity, collective memory and cultural resources",
+        "Prices, promotion and distribution",
+        "Climate, landscape and biodiversity"
+      ],
+      "answer": 1,
+      "explain": "Topic 1: the lecture explores the role of historical identity, collective memory and cultural resources in shaping tourism practices."
+    },
+    {
+      "type": "single",
+      "q": "Which three things does Topic 2 study to understand the heritage tourist?",
+      "options": [
+        "Demographics, motivations and psychological drivers",
+        "Budgets, timelines and beneficiaries",
+        "Zoning, easements and tax credits",
+        "Physical, ecological and social capacity"
+      ],
+      "answer": 0,
+      "explain": "Topic 2 examines visitor motivations, demographic patterns and psychological drivers that distinguish heritage tourists from other travelers."
+    },
+    {
+      "type": "multiple",
+      "q": "Which criteria are used in Topic 3 to evaluate heritage resources for tourism? (Choose all that apply.)",
+      "options": [
+        "Integrity",
+        "Significance",
+        "Authenticity",
+        "Number of souvenir shops nearby"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "Topic 3: resources are evaluated for integrity, significance and authenticity (the seminar also adds accessibility)."
+    },
+    {
+      "type": "single",
+      "q": "In Topic 5, which group of stakeholders is named as needing coordination in a heritage tourism strategy?",
+      "options": [
+        "Only foreign tour operators",
+        "Only the national ministry",
+        "Hotels, museums and municipalities",
+        "Only university researchers"
+      ],
+      "answer": 2,
+      "explain": "Topic 5: strategic planning includes stakeholder coordination between hotels, museums and municipalities."
+    },
+    {
+      "type": "single",
+      "q": "What is the central tension in sustainable site management (Topic 6)?",
+      "options": [
+        "Marketing vs. accounting",
+        "Preservation vs. public access",
+        "Guides vs. audio guides",
+        "Local vs. international law"
+      ],
+      "answer": 1,
+      "explain": "Topic 6: conservation priority (minimise wear, protect microclimates) conflicts with visitation priority (education, maintenance revenue)."
+    },
+    {
+      "type": "single",
+      "q": "Which level of Tourism Carrying Capacity (TCC) means the limit of crowding for visitor appreciation and resident comfort?",
+      "options": [
+        "Physical capacity",
+        "Ecological capacity",
+        "Economic capacity",
+        "Social capacity"
+      ],
+      "answer": 3,
+      "explain": "Topic 6: social capacity is the limit of crowding for visitor appreciation and resident comfort. Physical = spatial density; ecological = reversible degradation threshold."
+    },
+    {
+      "type": "single",
+      "q": "What is the correct order of the four steps of the Limits of Acceptable Change (LAC) framework?",
+      "options": [
+        "Take action → Set indicators → Define values → Fix standards",
+        "Define values → Set indicators → Fix standards → Take action",
+        "Fix standards → Define values → Take action → Set indicators",
+        "Set indicators → Take action → Define values → Fix standards"
+      ],
+      "answer": 1,
+      "explain": "Topic 6: Define values (core assets) → Set indicators (abrasion, humidity) → Fix standards (critical limits) → Take action (entry caps, routing)."
+    },
+    {
+      "type": "multiple",
+      "q": "Which tools belong to the visitor flow management toolkit in Topic 6? (Choose all that apply.)",
+      "options": [
+        "Timed entry reservation",
+        "Unlimited free entry at peak hours",
+        "Dynamic tariff pricing",
+        "Spatial micro-zoning"
+      ],
+      "answer": [0, 2, 3],
+      "explain": "Topic 6: timed entry (hourly quotas), dynamic pricing (peak-hour adjustments) and micro-zoning (core vs. buffer zones)."
+    },
+    {
+      "type": "single",
+      "q": "Which Venice Charter principles are listed in Topic 6 for maintaining authenticity?",
+      "options": [
+        "Full reconstruction of lost buildings in modern materials",
+        "Removing later layers to show only the oldest one",
+        "Minimal physical intervention and preservation of all historical layers",
+        "Replacing originals with copies for visitor safety"
+      ],
+      "answer": 2,
+      "explain": "Topic 6: the Venice Charter principles are minimal physical site intervention and preservation of all historical layers; modern interpretation avoids false reconstruction."
+    },
+    {
+      "type": "truefalse",
+      "q": "According to Topic 6, sustainability at a heritage site is a static state that is reached once and then kept.",
+      "answer": false,
+      "explain": "The lecture recap says sustainability is a continuous adaptive process, not a static state."
+    },
+    {
+      "type": "single",
+      "q": "Which technology is used for predictive modelling of structural strain and wear at heritage sites?",
+      "options": [
+        "BIM digital twins",
+        "Heatmap crowd tracking",
+        "Tactile 3D models",
+        "Multilingual apps"
+      ],
+      "answer": 0,
+      "explain": "Topic 6: BIM digital twins predict structural strain and wear; heatmaps track crowd bottlenecks; IoT sensors track humidity and vibration."
+    },
+    {
+      "type": "single",
+      "q": "Complete Tilden's principle: \"Through interpretation, understanding; through understanding, appreciation; through appreciation, ...\"",
+      "options": [
+        "profit",
+        "protection",
+        "promotion",
+        "entertainment"
+      ],
+      "answer": 1,
+      "explain": "Topic 7: Tilden's chain ends with protection – interpretation leads to understanding, appreciation and finally protection."
+    },
+    {
+      "type": "multiple",
+      "q": "Which are the three pillars of authentic heritage storytelling (Topic 7)? (Choose all that apply.)",
+      "options": [
+        "Human connection",
+        "Universal themes",
+        "Encyclopedic completeness",
+        "Provocative arc"
+      ],
+      "answer": [0, 1, 3],
+      "explain": "Topic 7: human connection, universal themes and a provocative arc that raises questions instead of giving dry encyclopedic answers."
+    },
+    {
+      "type": "truefalse",
+      "q": "In the eco-museum approach, local residents act as primary narrators and custodians of heritage.",
+      "answer": true,
+      "explain": "Topic 7: the eco-museum is based on community ownership, territory over trophy cases and intangible traditions."
+    },
+    {
+      "type": "single",
+      "q": "Which techniques does Topic 7 recommend for children and families?",
+      "options": [
+        "Comfortable pace and rest points",
+        "Multilingual apps and universal metaphors",
+        "Long expert lectures with dates",
+        "Gamification, treasure quests and character-driven roleplay"
+      ],
+      "answer": 3,
+      "explain": "Topic 7: children and families – gamification, quests, roleplay; seniors – comfortable pace, clear acoustics, rest points; international guests – visual symbols, multilingual apps."
+    },
+    {
+      "type": "truefalse",
+      "q": "The first step of designing an interpretive plan is visitor evaluation.",
+      "answer": false,
+      "explain": "Topic 7: the steps are 1) asset audit, 2) theme framing, 3) medium selection, 4) visitor evaluation. Evaluation is the last step."
+    }
+  ]
+}
