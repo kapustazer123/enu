@@ -1,0 +1,192 @@
+{
+  "title": "Module 2: Ethics in practice (topics 8–15)",
+  "shuffle": true,
+  "questions": [
+    {
+      "type": "single",
+      "q": "What do the letters of the LEARN complaint-handling model stand for?",
+      "options": [
+        "Look, Explain, Argue, Refund, Note",
+        "Listen, Empathize, Apologize, React, Notify",
+        "Listen, Evaluate, Ask, Repeat, Negotiate",
+        "Learn, Explain, Apologize, Return, Next"
+      ],
+      "answer": 1,
+      "explain": "Topic 8: LEARN = Listen, Empathize, Apologize, React, Notify (inform the guest and colleagues so the problem is not repeated)."
+    },
+    {
+      "type": "single",
+      "q": "The idea that a guest whose problem was solved very well may become more loyal than a guest who had no problem is called…",
+      "options": [
+        "The greenwashing effect",
+        "The categorical imperative",
+        "The service recovery paradox",
+        "Drip pricing"
+      ],
+      "answer": 2,
+      "explain": "Topic 8: the service recovery paradox shows why complaints are an opportunity, not only a problem."
+    },
+    {
+      "type": "truefalse",
+      "q": "When handling a complaint, staff should first find out who is to blame before apologising for the inconvenience.",
+      "answer": false,
+      "explain": "Topic 8: staff should apologise for the inconvenience even before the cause is clear, and never blame the guest or colleagues."
+    },
+    {
+      "type": "single",
+      "q": "A caller says she is a guest's wife and asks for his room number. What is the ethical response of the receptionist?",
+      "options": [
+        "Give the number, because family members have a right to know",
+        "Say loudly that the guest is not in the hotel",
+        "Ask her to come to the hotel and then show her the guest list",
+        "Offer to connect the call to the room or take a message, without revealing the number"
+      ],
+      "answer": 3,
+      "explain": "Topic 9: privacy rules forbid revealing room numbers or confirming a stay to third parties; connecting the call protects the guest."
+    },
+    {
+      "type": "multiple",
+      "q": "Which actions are part of ethical handling of overbooking (\"walking\" a guest)?",
+      "options": [
+        "Arranging a comparable or better hotel nearby",
+        "Paying for the first night and transport",
+        "Choosing the guest who looks least likely to complain",
+        "Warning the guest early when possible"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explain": "Topic 9: ethical overbooking means early warning, a comparable room elsewhere and covering costs, using fair criteria — not targeting 'weak' guests."
+    },
+    {
+      "type": "single",
+      "q": "A hotel shows a low price on its website and adds a compulsory resort fee only at the last booking step. This practice is called…",
+      "options": [
+        "Drip pricing",
+        "Empowerment",
+        "Reasonable accommodation",
+        "Tip pooling"
+      ],
+      "answer": 0,
+      "explain": "Topics 9 and 12: drip pricing hides compulsory fees until the end of the booking, which misleads guests."
+    },
+    {
+      "type": "single",
+      "q": "A supplier offers a hotel purchasing manager a personal payment for choosing his products. What is this situation?",
+      "options": [
+        "A normal service charge",
+        "A conflict of interest that should be refused and reported",
+        "An example of servant leadership",
+        "A gratuity that the manager may keep"
+      ],
+      "answer": 1,
+      "explain": "Topic 10: money or expensive gifts from suppliers create a conflict of interest (or bribery) and must be refused."
+    },
+    {
+      "type": "multiple",
+      "q": "Which statements about tips, gifts and service charges follow workplace ethics?",
+      "options": [
+        "Tip distribution (individual or pooled) must be transparent and fair",
+        "A service charge should be clearly shown to guests",
+        "Managers may keep all tips because they are responsible for the team",
+        "Small gifts from guests are declared according to company policy"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explain": "Topic 10: tips must be shared by a fair, transparent policy, service charges shown clearly and small gifts declared; managers taking staff tips is unfair."
+    },
+    {
+      "type": "single",
+      "q": "Which leadership approach puts serving and developing employees first (Robert Greenleaf)?",
+      "options": [
+        "Autocratic leadership",
+        "Laissez-faire leadership",
+        "Transactional control",
+        "Servant leadership"
+      ],
+      "answer": 3,
+      "explain": "Topic 11: in servant leadership the leader serves staff; well-treated staff in turn serve guests better."
+    },
+    {
+      "type": "truefalse",
+      "q": "\"Tone at the top\" refers to the ethical example set by senior management.",
+      "answer": true,
+      "explain": "Topic 11: leaders who act with integrity create an ethical climate; employees copy what managers do, not only what they say."
+    },
+    {
+      "type": "single",
+      "q": "A hotel calls itself an \"eco-hotel\" in advertising but has no real environmental measures. This is…",
+      "options": [
+        "Greenwashing",
+        "Universal design",
+        "Corporate philanthropy",
+        "Bait and switch"
+      ],
+      "answer": 0,
+      "explain": "Topics 12 and 14: greenwashing means presenting a business as more environmentally friendly than it really is."
+    },
+    {
+      "type": "multiple",
+      "q": "Which practices are unethical in managing online reviews?",
+      "options": [
+        "Writing fake positive reviews about your own hotel",
+        "Replying politely to a negative review and explaining what was changed",
+        "Rewarding guests only for positive reviews",
+        "Deleting or hiding honest negative reviews"
+      ],
+      "answer": [
+        0,
+        2,
+        3
+      ],
+      "explain": "Topic 12: fake reviews, paying only for positive reviews and hiding criticism are unethical; polite replies are good practice."
+    },
+    {
+      "type": "single",
+      "q": "Which quick ethics test asks: \"Would I be comfortable if this decision appeared in the news or on social media?\"",
+      "options": [
+        "Legality test",
+        "Newspaper (social media) test",
+        "Golden Rule test",
+        "Balance test"
+      ],
+      "answer": 1,
+      "explain": "Topic 13: the newspaper test checks whether a decision could be defended publicly."
+    },
+    {
+      "type": "truefalse",
+      "q": "When analysing an ethical case, it is enough to consider the short-term profit of the hotel.",
+      "answer": false,
+      "explain": "Topic 13: a good analysis considers all stakeholders (guests, staff, owners, community) and long-term effects; looking only at short-term profit is a common mistake."
+    },
+    {
+      "type": "single",
+      "q": "What are the four levels of Carroll's CSR pyramid, from bottom to top?",
+      "options": [
+        "People, Planet, Profit, Politics",
+        "Legal, economic, philanthropic, ethical",
+        "Environmental, social, governance, financial",
+        "Economic, legal, ethical, philanthropic"
+      ],
+      "answer": 3,
+      "explain": "Topic 14: Carroll's pyramid — economic (profitable), legal (obey the law), ethical (be fair), philanthropic (good corporate citizen)."
+    },
+    {
+      "type": "single",
+      "q": "Which is correct etiquette when serving a guest who uses a wheelchair and is accompanied by a friend?",
+      "options": [
+        "Speak to the guest directly and ask before helping",
+        "Speak only to the friend, because it is faster",
+        "Push the wheelchair without asking to save the guest effort",
+        "Avoid eye contact so the guest does not feel uncomfortable"
+      ],
+      "answer": 0,
+      "explain": "Topic 15: speak directly to the guest, ask 'May I help you?' and never move a wheelchair without permission."
+    }
+  ]
+}

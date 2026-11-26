@@ -1,0 +1,202 @@
+[
+ {
+  "front": "Recreation",
+  "back": "Activity in free time that restores and develops a person's physical and spiritual strength (from Latin recreatio, 'restoration').",
+  "topic": "intro"
+ },
+ {
+  "front": "Recreational tourism",
+  "back": "Tourism whose main motive is rest and recovery of health and strength, usually in natural or resort settings; the overlap of recreation and tourism.",
+  "topic": "intro"
+ },
+ {
+  "front": "Recreational system (sub-systems)",
+  "back": "Holidaymakers, natural and cultural complexes, technical systems (infrastructure), service staff and the management body.",
+  "topic": "intro"
+ },
+ {
+  "front": "Cycles of recreation",
+  "back": "Daily (after work), weekly (weekend), annual (vacation) and lifetime.",
+  "topic": "intro"
+ },
+ {
+  "front": "Recreational need vs demand",
+  "back": "A need is the wish to rest and restore strength; demand is that need supported by free time and money.",
+  "topic": "needs"
+ },
+ {
+  "front": "Functions of recreation",
+  "back": "Medical (health), educational (cognitive), sports, cultural; for society also economic (restoring the ability to work, jobs, income).",
+  "topic": "needs"
+ },
+ {
+  "front": "Factors shaping recreational needs",
+  "back": "Income, length of holiday, urbanisation, age and family status, working conditions, health status, fashion.",
+  "topic": "needs"
+ },
+ {
+  "front": "Recreational resources",
+  "back": "Natural and cultural objects and phenomena with comfort, uniqueness, aesthetic or healing value that can be used for recreation.",
+  "topic": "resources"
+ },
+ {
+  "front": "Three types of resource assessment",
+  "back": "Medical-biological (effect on the body), psychological-aesthetic (attractiveness), technological (suitability for an activity).",
+  "topic": "resources"
+ },
+ {
+  "front": "Point (score) method",
+  "back": "Choose criteria, give points to each indicator, add them and rank areas from very favourable to unfavourable; map the results.",
+  "topic": "resources"
+ },
+ {
+  "front": "Classification of drinking mineral waters (CIS practice)",
+  "back": "Table (below about 1 g/l), medical-table (about 1–10 g/l), medicinal (above about 10 g/l).",
+  "topic": "natural"
+ },
+ {
+  "front": "Therapeutic muds (peloids)",
+  "back": "Natural mud-like deposits with healing properties: silt-sulphide, peat, sapropel, hill (volcanic) muds. Exhaustible resources.",
+  "topic": "natural"
+ },
+ {
+  "front": "Lake Alakol",
+  "back": "Saline lake in south-east Kazakhstan on the border of Abai and Zhetisu regions; resort villages Akshi, Koktuma and Kabanbay; summer beach rest.",
+  "topic": "natural"
+ },
+ {
+  "front": "Balneology",
+  "back": "The science of mineral waters and their use for treatment and prevention; balneotherapy is treatment with mineral waters.",
+  "topic": "health"
+ },
+ {
+  "front": "Sanatorium",
+  "back": "A medical-preventive institution at a resort combining natural healing factors, diet, regime and physiotherapy; a course usually lasts about 12–21 days.",
+  "topic": "health"
+ },
+ {
+  "front": "Spa vs wellness",
+  "back": "Spa: water procedures, massage, relaxation (named after Spa, Belgium). Wellness: lifestyle approach of activity, healthy food and mental balance for prevention.",
+  "topic": "health"
+ },
+ {
+  "front": "Types of resorts by healing factor",
+  "back": "Balneological (mineral waters), mud, climatic (mountain, seaside, forest) and mixed.",
+  "topic": "health"
+ },
+ {
+  "front": "Passive vs active recreation",
+  "back": "Passive: low physical activity (beach rest, sunbathing). Active: physical effort (hiking, skiing, rafting).",
+  "topic": "types"
+ },
+ {
+  "front": "Criteria for classifying recreational tourism",
+  "back": "Purpose, activity level, duration, season, natural environment, organisation, participants, geography, mode of movement.",
+  "topic": "types"
+ },
+ {
+  "front": "Recreational load",
+  "back": "Pressure of holidaymakers on a territory, measured as people (or person-days) per unit of area per unit of time, e.g. people per hectare per day.",
+  "topic": "capacity"
+ },
+ {
+  "front": "Carrying capacity",
+  "back": "Maximum number of visitors an area can host at one time without unacceptable damage to nature or visitor experience. Types: physical, ecological, psychological, social, economic.",
+  "topic": "capacity"
+ },
+ {
+  "front": "Recreational digression",
+  "back": "Gradual degradation of natural complexes under recreational load; usually five stages, from almost natural state to destroyed complex with bare soil.",
+  "topic": "capacity"
+ },
+ {
+  "front": "Limits of Acceptable Change (LAC)",
+  "back": "Planning approach that defines acceptable levels of change and monitors indicators, instead of fixing one visitor number.",
+  "topic": "capacity"
+ },
+ {
+  "front": "Functional zones of a national park (Kazakhstan)",
+  "back": "Protected core, ecological stabilisation, tourist and recreational activity, limited economic activity.",
+  "topic": "planning"
+ },
+ {
+  "front": "Recreation Opportunity Spectrum (ROS)",
+  "back": "Planning tool that classifies land from primitive (wild) to urban settings so each area offers a different type of recreational experience.",
+  "topic": "planning"
+ },
+ {
+  "front": "Steps of recreational planning",
+  "back": "Resource inventory, demand study, carrying capacity, zoning and site selection, infrastructure plan, economic assessment and monitoring.",
+  "topic": "planning"
+ },
+ {
+  "front": "National park vs nature reserve",
+  "back": "Reserve: strictest protection, science only, no mass tourism. National park: protection plus education and regulated recreation.",
+  "topic": "protected"
+ },
+ {
+  "front": "Ecotourism",
+  "back": "Responsible travel to natural areas that conserves the environment and improves the well-being of local people (TIES, 1990); includes education.",
+  "topic": "protected"
+ },
+ {
+  "front": "IUCN categories",
+  "back": "Ia strict nature reserve, Ib wilderness, II national park, III natural monument, IV habitat/species management, V protected landscape, VI sustainable use.",
+  "topic": "protected"
+ },
+ {
+  "front": "Recreational infrastructure",
+  "back": "Accommodation, catering, medical and wellness, sports and leisure facilities, transport, engineering networks and information services.",
+  "topic": "infrastructure"
+ },
+ {
+  "front": "Glamping",
+  "back": "'Glamorous camping': rest in nature in comfortable domes, safari tents or tiny houses with beds, electricity and service.",
+  "topic": "infrastructure"
+ },
+ {
+  "front": "Levels of a recreational product",
+  "back": "Core (main benefit), actual (accommodation, food, programme, guide), augmented (transfers, insurance, extras).",
+  "topic": "product"
+ },
+ {
+  "front": "Steps of product design",
+  "back": "Market research, target segment, resources, concept, route and programme, suppliers, costing, safety plan, promotion, pilot tour.",
+  "topic": "product"
+ },
+ {
+  "front": "Burabay",
+  "back": "National park and Shchuchinsk–Borovoe resort zone in Akmola Region: pine forests, lakes, Okzhetpes rock; climatic and wellness resort working all year.",
+  "topic": "kazakhstan"
+ },
+ {
+  "front": "Kazakhstan tourism strategy",
+  "back": "Concept for the Development of the Tourism Industry for 2023–2029 (Government Decree No. 262, 28 March 2023); main law: On Tourist Activity (2001).",
+  "topic": "kazakhstan"
+ },
+ {
+  "front": "Main problems of Kazakhstan's recreation",
+  "back": "Strong seasonality, long distances, old infrastructure, weak sewage and waste systems, uneven service quality, pressure on nature.",
+  "topic": "kazakhstan"
+ },
+ {
+  "front": "Butler's Tourism Area Life Cycle",
+  "back": "Model (1980): exploration, involvement, development, consolidation, stagnation, then decline or rejuvenation.",
+  "topic": "world"
+ },
+ {
+  "front": "The Great Spas of Europe",
+  "back": "UNESCO World Heritage site (2021) of 11 spa towns, including Karlovy Vary, Baden-Baden, Vichy and Spa.",
+  "topic": "world"
+ },
+ {
+  "front": "Seasonality",
+  "back": "Regular changes in demand during the year caused by climate, holidays and school calendars; leads to low off-season occupancy and peak overcrowding.",
+  "topic": "economics"
+ },
+ {
+  "front": "Break-even point",
+  "back": "Number of guests at which income equals total costs = fixed costs / (price per guest − variable cost per guest).",
+  "topic": "economics"
+ }
+]

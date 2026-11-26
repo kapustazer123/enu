@@ -1,0 +1,202 @@
+[
+ {
+  "front": "Ethics vs morality",
+  "back": "Ethics is the philosophical study and system of principles of right and wrong; morality is the set of values and norms actually accepted in a society or culture.",
+  "topic": "intro"
+ },
+ {
+  "front": "Professional ethics",
+  "back": "The norms and duties of a specific profession (receptionist, waiter, guide) that go beyond general morality, e.g. confidentiality, honesty, food safety.",
+  "topic": "intro"
+ },
+ {
+  "front": "Why ethics matters especially in hospitality",
+  "back": "Service is intangible and delivered face to face, guests are vulnerable away from home, staff access rooms and personal data, and reputation spreads fast online.",
+  "topic": "intro"
+ },
+ {
+  "front": "Four levels of hospitality ethics",
+  "back": "Personal (employee), professional (occupation), organisational (hotel, restaurant, tour operator), societal/global (industry, destinations, sustainability).",
+  "topic": "intro"
+ },
+ {
+  "front": "Utilitarianism",
+  "back": "Consequence-based theory (Bentham, Mill): the right action brings the greatest good for the greatest number. Weakness: may sacrifice the minority.",
+  "topic": "ethical-theories"
+ },
+ {
+  "front": "Deontology",
+  "back": "Duty-based ethics (Kant): some actions are right or wrong in themselves; keep promises, tell the truth, treat people as ends, never merely as means.",
+  "topic": "ethical-theories"
+ },
+ {
+  "front": "Virtue ethics",
+  "back": "Theory from Aristotle focusing on character: ask what a good, honest professional would do; develop virtues such as honesty, fairness and generosity.",
+  "topic": "ethical-theories"
+ },
+ {
+  "front": "Justice theory (Rawls)",
+  "back": "Ethics as fairness: fair distribution of benefits and burdens and equal treatment; the 'veil of ignorance' thought experiment.",
+  "topic": "ethical-theories"
+ },
+ {
+  "front": "UNWTO Global Code of Ethics for Tourism",
+  "back": "Ten voluntary principles for responsible tourism adopted by the UNWTO General Assembly in 1999 (Santiago, Chile), acknowledged by the UN General Assembly in 2001.",
+  "topic": "codes"
+ },
+ {
+  "front": "Code of ethics vs code of conduct",
+  "back": "Code of ethics states values and principles (the 'why'); code of conduct gives concrete rules of behaviour for employees (what to do and not do).",
+  "topic": "codes"
+ },
+ {
+  "front": "What makes a corporate code effective?",
+  "back": "Clear language, staff training, leaders following it, confidential reporting channel, protection of whistleblowers, fair sanctions, regular review.",
+  "topic": "codes"
+ },
+ {
+  "front": "Service culture",
+  "back": "Shared values, beliefs and habits in an organisation that put the guest's needs at the centre of every job.",
+  "topic": "service-culture"
+ },
+ {
+  "front": "SERVQUAL (RATER)",
+  "back": "Five dimensions of service quality: Reliability, Assurance, Tangibles, Empathy, Responsiveness (Parasuraman, Zeithaml, Berry).",
+  "topic": "service-culture"
+ },
+ {
+  "front": "Moment of truth",
+  "back": "Any contact in which a guest forms an impression of the company; term popularised by Jan Carlzon of SAS.",
+  "topic": "service-culture"
+ },
+ {
+  "front": "Empowerment",
+  "back": "Giving front-line staff authority to solve guest problems on the spot without waiting for a manager.",
+  "topic": "service-culture"
+ },
+ {
+  "front": "Grooming standards",
+  "back": "Clean, complete uniform with name badge; neat hair; short clean nails; minimal jewellery; moderate make-up; no strong perfume; good personal hygiene.",
+  "topic": "etiquette"
+ },
+ {
+  "front": "Ethical limits of a dress code",
+  "back": "Rules must relate to hygiene, safety or brand, apply equally to all, and respect religion, gender and disability where possible.",
+  "topic": "etiquette"
+ },
+ {
+  "front": "Telephone etiquette: answering",
+  "back": "Answer quickly with a smile in the voice: greeting + hotel/department + own name + offer of help; repeat key details; let the guest hang up first.",
+  "topic": "communication"
+ },
+ {
+  "front": "Non-verbal communication",
+  "back": "Messages without words: facial expression, gestures, posture, eye contact, distance (proxemics) and tone. Crossed arms or using a phone show disrespect.",
+  "topic": "communication"
+ },
+ {
+  "front": "Replying to a negative online review",
+  "back": "Reply promptly and politely, thank and apologise, explain what was changed, reveal no personal data, move details to a private channel.",
+  "topic": "communication"
+ },
+ {
+  "front": "Ethnocentrism",
+  "back": "Judging other cultures by the standards of one's own and seeing one's own as superior; a barrier to intercultural service.",
+  "topic": "intercultural"
+ },
+ {
+  "front": "Dastarkhan and tör",
+  "back": "Dastarkhan: the generously laid Kazakh festive table. Tör: the place of honour farthest from the entrance, given to the most respected guest or elder.",
+  "topic": "intercultural"
+ },
+ {
+  "front": "Qonaqjailylyq",
+  "back": "Kazakh tradition of hospitality: the guest is honoured, offered tea and the best food, even an unexpected traveller ('God's guest'), and given sarqyt to take home.",
+  "topic": "intercultural"
+ },
+ {
+  "front": "LEARN model",
+  "back": "Listen, Empathize, Apologize, React, Notify — a complaint-handling model; Notify means informing the guest and colleagues so the problem is not repeated.",
+  "topic": "complaints"
+ },
+ {
+  "front": "LAST model",
+  "back": "Listen, Apologize, Solve, Thank — a short complaint-handling model.",
+  "topic": "complaints"
+ },
+ {
+  "front": "Service recovery paradox",
+  "back": "A guest whose problem was solved very well may become more loyal than one who had no problem at all.",
+  "topic": "complaints"
+ },
+ {
+  "front": "Overbooking and 'walking' a guest",
+  "back": "Accepting more bookings than rooms; walking = moving a confirmed guest to another hotel. Ethically: early warning, comparable room, pay first night and transport, fair criteria.",
+  "topic": "guest-rights"
+ },
+ {
+  "front": "Guest privacy rules",
+  "back": "Never give room numbers or confirm a stay to third parties; say the room number quietly; respect 'Do not disturb'; protect passport and card data.",
+  "topic": "guest-rights"
+ },
+ {
+  "front": "Conflict of interest",
+  "back": "A situation where personal interests could influence professional decisions, e.g. a supplier's personal payment to a purchasing manager.",
+  "topic": "workplace"
+ },
+ {
+  "front": "Tips vs service charge",
+  "back": "Tip: voluntary money from a guest. Service charge: fixed percentage added by the business; it should be clearly shown and, ethically, reach the staff.",
+  "topic": "workplace"
+ },
+ {
+  "front": "Harassment prevention at work",
+  "back": "Clear policy, training, safe reporting channels, panic buttons for room attendants, equal investigation for all and support for victims.",
+  "topic": "workplace"
+ },
+ {
+  "front": "Ethical leadership",
+  "back": "Leading with integrity, fairness and care; the leader is both a moral person and a moral manager who sets the 'tone at the top'.",
+  "topic": "leadership"
+ },
+ {
+  "front": "Servant leadership",
+  "back": "Leadership approach (Robert Greenleaf) where the leader's first aim is to serve and develop employees, who then serve guests better.",
+  "topic": "leadership"
+ },
+ {
+  "front": "Greenwashing",
+  "back": "Presenting a business as more environmentally friendly than it really is, e.g. an 'eco-hotel' label with no real measures.",
+  "topic": "marketing"
+ },
+ {
+  "front": "Drip pricing",
+  "back": "Showing a low price first and adding compulsory fees (resort fee, taxes, service charge) only later in the booking process.",
+  "topic": "marketing"
+ },
+ {
+  "front": "Ethical dilemma",
+  "back": "A situation where values or duties conflict and every option has a moral cost, e.g. loyalty to a colleague vs honesty to the employer.",
+  "topic": "dilemmas"
+ },
+ {
+  "front": "Steps of an ethical decision model",
+  "back": "Facts, ethical issue, stakeholders, options, evaluation (theories, law, code), decision and action, review.",
+  "topic": "dilemmas"
+ },
+ {
+  "front": "Carroll's CSR pyramid",
+  "back": "Economic (be profitable), legal (obey the law), ethical (do what is fair), philanthropic (be a good corporate citizen).",
+  "topic": "sustainability"
+ },
+ {
+  "front": "Triple bottom line",
+  "back": "Measuring business success by People, Planet and Profit (John Elkington).",
+  "topic": "sustainability"
+ },
+ {
+  "front": "Universal design and reasonable accommodation",
+  "back": "Universal design: spaces usable by all without adaptation. Reasonable accommodation: necessary adjustments so a person with a disability can use a service.",
+  "topic": "inclusion"
+ }
+]

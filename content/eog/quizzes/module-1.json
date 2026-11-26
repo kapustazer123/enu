@@ -1,0 +1,180 @@
+{
+  "title": "Module 1: Foundations of service ethics (topics 1–7)",
+  "shuffle": true,
+  "questions": [
+    {
+      "type": "single",
+      "q": "What is the main difference between ethics and law in hospitality?",
+      "options": [
+        "Ethics applies only to managers, law applies to all staff",
+        "Law sets the compulsory minimum enforced by the state, while ethics is wider and covers actions that may be legal but still wrong",
+        "Ethics and law always require exactly the same behaviour",
+        "Law is voluntary, while ethics is enforced by the courts"
+      ],
+      "answer": 1,
+      "explain": "Topic 1: law is the minimum punished by the state; ethics is wider — for example, hiding fees in small print can be legal but unethical."
+    },
+    {
+      "type": "multiple",
+      "q": "Which reasons explain why ethics is especially important in hospitality?",
+      "options": [
+        "Service is intangible and produced in direct contact with the guest",
+        "Staff have access to guests' rooms, belongings and personal data",
+        "Hospitality businesses are not regulated by any laws",
+        "Reputation spreads quickly through online reviews"
+      ],
+      "answer": [0, 1, 3],
+      "explain": "Topic 1: intangibility, staff access to guests' property and data, and fast-spreading reputation make ethics central; hospitality is of course regulated by law."
+    },
+    {
+      "type": "single",
+      "q": "Which level of hospitality ethics deals with fair pricing, codes of conduct and the treatment of staff by a hotel?",
+      "options": [
+        "Personal level",
+        "Societal / global level",
+        "Organisational level",
+        "Biological level"
+      ],
+      "answer": 2,
+      "explain": "Topic 1: the organisational level covers company decisions such as pricing, codes of conduct and staff treatment."
+    },
+    {
+      "type": "single",
+      "q": "A manager decides to overbook rooms because it keeps occupancy high and benefits most guests and the owners. Which ethical theory is this reasoning closest to?",
+      "options": [
+        "Utilitarianism",
+        "Deontology",
+        "Virtue ethics",
+        "Ethical egoism of the guest"
+      ],
+      "answer": 0,
+      "explain": "Topic 2: utilitarianism (Bentham, Mill) judges actions by their consequences — the greatest good for the greatest number."
+    },
+    {
+      "type": "single",
+      "q": "Which philosopher is associated with the categorical imperative and duty-based ethics?",
+      "options": [
+        "Aristotle",
+        "John Stuart Mill",
+        "John Rawls",
+        "Immanuel Kant"
+      ],
+      "answer": 3,
+      "explain": "Topic 2: Kant's deontology says some actions are right or wrong in themselves; people must be treated as ends, never merely as means."
+    },
+    {
+      "type": "truefalse",
+      "q": "Virtue ethics focuses mainly on the consequences of an action rather than on the character of the person.",
+      "answer": false,
+      "explain": "Topic 2: virtue ethics (Aristotle) focuses on character — what a good, honest professional would do. Consequences are the focus of utilitarianism."
+    },
+    {
+      "type": "single",
+      "q": "When was the UNWTO Global Code of Ethics for Tourism adopted, and how many articles does it have?",
+      "options": [
+        "1987, 17 articles",
+        "1999, 10 articles",
+        "2015, 10 articles",
+        "2001, 5 articles"
+      ],
+      "answer": 1,
+      "explain": "Topic 3: the Code was adopted by the UNWTO General Assembly in 1999 (Santiago, Chile) and has 10 articles; the UN General Assembly acknowledged it in 2001."
+    },
+    {
+      "type": "truefalse",
+      "q": "The Global Code of Ethics for Tourism is a voluntary document rather than a binding law.",
+      "answer": true,
+      "explain": "Topic 3: the Code is voluntary; it guides governments, businesses, communities and tourists, and is promoted by the World Committee on Tourism Ethics."
+    },
+    {
+      "type": "single",
+      "q": "How does a code of conduct differ from a code of ethics?",
+      "options": [
+        "A code of conduct gives concrete rules of behaviour, while a code of ethics states general values and principles",
+        "A code of conduct is written only for guests",
+        "A code of ethics is always longer and more detailed than a code of conduct",
+        "There is no difference; they are legal synonyms"
+      ],
+      "answer": 0,
+      "explain": "Topic 3: a code of ethics explains the values (the 'why'); a code of conduct lists practical rules (what to do and not do)."
+    },
+    {
+      "type": "multiple",
+      "q": "Which dimensions belong to the SERVQUAL (RATER) model of service quality?",
+      "options": [
+        "Reliability",
+        "Advertising",
+        "Empathy",
+        "Responsiveness"
+      ],
+      "answer": [0, 2, 3],
+      "explain": "Topic 4: RATER = Reliability, Assurance, Tangibles, Empathy, Responsiveness. Advertising is not a dimension."
+    },
+    {
+      "type": "single",
+      "q": "Giving a front-line employee the authority to solve a guest's problem without waiting for a manager is called…",
+      "options": [
+        "Overbooking",
+        "Empowerment",
+        "Perishability",
+        "Grooming"
+      ],
+      "answer": 1,
+      "explain": "Topic 4: empowerment lets staff react quickly to guest problems; Ritz-Carlton is a well-known example."
+    },
+    {
+      "type": "single",
+      "q": "Which characteristic of hospitality services means that an empty hotel room tonight cannot be sold tomorrow?",
+      "options": [
+        "Intangibility",
+        "Variability",
+        "Inseparability",
+        "Perishability"
+      ],
+      "answer": 3,
+      "explain": "Topic 4: perishability — services cannot be stored, so unsold capacity is lost."
+    },
+    {
+      "type": "single",
+      "q": "Which grooming rule is typical for waiters in food service?",
+      "options": [
+        "Strong perfume to create a pleasant atmosphere",
+        "Long decorated nails as part of the corporate image",
+        "Short clean nails, minimal jewellery and hair tied back",
+        "Personal clothing instead of a uniform"
+      ],
+      "answer": 2,
+      "explain": "Topic 5: hygiene rules require short clean nails, little jewellery and neat hair; strong perfume spoils the dining experience."
+    },
+    {
+      "type": "single",
+      "q": "According to standard telephone etiquette, how should a hotel employee answer a call?",
+      "options": [
+        "With a greeting, the hotel or department name, own name and an offer of help",
+        "Simply \"Hello?\" and wait for the caller to explain",
+        "With the guest's room number to save time",
+        "By putting the caller on hold immediately without asking"
+      ],
+      "answer": 0,
+      "explain": "Topic 6: a professional answer includes greeting + hotel/department + own name + 'How may I help you?'."
+    },
+    {
+      "type": "multiple",
+      "q": "Which are elements of traditional Kazakh hospitality (qonaqjailylyq)?",
+      "options": [
+        "Seating the most respected guest in the tör, the place of honour",
+        "A generous dastarkhan with tea, baursak and main dishes",
+        "Charging the guest for each cup of tea",
+        "Giving sarqyt — food to take home"
+      ],
+      "answer": [0, 1, 3],
+      "explain": "Topic 7: tör, the dastarkhan and sarqyt are traditional elements; charging guests for tea contradicts the tradition."
+    },
+    {
+      "type": "truefalse",
+      "q": "Ethnocentrism means judging other cultures by the standards of one's own culture and seeing it as superior.",
+      "answer": true,
+      "explain": "Topic 7: ethnocentrism is a barrier to intercultural competence; staff should replace judgment with curiosity and respect."
+    }
+  ]
+}

@@ -3,13 +3,104 @@
   "code": "RT 2206",
   "color": "#3d6b6b",
   "teacher": "Абилхаир Б.К.",
-  "description": "Материалы по этой дисциплине пока не получены. Итоговый контроль — защита проекта.",
+  "description": "*Recreational tourism.* Final control is a **project defence** — see topic 15 for a guide and the defence questions. Built from the course annotation and open sources — **not the teacher's lectures**: check key points against your lecture notes.",
   "exam": {
     "type": "Защита проекта",
     "date": "2026-12-26T09:00",
     "place": "Корпус №1 (УАК), ауд. 335"
   },
-  "topics": [],
-  "quizzes": [],
+  "topics": [
+    {
+      "id": "intro",
+      "title": "Recreation and recreational tourism: concepts",
+      "file": "topics/01-intro.md"
+    },
+    {
+      "id": "needs",
+      "title": "Recreational needs and functions of recreation",
+      "file": "topics/02-needs.md"
+    },
+    {
+      "id": "resources",
+      "title": "Recreational resources: classification and assessment",
+      "file": "topics/03-resources.md"
+    },
+    {
+      "id": "natural",
+      "title": "Natural recreational resources",
+      "file": "topics/04-natural.md"
+    },
+    {
+      "id": "health",
+      "title": "Health, spa and wellness tourism",
+      "file": "topics/05-health.md"
+    },
+    {
+      "id": "types",
+      "title": "Types of recreational activity",
+      "file": "topics/06-types.md"
+    },
+    {
+      "id": "capacity",
+      "title": "Carrying capacity and environmental impacts",
+      "file": "topics/07-capacity.md"
+    },
+    {
+      "id": "planning",
+      "title": "Recreational zoning and planning",
+      "file": "topics/08-planning.md"
+    },
+    {
+      "id": "protected",
+      "title": "Protected areas and ecotourism",
+      "file": "topics/09-protected.md"
+    },
+    {
+      "id": "infrastructure",
+      "title": "Recreational infrastructure",
+      "file": "topics/10-infrastructure.md"
+    },
+    {
+      "id": "product",
+      "title": "Designing recreational products",
+      "file": "topics/11-product.md"
+    },
+    {
+      "id": "kazakhstan",
+      "title": "Recreational zones of Kazakhstan",
+      "file": "topics/12-kazakhstan.md"
+    },
+    {
+      "id": "world",
+      "title": "Recreational regions of the world",
+      "file": "topics/13-world.md"
+    },
+    {
+      "id": "economics",
+      "title": "Economics of recreational enterprises",
+      "file": "topics/14-economics.md"
+    },
+    {
+      "id": "project",
+      "title": "Project: preparation and defence",
+      "file": "topics/15-project.md"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "module-1",
+      "title": "Module 1: Recreation and resources",
+      "description": "Topics 1–7",
+      "file": "quizzes/module-1.json"
+    },
+    {
+      "id": "module-2",
+      "title": "Module 2: Planning, products and regions",
+      "description": "Topics 8–14",
+      "file": "quizzes/module-2.json"
+    }
+  ],
+  "flashcards": "flashcards.json",
+  "questions": "questions.json",
   "links": []
 }

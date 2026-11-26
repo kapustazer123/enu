@@ -1,0 +1,192 @@
+{
+ "title": "Module 1: Recreation and resources (topics 1–7)",
+ "shuffle": true,
+ "questions": [
+  {
+   "type": "single",
+   "q": "What does the Latin word 'recreatio', the origin of 'recreation', mean?",
+   "options": [
+    "Travel",
+    "Restoration",
+    "Entertainment",
+    "Treatment"
+   ],
+   "answer": 1,
+   "explain": "Recreation comes from Latin recreatio, 'restoration' of physical and spiritual strength (Topic 1)."
+  },
+  {
+   "type": "single",
+   "q": "Which feature always separates tourism from recreation in general?",
+   "options": [
+    "Use of mineral waters",
+    "Physical activity",
+    "Travel outside the usual environment",
+    "Payment for services"
+   ],
+   "answer": 2,
+   "explain": "Recreation can take place at home or in a city park; tourism always involves travel outside the usual environment (Topic 1)."
+  },
+  {
+   "type": "truefalse",
+   "q": "An evening walk in a park in your own city is recreation but not tourism.",
+   "answer": true,
+   "explain": "It restores strength in free time, but there is no travel outside the usual environment (Topic 1)."
+  },
+  {
+   "type": "single",
+   "q": "What is the difference between a recreational need and recreational demand?",
+   "options": [
+    "There is no difference",
+    "Demand is a need supported by free time and money",
+    "A need is always bigger in money terms",
+    "Demand concerns only medical recreation"
+   ],
+   "answer": 1,
+   "explain": "Recreational demand is the need backed by free time and money, i.e. a real wish to buy a service (Topic 2)."
+  },
+  {
+   "type": "multiple",
+   "q": "Which of these are functions of recreation described in Topic 2?",
+   "options": [
+    "Medical (health)",
+    "Educational (cognitive)",
+    "Military",
+    "Sports"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "explain": "The main functions are medical, educational, sports and cultural (plus economic for society); military is not one of them."
+  },
+  {
+   "type": "single",
+   "q": "A school group visits Charyn Canyon to learn about geology. Which function of recreation is strongest here?",
+   "options": [
+    "Medical",
+    "Sports",
+    "Economic",
+    "Educational"
+   ],
+   "answer": 3,
+   "explain": "Learning new knowledge and impressions is the educational (cognitive) function (Topic 2)."
+  },
+  {
+   "type": "single",
+   "q": "Which type of assessment of recreational resources checks slope steepness for skiing or beach width for swimming?",
+   "options": [
+    "Technological",
+    "Psychological-aesthetic",
+    "Medical-biological",
+    "Sociological"
+   ],
+   "answer": 0,
+   "explain": "Technological assessment evaluates how suitable a territory is for a certain activity (Topic 3)."
+  },
+  {
+   "type": "single",
+   "q": "Historical monuments are classified as which type of recreational resource by renewability?",
+   "options": [
+    "Renewable",
+    "Non-renewable",
+    "Inexhaustible",
+    "Relatively renewable"
+   ],
+   "answer": 1,
+   "explain": "Historical monuments cannot be restored once destroyed, so they are non-renewable (Topic 3)."
+  },
+  {
+   "type": "multiple",
+   "q": "Which are steps of the point (score) method of assessment?",
+   "options": [
+    "Choose criteria and indicators",
+    "Give points to each indicator",
+    "Sell the territory to investors",
+    "Add points and rank the areas"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "explain": "The point method selects criteria, scores each indicator, adds the points and ranks areas (Topic 3)."
+  },
+  {
+   "type": "single",
+   "q": "In CIS practice, drinking mineral water with mineralisation of about 1–10 g/l is called...",
+   "options": [
+    "Table water",
+    "Medicinal water",
+    "Medical-table water",
+    "Thermal water"
+   ],
+   "answer": 2,
+   "explain": "Table water is below about 1 g/l, medical-table about 1–10 g/l, medicinal above about 10 g/l (Topic 4)."
+  },
+  {
+   "type": "truefalse",
+   "q": "Mineral waters and therapeutic muds are practically inexhaustible resources, so their use does not need to be controlled.",
+   "answer": false,
+   "explain": "Mineral waters and muds are exhaustible; their use must be controlled and protected (Topics 3–4)."
+  },
+  {
+   "type": "single",
+   "q": "Which Kazakhstan resort area is best known for balneological (mineral water) treatment?",
+   "options": [
+    "Shymbulak",
+    "Kapshagay",
+    "Saryagash",
+    "Charyn"
+   ],
+   "answer": 2,
+   "explain": "Saryagash in Turkestan Region is the best-known mineral-water resort of Kazakhstan (Topics 4–5)."
+  },
+  {
+   "type": "single",
+   "q": "Which type of health tourism focuses on prevention and a healthy lifestyle (yoga, fitness, diet) rather than treatment?",
+   "options": [
+    "Wellness",
+    "Medical-sanatorium",
+    "Balneotherapy",
+    "Medical tourism in the narrow sense"
+   ],
+   "answer": 0,
+   "explain": "Wellness is a lifestyle approach focused on prevention and balance, not treatment of disease (Topic 5)."
+  },
+  {
+   "type": "multiple",
+   "q": "Which classification criteria are used for recreational tourism in Topic 6?",
+   "options": [
+    "Activity level (passive, active, extreme)",
+    "Season",
+    "Colour of the hotel",
+    "Duration"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "explain": "Recreational tourism is classified by purpose, activity level, duration, season, environment, organisation and participants (Topic 6)."
+  },
+  {
+   "type": "truefalse",
+   "q": "Psychological carrying capacity is the limit set by visitor satisfaction: crowding reduces the quality of rest.",
+   "answer": true,
+   "explain": "Psychological (perceptual) capacity depends on how visitors feel about crowding (Topic 7)."
+  },
+  {
+   "type": "single",
+   "q": "At which stage of recreational digression does a forest have bare compacted soil and dying trees?",
+   "options": [
+    "Stage 1",
+    "Stage 2",
+    "Stage 3",
+    "Stage 5"
+   ],
+   "answer": 3,
+   "explain": "The fifth (last) stage means the natural complex is destroyed (Topic 7)."
+  }
+ ]
+}

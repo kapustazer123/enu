@@ -3,13 +3,103 @@
   "code": "EOG 2205",
   "color": "#5b3f73",
   "teacher": "Исатай Ә.А.",
-  "description": "Материалы по этой дисциплине пока не получены.",
+  "description": "*Service ethics in hospitality.* Built from the course annotation and open sources — **not the teacher's lectures**: check key points against your lecture notes. Practice questions are not the official exam list.",
   "exam": {
     "type": "Письменный экзамен",
     "date": "2026-12-24T12:00",
     "place": "Корпус №1 (УАК), ауд. 113"
   },
-  "topics": [],
-  "quizzes": [],
+  "topics": [
+    {
+      "id": "intro",
+      "title": "Ethics and professional ethics in hospitality",
+      "file": "topics/01-intro.md"
+    },
+    {
+      "id": "ethical-theories",
+      "title": "Ethical theories and principles",
+      "file": "topics/02-ethical-theories.md"
+    },
+    {
+      "id": "codes",
+      "title": "Codes of ethics: UNWTO and corporate codes",
+      "file": "topics/03-codes.md"
+    },
+    {
+      "id": "service-culture",
+      "title": "Service culture and guest-service standards",
+      "file": "topics/04-service-culture.md"
+    },
+    {
+      "id": "etiquette",
+      "title": "Professional etiquette and image",
+      "file": "topics/05-etiquette.md"
+    },
+    {
+      "id": "communication",
+      "title": "Ethics of communication with guests",
+      "file": "topics/06-communication.md"
+    },
+    {
+      "id": "intercultural",
+      "title": "Intercultural ethics and Kazakh hospitality",
+      "file": "topics/07-intercultural.md"
+    },
+    {
+      "id": "complaints",
+      "title": "Complaints, conflicts and service recovery",
+      "file": "topics/08-complaints.md"
+    },
+    {
+      "id": "guest-rights",
+      "title": "Guest rights: privacy, honesty, safety",
+      "file": "topics/09-guest-rights.md"
+    },
+    {
+      "id": "workplace",
+      "title": "Workplace ethics",
+      "file": "topics/10-workplace.md"
+    },
+    {
+      "id": "leadership",
+      "title": "Ethical leadership and management",
+      "file": "topics/11-leadership.md"
+    },
+    {
+      "id": "marketing",
+      "title": "Ethical marketing and online reviews",
+      "file": "topics/12-marketing.md"
+    },
+    {
+      "id": "dilemmas",
+      "title": "Ethical dilemmas and decision-making",
+      "file": "topics/13-dilemmas.md"
+    },
+    {
+      "id": "sustainability",
+      "title": "CSR and sustainable hospitality",
+      "file": "topics/14-sustainability.md"
+    },
+    {
+      "id": "inclusion",
+      "title": "Accessibility and inclusive service",
+      "file": "topics/15-inclusion.md"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "module-1",
+      "title": "Module 1: Foundations of service ethics",
+      "description": "Topics 1–7",
+      "file": "quizzes/module-1.json"
+    },
+    {
+      "id": "module-2",
+      "title": "Module 2: Ethics in practice",
+      "description": "Topics 8–15",
+      "file": "quizzes/module-2.json"
+    }
+  ],
+  "flashcards": "flashcards.json",
   "links": []
 }

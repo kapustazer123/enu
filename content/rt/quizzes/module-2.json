@@ -1,0 +1,188 @@
+{
+ "title": "Module 2: Planning, products and regions (topics 8–14)",
+ "shuffle": true,
+ "questions": [
+  {
+   "type": "single",
+   "q": "What is recreational zoning?",
+   "options": [
+    "Building hotels along the whole shore",
+    "Setting prices by season",
+    "Classifying mineral waters",
+    "Dividing a territory into zones with different purposes and rules of use"
+   ],
+   "answer": 3,
+   "explain": "Functional zoning divides territory into zones with different functions and permitted activities (Topic 8)."
+  },
+  {
+   "type": "single",
+   "q": "Which planning tool classifies land from primitive (wild) to urban settings so each area offers a different experience?",
+   "options": [
+    "Recreation Opportunity Spectrum (ROS)",
+    "Butler's life cycle",
+    "Break-even analysis",
+    "IUCN category list"
+   ],
+   "answer": 0,
+   "explain": "ROS classifies settings from primitive to urban (Topic 8)."
+  },
+  {
+   "type": "multiple",
+   "q": "Which are the three zones of a UNESCO biosphere reserve?",
+   "options": [
+    "Core",
+    "Buffer",
+    "Transition",
+    "Service"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "explain": "Biosphere reserves use the core-buffer-transition model (Topics 8–9)."
+  },
+  {
+   "type": "single",
+   "q": "Which IUCN category is 'National park'?",
+   "options": [
+    "Ia",
+    "II",
+    "IV",
+    "VI"
+   ],
+   "answer": 1,
+   "explain": "IUCN Category II is National park (Topic 9)."
+  },
+  {
+   "type": "single",
+   "q": "Which is the oldest nature reserve in Central Asia, created in 1926?",
+   "options": [
+    "Aksu-Zhabagly",
+    "Korgalzhyn",
+    "Naurzum",
+    "Altyn-Emel"
+   ],
+   "answer": 0,
+   "explain": "Aksu-Zhabagly (1926) is the oldest reserve in Central Asia (Topic 9)."
+  },
+  {
+   "type": "truefalse",
+   "q": "Bayanaul National Park (1985) was the first national park of Kazakhstan.",
+   "answer": true,
+   "explain": "Bayanaul in Pavlodar Region, created in 1985, is the first national park of Kazakhstan (Topic 9)."
+  },
+  {
+   "type": "single",
+   "q": "Which UNESCO World Heritage site includes the Korgalzhyn and Naurzum reserves?",
+   "options": [
+    "Western Tien-Shan",
+    "The Great Spas of Europe",
+    "Mausoleum of Khoja Ahmed Yasawi",
+    "Saryarka — Steppe and Lakes of Northern Kazakhstan"
+   ],
+   "answer": 3,
+   "explain": "Korgalzhyn and Naurzum form 'Saryarka — Steppe and Lakes of Northern Kazakhstan' (2008) (Topic 9)."
+  },
+  {
+   "type": "single",
+   "q": "What is glamping?",
+   "options": [
+    "Rest in nature in comfortable structures with beds, electricity and service",
+    "Camping only for children",
+    "A type of mud therapy",
+    "A strict nature reserve"
+   ],
+   "answer": 0,
+   "explain": "Glamping = 'glamorous camping', comfortable nature-based accommodation (Topic 10)."
+  },
+  {
+   "type": "single",
+   "q": "A recreation base (baza otdykha) is best described as...",
+   "options": [
+    "A medical institution with a doctor's programme",
+    "A hotel in the city centre",
+    "A seasonal or all-year complex with simple accommodation, food and basic leisure",
+    "A UNESCO site"
+   ],
+   "answer": 2,
+   "explain": "Recreation bases offer simple cottages or rooms, catering and leisure, often by a lake (Topic 10)."
+  },
+  {
+   "type": "single",
+   "q": "Transfers, insurance and loyalty discounts belong to which level of a recreational product?",
+   "options": [
+    "Core product",
+    "Actual product",
+    "Augmented product",
+    "Recreational need"
+   ],
+   "answer": 2,
+   "explain": "Extra services beyond the main offer form the augmented product (Topic 11)."
+  },
+  {
+   "type": "multiple",
+   "q": "Which principles of a good recreational programme are given in Topic 11?",
+   "options": [
+    "Alternate active and easier days",
+    "Match the physical abilities of the target group",
+    "Maximise the number of visitors regardless of capacity",
+    "Use local resources, food and culture"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "explain": "A good programme balances loads, fits the target group, uses local resources and respects carrying capacity (Topic 11)."
+  },
+  {
+   "type": "single",
+   "q": "Which document sets the current strategy for Kazakhstan's tourism sector?",
+   "options": [
+    "Global Code of Ethics for Tourism",
+    "Law on Specially Protected Natural Areas",
+    "Butler's model",
+    "Concept for the Development of the Tourism Industry for 2023–2029"
+   ],
+   "answer": 3,
+   "explain": "The Concept for 2023–2029 was approved by Government Decree No. 262 of 28 March 2023 (Topic 12)."
+  },
+  {
+   "type": "truefalse",
+   "q": "Lake Balkhash is fresh in its western part and saline in its eastern part.",
+   "answer": true,
+   "explain": "Balkhash is half fresh (west) and half saline (east) (Topic 12)."
+  },
+  {
+   "type": "single",
+   "q": "Which world recreational region is the largest and the historic centre of '3S' beach tourism?",
+   "options": [
+    "The Mediterranean",
+    "The Caribbean",
+    "Scandinavia",
+    "The Rocky Mountains"
+   ],
+   "answer": 0,
+   "explain": "The Mediterranean is the largest recreational region in the world (Topic 13)."
+  },
+  {
+   "type": "truefalse",
+   "q": "Seasonality is a problem only for ski resorts; sanatoriums and lake resorts do not suffer from it.",
+   "answer": false,
+   "explain": "Lake and beach resorts in Kazakhstan are strongly seasonal; sanatoriums suffer less because treatment does not depend on weather (Topic 14)."
+  },
+  {
+   "type": "single",
+   "q": "Fixed costs are 2,000,000, price per guest is 50,000 and variable cost per guest is 30,000. What is the break-even number of guests?",
+   "options": [
+    "40",
+    "67",
+    "100",
+    "25"
+   ],
+   "answer": 2,
+   "explain": "Break-even = fixed costs / (price − variable cost) = 2,000,000 / 20,000 = 100 guests (Topic 14)."
+  }
+ ]
+}
