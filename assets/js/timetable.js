@@ -23,6 +23,8 @@ export function weekInfo(tt, date = new Date()) {
   const start = tt.semesterStart ? mondayOf(new Date(tt.semesterStart)) : null;
   if (!start || isNaN(start)) return { number: null, type: null };
   const number = Math.floor(Math.round((mondayOf(date) - start) / DAY_MS) / 7) + 1;
+  // Числитель/знаменатель показываем, только если хоть одна пара от него зависит
+  if (!(tt.lessons || []).some((l) => l.week)) return { number, type: null };
   const first = (tt.firstWeek || 'числитель').toLowerCase();
   const other = first === 'числитель' ? 'знаменатель' : 'числитель';
   return { number, type: number % 2 === 1 ? first : other };
@@ -56,6 +58,13 @@ export function lessonState(lesson, now = new Date()) {
   if (cur < minutesOf(lesson.start)) return 'future';
   if (cur >= minutesOf(lesson.end)) return 'past';
   return 'now';
+}
+
+/** Где проходит пара: «онлайн», «УАК, ауд. 335», «СОК, Тренажёрный зал №2». */
+export function placeLabel(lesson) {
+  if (lesson.online) return 'онлайн';
+  const room = lesson.room ? (/^\d/.test(String(lesson.room)) ? `ауд. ${lesson.room}` : lesson.room) : '';
+  return [lesson.building, room].filter(Boolean).join(', ');
 }
 
 export function lessonTitle(lesson, subjectsById) {

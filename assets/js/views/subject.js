@@ -14,6 +14,7 @@ export async function renderSubject(app, id) {
       <span class="label">${esc(s.exam?.type || 'Экзамен')} · ${esc(formatDate(s.exam?.date))}</span>
       <h1>${esc(s.title)}</h1>
       <div class="meta">
+        ${s.code ? `<span class="mono">${esc(s.code)}</span>` : ''}
         ${daysBadge(days)}
         ${s.exam?.place ? `<span>${esc(s.exam.place)}</span>` : ''}
         ${s.teacher ? `<span>${esc(s.teacher)}</span>` : ''}

@@ -1,14 +1,23 @@
 {
-  "group": "Пример группы",
+  "group": "6B11105 Туризм · 2026–2027, 1 семестр",
   "semesterStart": "2026-09-01",
-  "semesterEnd": "2026-12-27",
-  "firstWeek": "числитель",
+  "semesterEnd": "2026-12-12",
+  "weeks": 15,
   "lessons": [
-    { "day": 1, "start": "08:00", "end": "08:50", "subject": "calculus-example", "type": "Лекция", "room": "301", "teacher": "Иванов И. И." },
-    { "day": 1, "start": "09:00", "end": "09:50", "subject": "calculus-example", "type": "Практика", "room": "214" },
-    { "day": 3, "start": "11:00", "end": "11:50", "title": "Физическая культура", "type": "Практика", "room": "Спортзал" },
-    { "day": 4, "start": "10:00", "end": "10:50", "subject": "calculus-example", "type": "СРСП", "room": "301", "week": "числитель" },
-    { "day": 4, "start": "10:00", "end": "10:50", "title": "Пример: предмет по знаменателю", "type": "Лабораторная", "room": "105", "week": "знаменатель" },
-    { "day": 5, "start": "14:00", "end": "14:50", "subject": "calculus-example", "type": "Лекция", "link": "https://example.com/zoom" }
+    { "day": "пн", "start": "15:10", "end": "17:00", "subject": "otkr", "type": "Практика", "teacher": "Есимова Д.Д.", "online": true },
+    { "day": "пн", "start": "17:10", "end": "19:00", "subject": "edt", "type": "Лекция", "teacher": "Мукатова Р.А.", "online": true },
+
+    { "day": "вт", "start": "08:00", "end": "09:50", "subject": "ikt", "type": "Лекция", "teacher": "Ермаганбетова М.А.", "online": true, "link": "https://mooc.enu.kz/course/view.php?id=1369" },
+    { "day": "вт", "start": "11:10", "end": "12:00", "subject": "rt", "type": "Лекция", "teacher": "Абилхаир Б.К.", "online": true },
+    { "day": "вт", "start": "16:10", "end": "18:00", "subject": "fk", "type": "Практика", "teacher": "Мергалиев М.М.", "building": "СОК (B26)", "room": "Тренажёрный зал №2" },
+
+    { "day": "ср", "start": "11:10", "end": "13:00", "subject": "rt", "type": "Практика", "teacher": "Абилхаир Б.К.", "online": true },
+    { "day": "ср", "start": "13:10", "end": "14:00", "subject": "otkr", "type": "Лекция", "teacher": "Есимова Д.Д.", "online": true },
+
+    { "day": "чт", "start": "14:10", "end": "15:00", "subject": "ikt", "type": "Практика", "teacher": "Канапина З.Е.", "building": "ЦИСИ (B03)", "room": "201" },
+    { "day": "чт", "start": "20:10", "end": "21:00", "subject": "eog", "type": "Лекция", "teacher": "Исатай Ә.А.", "online": true },
+
+    { "day": "сб", "start": "12:10", "end": "15:00", "subject": "edt", "type": "Практика", "teacher": "Мукатова Р.А.", "building": "Филиал ЕНУ", "room": "МТА «Арман-Тур»" },
+    { "day": "сб", "start": "19:10", "end": "21:00", "subject": "eog", "type": "Практика", "teacher": "Исатай Ә.А.", "online": true }
   ]
 }

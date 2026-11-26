@@ -1,7 +1,7 @@
 import { getAllSubjects, getTimetable } from '../content.js';
 import { subjectStats } from '../progress.js';
 import { esc, formatDate, daysUntil, daysShort, progressBar, plural } from '../utils.js';
-import { inSemester, lessonsOn, lessonState, lessonTitle, weekInfo } from '../timetable.js';
+import { inSemester, lessonsOn, lessonState, lessonTitle, weekInfo, placeLabel } from '../timetable.js';
 
 function todayCell(tt, subjects) {
   if (!tt) return '';
@@ -20,7 +20,7 @@ function todayCell(tt, subjects) {
   else body = `
     <div class="big">${esc(next.start)}</div>
     <div>${current ? '<span class="hl">идёт сейчас</span> · ' : ''}<strong>${esc(lessonTitle(next, byId))}</strong></div>
-    <div class="small muted">${[next.type, next.room && `ауд. ${next.room}`].filter(Boolean).map(esc).join(' · ')}${upcoming.length > 1 ? ` · ещё ${upcoming.length - 1} после` : ''}</div>`;
+    <div class="small muted">${[next.type, placeLabel(next)].filter(Boolean).map(esc).join(' · ')}${upcoming.length > 1 ? ` · ещё ${upcoming.length - 1} после` : ''}</div>`;
 
   return `<a class="summary-cell wide" href="#/timetable">
     <span class="label">Сегодня${wi.type ? ` · ${esc(wi.type)}` : ''}</span>

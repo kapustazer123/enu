@@ -1,6 +1,6 @@
 import { getAllSubjects, getTimetable } from '../content.js';
 import { esc } from '../utils.js';
-import { DAY_NAMES, dayIndex, mondayOf, weekInfo, inSemester, lessonsOn, lessonState, lessonTitle } from '../timetable.js';
+import { DAY_NAMES, dayIndex, mondayOf, weekInfo, inSemester, lessonsOn, lessonState, lessonTitle, placeLabel } from '../timetable.js';
 
 const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 
@@ -14,10 +14,10 @@ export function lessonHTML(l, subjectsById, state) {
       <div class="lesson-title">${state === 'now' ? '<span class="hl">идёт сейчас</span> · ' : ''}${subj ? `<a href="#/s/${esc(l.subject)}">${esc(title)}</a>` : esc(title)}</div>
       <div class="lesson-meta">
         ${l.type ? `<span>${esc(l.type)}</span>` : ''}
-        ${l.room ? `<span>ауд. ${esc(l.room)}</span>` : ''}
+        ${placeLabel(l) ? `<span>${esc(placeLabel(l))}</span>` : ''}
         ${l.teacher ? `<span>${esc(l.teacher)}</span>` : ''}
         ${l.week ? `<span class="tag">${esc(l.week)}</span>` : ''}
-        ${l.link ? `<a href="${esc(l.link)}" target="_blank" rel="noopener">онлайн ↗</a>` : ''}
+        ${l.link ? `<a href="${esc(l.link)}" target="_blank" rel="noopener">${l.online ? 'подключиться' : 'ссылка'} ↗</a>` : ''}
       </div>
     </div>
   </li>`;
@@ -63,7 +63,7 @@ export async function renderTimetable(app) {
       <div class="page-head" style="margin-bottom:var(--s5)">
         <span class="label">${tt.group ? esc(tt.group) : 'Занятия'}</span>
         <h1>Расписание занятий</h1>
-        ${wi.number ? `<p class="lead" style="margin:0">${wi.number}-я неделя — <strong style="color:var(--ink)">${esc(wi.type)}</strong></p>` : ''}
+        ${wi.number ? `<p class="lead" style="margin:0">${wi.number}-я неделя${wi.type ? ` — <strong style="color:var(--ink)">${esc(wi.type)}</strong>` : ''}${tt.weeks ? ` из ${tt.weeks}` : ''}</p>` : ''}
       </div>
       ${!inSemester(tt, today) ? '<div class="notice">Семестр завершён, идёт сессия. <a href="#/schedule">Расписание экзаменов</a></div>' : ''}
       <div class="tabs" role="tablist">
