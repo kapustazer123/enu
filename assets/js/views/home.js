@@ -1,9 +1,9 @@
 import { getAllSubjects, getTimetable } from '../content.js';
 import { subjectStats } from '../progress.js';
-import { esc, formatDate, daysUntil, daysBadge, daysLabel, progressBar, plural } from '../utils.js';
+import { esc, formatDate, daysUntil, daysShort, progressBar, plural } from '../utils.js';
 import { inSemester, lessonsOn, lessonState, lessonTitle, weekInfo } from '../timetable.js';
 
-function todayCard(tt, subjects) {
+function todayCell(tt, subjects) {
   if (!tt) return '';
   const now = new Date();
   const byId = Object.fromEntries(subjects.map((s) => [s.id, s]));
@@ -14,16 +14,16 @@ function todayCard(tt, subjects) {
   const next = current || upcoming[0];
 
   let body;
-  if (!inSemester(tt, now)) body = '<div class="countdown">Сессия</div><div class="muted">Занятия закончились</div>';
-  else if (!lessons.length) body = '<div class="countdown">Выходной</div><div class="muted">Пар сегодня нет</div>';
-  else if (!next) body = `<div class="countdown">Всё</div><div class="muted">${lessons.length} ${plural(lessons.length, 'пара', 'пары', 'пар')} позади</div>`;
+  if (!inSemester(tt, now)) body = '<div class="big">Сессия</div><div class="small muted">Занятия закончились</div>';
+  else if (!lessons.length) body = '<div class="big">—</div><div class="small muted">Пар сегодня нет</div>';
+  else if (!next) body = `<div class="big">${lessons.length}<span class="unit">${plural(lessons.length, 'пара', 'пары', 'пар')}</span></div><div class="small muted">На сегодня всё</div>`;
   else body = `
-    <div class="countdown">${esc(next.start)}</div>
-    <div>${current ? '<span class="badge ok">идёт сейчас</span> ' : ''}<strong>${esc(lessonTitle(next, byId))}</strong></div>
-    <div class="muted small">${[next.type, next.room && `ауд. ${next.room}`].filter(Boolean).map(esc).join(' · ')}${upcoming.length > 1 ? ` · ещё ${upcoming.length - 1} после` : ''}</div>`;
+    <div class="big">${esc(next.start)}</div>
+    <div>${current ? '<span class="hl">идёт сейчас</span> · ' : ''}<strong>${esc(lessonTitle(next, byId))}</strong></div>
+    <div class="small muted">${[next.type, next.room && `ауд. ${next.room}`].filter(Boolean).map(esc).join(' · ')}${upcoming.length > 1 ? ` · ещё ${upcoming.length - 1} после` : ''}</div>`;
 
-  return `<a class="card" href="#/timetable" style="color:inherit;text-decoration:none">
-    <div class="muted small">Сегодня${wi.type ? ` · ${esc(wi.type)}` : ''}</div>
+  return `<a class="summary-cell" href="#/timetable">
+    <span class="label">Сегодня${wi.type ? ` · ${esc(wi.type)}` : ''}</span>
     ${body}
   </a>`;
 }
@@ -39,51 +39,62 @@ export async function renderHome(app) {
   const next = upcoming[0];
   const overall = stats.length ? Math.round(stats.reduce((a, st) => a + st.readiness, 0) / stats.length) : 0;
 
-  app.innerHTML = `
-    <h1>${esc(portal.title || 'Подготовка к сессии')}</h1>
-    ${portal.description ? `<p class="muted">${esc(portal.description)}</p>` : ''}
+  // Зачётка: по дате экзамена, без даты — в конце
+  const rows = subjects.map((s, i) => ({ s, st: stats[i], days: daysUntil(s.exam?.date) }))
+    .sort((a, b) => (a.days ?? 1e9) - (b.days ?? 1e9));
 
-    <div class="hero">
-      ${todayCard(tt, subjects)}
-      <div class="card">
-        <div class="muted small">Ближайший экзамен</div>
-        ${next ? `
-          <div class="countdown">${next.days === 0 ? 'Сегодня' : next.days === 1 ? 'Завтра' : `${next.days} ${plural(next.days, 'день', 'дня', 'дней')}`}</div>
-          <div><a href="#/s/${esc(next.s.id)}">${esc(next.s.title)}</a> · <span class="muted">${esc(formatDate(next.s.exam.date))}</span></div>
-        ` : '<div class="countdown">—</div><div class="muted">Даты экзаменов пока не указаны</div>'}
-      </div>
-      <div class="card">
-        <div class="muted small">Общая готовность</div>
-        <div class="countdown">${overall}%</div>
-        ${progressBar(overall, `${subjects.length} ${plural(subjects.length, 'предмет', 'предмета', 'предметов')}`)}
+  app.innerHTML = `
+    <div class="page-head">
+      <span class="label">${esc(portal.term || 'Зимняя сессия')}</span>
+      <h1>${esc(portal.title || 'Подготовка к сессии')}</h1>
+      ${portal.description ? `<p class="lead">${esc(portal.description)}</p>` : ''}
+    </div>
+
+    <div class="summary">
+      ${todayCell(tt, subjects)}
+      ${next ? `<a class="summary-cell" href="#/s/${esc(next.s.id)}">
+          <span class="label">До экзамена</span>
+          <div class="big">${next.days === 0 ? 'Сегодня' : next.days === 1 ? 'Завтра' : `${next.days}<span class="unit">${plural(next.days, 'день', 'дня', 'дней')}</span>`}</div>
+          <div><strong>${esc(next.s.title)}</strong></div>
+          <div class="small muted">${esc(formatDate(next.s.exam.date))}</div>
+        </a>` : `<div><span class="label">До экзамена</span><div class="big">—</div><div class="small muted">Даты пока не указаны</div></div>`}
+      <div>
+        <span class="label">Готовность</span>
+        <div class="big">${overall}<span class="unit">%</span></div>
+        <div class="small muted">в среднем по ${subjects.length} ${plural(subjects.length, 'предмету', 'предметам', 'предметам')}</div>
       </div>
     </div>
 
-    ${errors.length ? `<div class="card" style="border-color:var(--bad)"><strong>Ошибки в контенте:</strong><ul>${errors.map((e) => `<li>${esc(e)}</li>`).join('')}</ul></div>` : ''}
+    ${errors.length ? `<div class="error-box" style="margin-top:var(--s5)"><strong>Ошибки в контенте</strong><ul>${errors.map((e) => `<li>${esc(e)}</li>`).join('')}</ul></div>` : ''}
 
-    <div class="section-head"><h2>Предметы</h2><span class="small"><a href="#/timetable">Занятия</a> · <a href="#/schedule">Сессия →</a></span></div>
-    ${subjects.length ? `<div class="grid">
-      ${subjects.map((s, i) => subjectCard(s, stats[i])).join('')}
-    </div>` : '<div class="empty">Предметов пока нет. Добавьте папку в <code>content/</code> и укажите её в <code>content/subjects.json</code>.</div>'}
+    <section class="section">
+      <div class="section-head"><h2>Предметы</h2><span class="aside"><a href="#/schedule">Расписание сессии</a></span></div>
+      ${subjects.length ? `<div class="table-wrap"><table class="table">
+        <thead><tr>
+          <th>Предмет</th><th class="hide-sm">Контроль</th><th>Дата</th><th class="hide-sm">Осталось</th><th style="width:28%">Готовность</th>
+        </tr></thead>
+        <tbody>${rows.map(({ s, st, days }) => `
+          <tr class="${days != null && days < 0 ? 'past' : ''}">
+            <td><div class="subject-name" style="--subject:${esc(s.color || '')}"><span class="swatch"></span><span>
+              <a href="#/s/${esc(s.id)}">${esc(s.title)}</a>
+              <div class="small muted" style="font-weight:400">${contentSummary(st)}</div>
+            </span></div></td>
+            <td class="hide-sm">${esc(s.exam?.type || 'Экзамен')}</td>
+            <td class="mono small">${esc(formatDate(s.exam?.date, false))}</td>
+            <td class="hide-sm small">${daysShort(days)}</td>
+            <td>${progressBar(st.readiness)}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table></div>` : '<div class="empty">Предметов пока нет. Добавьте папку в <code>content/</code> и укажите её в <code>content/subjects.json</code>.</div>'}
+    </section>
   `;
 }
 
-function subjectCard(s, st) {
-  const days = daysUntil(s.exam?.date);
+function contentSummary(st) {
   const bits = [
     st.topics.total && `${st.topics.done}/${st.topics.total} тем`,
     st.quizzes.total && `${st.quizzes.total} ${plural(st.quizzes.total, 'квиз', 'квиза', 'квизов')}`,
-    st.cards.total && `${st.cards.total} карточек`,
-    st.questions.total && `${st.questions.total} вопросов`,
+    st.questions.total && `${st.questions.total} ${plural(st.questions.total, 'вопрос', 'вопроса', 'вопросов')}`,
   ].filter(Boolean);
-  return `
-    <a class="card subject-card" href="#/s/${esc(s.id)}" style="--subject:${esc(s.color || 'var(--accent)')}" title="${esc(daysLabel(days))}">
-      <h3>${esc(s.title)}</h3>
-      <div class="card-meta">
-        <span>${esc(s.exam?.type || 'Экзамен')}: ${esc(formatDate(s.exam?.date, false))}</span>
-        ${daysBadge(days)}
-      </div>
-      <div class="muted small" style="margin-bottom:10px">${bits.join(' · ') || 'Контент пока не добавлен'}</div>
-      ${progressBar(st.readiness, `готовность ${st.readiness}%`)}
-    </a>`;
+  return bits.join(' · ') || 'материалов пока нет';
 }

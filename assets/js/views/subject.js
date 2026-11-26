@@ -1,7 +1,7 @@
 import { getSubject } from '../content.js';
 import { subjectStats } from '../progress.js';
 import { store } from '../store.js';
-import { esc, md, formatDate, daysUntil, daysBadge, progressBar } from '../utils.js';
+import { esc, md, formatDate, daysUntil, daysBadge, progressBar, pct } from '../utils.js';
 
 export async function renderSubject(app, id) {
   const s = await getSubject(id);
@@ -9,56 +9,68 @@ export async function renderSubject(app, id) {
   const days = daysUntil(s.exam?.date);
 
   app.innerHTML = `
-    <div class="breadcrumbs"><a href="#/">Предметы</a> / ${esc(s.title)}</div>
-    <div class="card subject-card" style="--subject:${esc(s.color || 'var(--accent)')}">
+    <div class="breadcrumbs"><a href="#/">Предметы</a></div>
+    <div class="page-head" style="--subject:${esc(s.color || '')}">
+      <span class="label">${esc(s.exam?.type || 'Экзамен')} · ${esc(formatDate(s.exam?.date))}</span>
       <h1>${esc(s.title)}</h1>
-      <div class="card-meta">
-        <span>${esc(s.exam?.type || 'Экзамен')}: ${esc(formatDate(s.exam?.date))}</span>
-        ${s.exam?.place ? `<span>📍 ${esc(s.exam.place)}</span>` : ''}
-        ${s.teacher ? `<span>👤 ${esc(s.teacher)}</span>` : ''}
+      <div class="meta">
         ${daysBadge(days)}
+        ${s.exam?.place ? `<span>Аудитория ${esc(s.exam.place)}</span>` : ''}
+        ${s.teacher ? `<span>${esc(s.teacher)}</span>` : ''}
       </div>
-      ${s.description ? `<div>${md(s.description)}</div>` : ''}
-      ${progressBar(st.readiness, `готовность ${st.readiness}%`)}
+      ${s.description ? `<div class="lead" style="margin-top:var(--s4)">${md(s.description)}</div>` : ''}
+      <div style="max-width:420px;margin-top:var(--s4)">${progressBar(st.readiness, `${st.readiness}% готов`)}</div>
     </div>
 
-    <div class="section-head"><h2>📖 Материалы</h2><span class="muted small">${st.topics.done}/${st.topics.total} изучено</span></div>
-    ${s.topics.length ? `<ul class="list">${s.topics.map((t, i) => `
-      <li><a class="list-item" href="#/s/${esc(s.id)}/topic/${esc(t.id)}">
-        <span class="check ${store.isTopicDone(s.id, t.id) ? 'done' : ''}">${store.isTopicDone(s.id, t.id) ? '✓' : ''}</span>
-        <span class="grow"><strong>${i + 1}. ${esc(t.title)}</strong>${t.summary ? `<br><span class="muted small">${esc(t.summary)}</span>` : ''}</span>
-      </a></li>`).join('')}</ul>` : '<div class="empty">Материалы ещё не добавлены</div>'}
+    <section class="section">
+      <div class="section-head"><h2>Материалы</h2><span class="aside mono">${st.topics.done} из ${st.topics.total} изучено</span></div>
+      ${s.topics.length ? `<ul class="rows">${s.topics.map((t, i) => {
+        const done = store.isTopicDone(s.id, t.id);
+        return `<li><a class="row" href="#/s/${esc(s.id)}/topic/${esc(t.id)}">
+          <span class="row-num">${String(i + 1).padStart(2, '0')}</span>
+          <span class="grow"><span class="row-title">${esc(t.title)}</span>${t.summary ? `<div class="row-sub">${esc(t.summary)}</div>` : ''}</span>
+          <span class="row-end">${done ? '<span class="tick">✓ изучено</span>' : ''}</span>
+        </a></li>`;
+      }).join('')}</ul>` : '<div class="empty">Материалы ещё не добавлены.</div>'}
+    </section>
 
-    <div class="section-head"><h2>✅ Квизы</h2>${st.quizzes.total ? `<span class="muted small">средний лучший результат ${st.quizzes.avgBest}%</span>` : ''}</div>
-    ${s.quizzes.length ? `<ul class="list">${s.quizzes.map((q) => {
-      const r = store.quizResult(s.id, q.id);
-      const cls = !r ? '' : r.best >= 80 ? 'ok' : r.best >= 50 ? 'warn' : 'bad';
-      return `<li><a class="list-item" href="#/s/${esc(s.id)}/quiz/${esc(q.id)}">
-        <span class="grow"><strong>${esc(q.title)}</strong>${q.description ? `<br><span class="muted small">${esc(q.description)}</span>` : ''}</span>
-        <span class="badge ${cls}">${r ? `лучший: ${r.best}%` : 'не пройден'}</span>
-      </a></li>`;
-    }).join('')}</ul>` : '<div class="empty">Квизов пока нет</div>'}
+    <section class="section">
+      <div class="section-head"><h2>Квизы</h2>${st.quizzes.total ? `<span class="aside">средний лучший результат <span class="mono">${st.quizzes.avgBest}%</span></span>` : ''}</div>
+      ${s.quizzes.length ? `<ul class="rows">${s.quizzes.map((q, i) => {
+        const r = store.quizResult(s.id, q.id);
+        const cls = !r ? '' : r.best >= 80 ? 'ok' : r.best >= 50 ? 'warn' : 'bad';
+        return `<li><a class="row" href="#/s/${esc(s.id)}/quiz/${esc(q.id)}">
+          <span class="row-num">К${i + 1}</span>
+          <span class="grow"><span class="row-title">${esc(q.title)}</span>${q.description ? `<div class="row-sub">${esc(q.description)}</div>` : ''}</span>
+          <span class="row-end">${r ? `<span class="tag ${cls}">лучший ${r.best}%</span>` : 'не пройден'}</span>
+        </a></li>`;
+      }).join('')}</ul>` : '<div class="empty">Квизов пока нет.</div>'}
+    </section>
 
-    <div class="grid" style="margin-top:28px">
-      <a class="card" href="#/s/${esc(s.id)}/cards">
-        <h3>🃏 Карточки</h3>
-        <p class="muted small">Термины, формулы, определения — повторение по принципу «знаю / ещё раз».</p>
-        ${st.cards.total ? progressBar((st.cards.known / st.cards.total) * 100, `${st.cards.known}/${st.cards.total}`) : '<span class="muted small">Карточек пока нет</span>'}
+    <div class="sheet-grid">
+      <a class="sheet" href="#/s/${esc(s.id)}/questions">
+        <span class="label">Билеты</span>
+        <h3>Вопросы к экзамену</h3>
+        <p class="small muted">Ответы на билеты и отметки «знаю / повторить / не знаю».</p>
+        ${st.questions.total ? progressBar(pct(st.questions.known, st.questions.total), `${st.questions.known}/${st.questions.total}`) : '<span class="small muted">Вопросов пока нет</span>'}
       </a>
-      <a class="card" href="#/s/${esc(s.id)}/questions">
-        <h3>🎓 Вопросы к экзамену</h3>
-        <p class="muted small">Список билетов с ответами и отметками, что уже выучено.</p>
-        ${st.questions.total ? progressBar((st.questions.known / st.questions.total) * 100, `${st.questions.known}/${st.questions.total}`) : '<span class="muted small">Вопросов пока нет</span>'}
+      <a class="sheet" href="#/s/${esc(s.id)}/cards">
+        <span class="label">Карточки</span>
+        <h3>Термины и формулы</h3>
+        <p class="small muted">Повторение по принципу «знаю / ещё раз».</p>
+        ${st.cards.total ? progressBar(pct(st.cards.known, st.cards.total), `${st.cards.known}/${st.cards.total}`) : '<span class="small muted">Карточек пока нет</span>'}
       </a>
     </div>
 
     ${s.links.length ? `
-      <div class="section-head"><h2>🔗 Полезные ссылки</h2></div>
-      <ul class="list">${s.links.map((l) => `<li><a class="list-item" href="${esc(l.url)}" target="_blank" rel="noopener"><span class="grow">${esc(l.title)}</span><span class="muted">↗</span></a></li>`).join('')}</ul>
+      <section class="section">
+        <div class="section-head"><h2>Ссылки</h2></div>
+        <ul class="rows">${s.links.map((l) => `<li><a class="row" href="${esc(l.url)}" target="_blank" rel="noopener"><span class="grow row-title">${esc(l.title)}</span><span class="row-end">↗</span></a></li>`).join('')}</ul>
+      </section>
     ` : ''}
 
-    <div class="btn-row" style="margin-top:32px">
-      <button class="btn sm" id="reset">Сбросить прогресс по предмету</button>
+    <div class="btn-row" style="margin-top:var(--s7)">
+      <button class="btn quiet sm" id="reset" type="button">Сбросить прогресс по предмету</button>
     </div>
   `;
 

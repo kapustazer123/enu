@@ -1,6 +1,6 @@
 import { getSubject, getQuestions } from '../content.js';
 import { store } from '../store.js';
-import { esc, md, mdInline, progressBar } from '../utils.js';
+import { esc, md, mdInline, progressBar, pct } from '../utils.js';
 
 const STATUSES = [
   ['known', 'Знаю', 'ok'],
@@ -22,36 +22,41 @@ export async function renderQuestions(app, subjectId) {
     const known = count('known');
 
     app.innerHTML = `
-      <div class="breadcrumbs"><a href="#/">Предметы</a> / <a href="#/s/${esc(s.id)}">${esc(s.title)}</a> / Вопросы</div>
-      <h1>🎓 Вопросы к экзамену</h1>
-      ${progressBar(questions.length ? (known / questions.length) * 100 : 0, `знаю ${known} из ${questions.length}`)}
-      <div class="toolbar" style="margin-top:14px">
-        <div class="seg">
-          <button data-filter="all" class="${filter === 'all' ? 'active' : ''}">Все (${questions.length})</button>
-          ${STATUSES.map(([k, label]) => `<button data-filter="${k}" class="${filter === k ? 'active' : ''}">${label} (${count(k)})</button>`).join('')}
-          <button data-filter="none" class="${filter === 'none' ? 'active' : ''}">Без отметки (${count('none')})</button>
-        </div>
-        <button class="btn sm" id="random">🎲 Случайный билет</button>
+      <div class="breadcrumbs"><a href="#/">Предметы</a> / <a href="#/s/${esc(s.id)}">${esc(s.title)}</a></div>
+      <div class="page-head" style="margin-bottom:var(--s5)">
+        <span class="label">Билеты</span>
+        <h1>Вопросы к экзамену</h1>
+        <div style="max-width:420px">${progressBar(pct(known, questions.length), `${known}/${questions.length}`)}</div>
       </div>
-      ${!questions.length ? '<div class="empty">Вопросов пока нет</div>'
-        : !visible.length ? '<div class="empty">В этой категории вопросов нет</div>'
-        : `<ul class="list">${visible.map((q) => {
+      <div class="toolbar">
+        <div class="tabs" role="tablist">
+          <button type="button" data-filter="all" class="${filter === 'all' ? 'active' : ''}">Все<span class="count">${questions.length}</span></button>
+          ${STATUSES.map(([k, label]) => `<button type="button" data-filter="${k}" class="${filter === k ? 'active' : ''}">${label}<span class="count">${count(k)}</span></button>`).join('')}
+          <button type="button" data-filter="none" class="${filter === 'none' ? 'active' : ''}">Без отметки<span class="count">${count('none')}</span></button>
+        </div>
+        <button class="btn sm" type="button" id="random">Случайный билет</button>
+      </div>
+      ${!questions.length ? '<div class="empty">Вопросов пока нет.</div>'
+        : !visible.length ? '<div class="empty">В этой категории вопросов нет.</div>'
+        : visible.map((q) => {
           const st = store.questionStatus(s.id, q.id);
           const stMeta = STATUSES.find(([k]) => k === st);
-          return `<li><details class="qa" data-id="${esc(q.id)}" ${openId === q.id ? 'open' : ''}>
+          return `<details class="qa" data-id="${esc(q.id)}" ${openId === q.id ? 'open' : ''}>
             <summary>
-              <span class="num">${esc(q.id)}.</span>
-              <span class="grow">${mdInline(q.q)}${q.topic && topicTitle[q.topic] ? `<br><a class="small" href="#/s/${esc(s.id)}/topic/${esc(q.topic)}">📖 ${esc(topicTitle[q.topic])}</a>` : ''}</span>
-              ${stMeta ? `<span class="badge ${stMeta[2]}">${stMeta[1]}</span>` : ''}
+              <span class="row-num">${esc(String(q.id).padStart(2, '0'))}</span>
+              <span class="grow"><span class="row-title" style="font-weight:500">${mdInline(q.q)}</span>${q.topic && topicTitle[q.topic] ? `<div class="row-sub">${esc(topicTitle[q.topic])}</div>` : ''}</span>
+              ${stMeta ? `<span class="tag ${stMeta[2]}">${stMeta[1]}</span>` : ''}
+              <span class="chev" aria-hidden="true">›</span>
             </summary>
             <div class="answer">
-              ${q.a ? `<div class="prose">${md(q.a)}</div>` : '<p class="muted small">Ответ ещё не добавлен — подготовьте его сами и отметьте статус.</p>'}
+              ${q.a ? `<div class="prose">${md(q.a)}</div>` : '<p class="small muted">Ответ ещё не добавлен — подготовьте его сами и отметьте, насколько уверенно знаете.</p>'}
+              ${q.topic && topicTitle[q.topic] ? `<p class="small" style="margin-top:var(--s3)"><a href="#/s/${esc(s.id)}/topic/${esc(q.topic)}">Открыть тему «${esc(topicTitle[q.topic])}»</a></p>` : ''}
               <div class="status-btns">
-                ${STATUSES.map(([k, label, cls]) => `<button class="btn sm ${st === k ? cls : ''}" data-set="${k}" data-q="${esc(q.id)}">${label}</button>`).join('')}
+                ${STATUSES.map(([k, label, cls]) => `<button class="btn sm ${cls} ${st === k ? 'on' : ''}" type="button" data-set="${k}" data-q="${esc(q.id)}" aria-pressed="${st === k}">${label}</button>`).join('')}
               </div>
             </div>
-          </details></li>`;
-        }).join('')}</ul>`}
+          </details>`;
+        }).join('')}
     `;
 
     app.querySelectorAll('[data-filter]').forEach((b) => b.addEventListener('click', () => { filter = b.dataset.filter; draw(); }));

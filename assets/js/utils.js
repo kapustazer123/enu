@@ -103,10 +103,21 @@ export function daysLabel(days) {
 }
 
 export function daysBadge(days) {
-  if (days == null) return '<span class="badge">без даты</span>';
-  const cls = days < 0 ? '' : days <= 3 ? 'bad' : days <= 10 ? 'warn' : 'accent';
-  return `<span class="badge ${cls}">${daysLabel(days)}</span>`;
+  if (days == null) return '<span class="tag">без даты</span>';
+  const cls = days < 0 ? '' : days <= 3 ? 'bad' : days <= 10 ? 'warn' : '';
+  return `<span class="tag ${cls}">${daysLabel(days)}</span>`;
 }
+
+/** Короткое число дней для таблиц: «50 дн.», «завтра», «сдан». */
+export function daysShort(days) {
+  if (days == null) return '—';
+  if (days < 0) return 'прошёл';
+  if (days === 0) return '<span class="hl">сегодня</span>';
+  if (days === 1) return '<span class="hl">завтра</span>';
+  return `${days} ${plural(days, 'день', 'дня', 'дней')}`;
+}
+
+export const LETTERS = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И'];
 
 export function normalizeAnswer(s) {
   return String(s ?? '').trim().toLowerCase().replace(/ё/g, 'е').replace(/\s+/g, ' ').replace(/,/g, '.');

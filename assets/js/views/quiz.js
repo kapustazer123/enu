@@ -1,6 +1,6 @@
 import { getSubject, getQuiz } from '../content.js';
 import { store } from '../store.js';
-import { esc, md, mdInline, shuffle, pct, normalizeAnswer } from '../utils.js';
+import { esc, md, mdInline, shuffle, pct, normalizeAnswer, LETTERS } from '../utils.js';
 
 // Типы вопросов:
 //   single    — один правильный вариант:   "answer": 1           (индекс с нуля)
@@ -97,7 +97,7 @@ export async function renderQuiz(app, subjectId, quizId) {
           if (item.correct.has(orig)) cls = 'correct';
           else if (run.sel.has(orig)) cls = 'wrong';
         } else if (run.sel.has(orig)) cls = 'selected';
-        return `<button class="option ${cls}" data-opt="${orig}" ${run.checked ? 'disabled' : ''}><span class="key">${pos + 1}</span><span>${mdInline(item.options[orig])}</span></button>`;
+        return `<button class="option ${cls}" type="button" data-opt="${orig}" ${run.checked ? 'disabled' : ''}><span class="key">${LETTERS[pos] || pos + 1}</span><span>${mdInline(item.options[orig])}</span></button>`;
       }).join('')}</div>`;
     }
 
@@ -107,7 +107,7 @@ export async function renderQuiz(app, subjectId, quizId) {
         ? esc([].concat(item.q.answer)[0])
         : [...item.correct].map((i) => mdInline(item.options[i])).join('; ');
       feedback = `<div class="feedback ${last.ok ? 'ok' : 'bad'}">
-        <strong>${last.ok ? '✓ Верно!' : '✗ Неверно'}</strong>
+        <div class="verdict">${last.ok ? '✓ Верно' : '× Неверно'}</div>
         ${!last.ok ? `<p>Правильный ответ: ${correctText}</p>` : ''}
         ${item.q.explain ? md(item.q.explain) : ''}
       </div>`;
@@ -117,21 +117,21 @@ export async function renderQuiz(app, subjectId, quizId) {
       ${header()}
       <div class="quiz-head">
         <h1 style="margin:0">${esc(quiz.title || meta.title)}</h1>
-        <span class="badge accent">${run.i + 1} / ${run.items.length}</span>
+        <span class="mono small muted">${run.i + 1} / ${run.items.length}</span>
       </div>
-      <div class="progress" style="margin-bottom:20px"><span style="width:${pct(run.i, run.items.length)}%"></span></div>
-      <div class="card">
+      <div class="quiz-progress"><span style="width:${pct(run.i, run.items.length)}%"></span></div>
+      <div class="sheet">
+        <span class="label" style="display:block;margin-bottom:var(--s3)">Вопрос ${run.i + 1}${item.type === 'multiple' ? ' · несколько ответов' : ''}</span>
         <div class="question">${md(item.q.q)}</div>
-        ${item.type === 'multiple' ? '<p class="muted small">Выберите все правильные варианты</p>' : ''}
         ${body}
         ${feedback}
         <div class="btn-row">
           ${run.checked
-            ? `<button class="btn primary" id="next">${run.i + 1 < run.items.length ? 'Дальше →' : 'Результаты'}</button>`
-            : `<button class="btn primary" id="check">Проверить</button>`}
+            ? `<button class="btn primary" type="button" id="next">${run.i + 1 < run.items.length ? 'Дальше →' : 'Результаты'}</button>`
+            : `<button class="btn primary" type="button" id="check">Проверить</button>`}
         </div>
       </div>
-      <p class="muted small">Клавиши: 1–9 — выбор варианта, Enter — проверить / дальше.</p>
+      <p class="hint"><kbd>1</kbd>–<kbd>9</kbd> выбрать вариант · <kbd>Enter</kbd> проверить и дальше</p>
     `;
 
     app.querySelectorAll('[data-opt]').forEach((b) => b.addEventListener('click', () => toggle(Number(b.dataset.opt))));
@@ -152,31 +152,37 @@ export async function renderQuiz(app, subjectId, quizId) {
     const best = store.quizResult(s.id, quizId)?.best;
     const wrong = run.results.filter((r) => !r.ok);
 
+    const verdict = score === 100 ? 'Без ошибок.' : score >= 80 ? 'Хороший результат.' : score >= 50 ? 'Неплохо, но стоит повторить.' : 'Стоит вернуться к материалам.';
     app.innerHTML = `
       ${header()}
+      <span class="label" style="display:block;margin-bottom:var(--s2)">${run.isFull ? 'Результат' : 'Работа над ошибками'}</span>
       <h1>${esc(quiz.title || meta.title)}</h1>
-      <div class="card" style="text-align:center">
-        <div class="score">${score}%</div>
-        <p>${ok} из ${run.results.length} правильно${run.isFull && best != null ? ` · лучший результат: ${best}%` : ''}</p>
-        <p class="muted">${score === 100 ? 'Отлично! 🎉' : score >= 80 ? 'Хороший результат' : score >= 50 ? 'Неплохо, но стоит повторить' : 'Стоит вернуться к материалам'}</p>
-        <div class="btn-row" style="justify-content:center">
-          <button class="btn primary" id="again">Пройти заново</button>
-          ${wrong.length ? `<button class="btn" id="mistakes">Повторить ошибки (${wrong.length})</button>` : ''}
-          <a class="btn" href="#/s/${esc(s.id)}">К предмету</a>
+      <div class="sheet result" style="margin-top:var(--s5)">
+        <div class="big">${score}<span class="unit">%</span></div>
+        <div>
+          <p style="margin-bottom:var(--s1)"><strong>${ok} из ${run.results.length}</strong> правильно. ${verdict}</p>
+          ${run.isFull && best != null ? `<p class="small muted mono" style="margin:0">лучший результат: ${best}%</p>` : ''}
+          <div class="btn-row" style="margin-top:var(--s4)">
+            ${wrong.length ? `<button class="btn primary" type="button" id="mistakes">Повторить ошибки (${wrong.length})</button>` : ''}
+            <button class="btn ${wrong.length ? '' : 'primary'}" type="button" id="again">Пройти заново</button>
+            <a class="btn quiet" href="#/s/${esc(s.id)}">К предмету</a>
+          </div>
         </div>
       </div>
       ${wrong.length ? `
-        <div class="section-head"><h2>Разбор ошибок</h2></div>
-        <ul class="list">${wrong.map(({ item, given }) => {
-          const yours = item.type === 'text' ? esc(given) : given.map((i) => mdInline(item.options[i])).join('; ');
-          const right = item.type === 'text' ? esc([].concat(item.q.answer)[0]) : [...item.correct].map((i) => mdInline(item.options[i])).join('; ');
-          return `<li class="card">
-            <div class="question" style="font-size:1rem">${md(item.q.q)}</div>
-            <div class="small"><span class="badge bad">ваш ответ</span> ${yours}</div>
-            <div class="small" style="margin-top:4px"><span class="badge ok">верно</span> ${right}</div>
-            ${item.q.explain ? `<div class="small muted" style="margin-top:8px">${md(item.q.explain)}</div>` : ''}
-          </li>`;
-        }).join('')}</ul>` : ''}
+        <section class="section">
+          <div class="section-head"><h2>Разбор ошибок</h2><span class="aside mono">${wrong.length}</span></div>
+          ${wrong.map(({ item, given }) => {
+            const yours = item.type === 'text' ? esc(given) : given.map((i) => mdInline(item.options[i])).join('; ');
+            const right = item.type === 'text' ? esc([].concat(item.q.answer)[0]) : [...item.correct].map((i) => mdInline(item.options[i])).join('; ');
+            return `<div class="mistake">
+              <div class="question">${md(item.q.q)}</div>
+              <div class="answer-line"><span class="label" style="color:var(--bad)">Ваш ответ</span><span>${yours}</span></div>
+              <div class="answer-line"><span class="label" style="color:var(--ok)">Верно</span><span>${right}</span></div>
+              ${item.q.explain ? `<div class="small muted" style="margin-top:var(--s2)">${md(item.q.explain)}</div>` : ''}
+            </div>`;
+          }).join('')}
+        </section>` : ''}
     `;
     app.querySelector('#again').addEventListener('click', () => start(all, true));
     app.querySelector('#mistakes')?.addEventListener('click', () => start(wrong.map((w) => w.item.q), false));

@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Подготовка к сессии</title>
-  <meta name="description" content="Материалы, квизы, карточки и вопросы к экзаменам по всем предметам.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <title>Зачётка — подготовка к сессии</title>
+  <meta name="description" content="Материалы, квизы, карточки, вопросы к экзаменам и расписание — для подготовки к сессии.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231d5a47'/><text x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23fffdf8'>З</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#/">📚 <span>Сессия</span></a>
-    <nav class="topnav">
-      <a href="#/" data-nav="home">Предметы</a>
-      <a href="#/timetable" data-nav="timetable">Занятия</a>
-      <a href="#/schedule" data-nav="schedule">Сессия</a>
-      <a href="#/search" data-nav="search">Поиск</a>
-    </nav>
-    <button class="icon-btn" id="theme-toggle" title="Сменить тему" aria-label="Сменить тему">🌓</button>
+    <div class="container">
+      <a class="brand" href="#/">Зачётка<small>сессия</small></a>
+      <nav class="topnav" aria-label="Разделы">
+        <a href="#/" data-nav="home">Предметы</a>
+        <a href="#/timetable" data-nav="timetable">Занятия</a>
+        <a href="#/schedule" data-nav="schedule">Сессия</a>
+        <a href="#/search" data-nav="search">Поиск</a>
+      </nav>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="Сменить тему">Тема</button>
+    </div>
   </header>
 
   <main id="app" class="container" aria-live="polite">
@@ -29,7 +31,7 @@
   </main>
 
   <footer class="footer container">
-    <span class="muted">Прогресс хранится в этом браузере.</span>
+    <div class="inner muted">Прогресс хранится в этом браузере.</div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>

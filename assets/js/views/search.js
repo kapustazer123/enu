@@ -12,9 +12,9 @@ async function buildIndex() {
       getFlashcards(s).catch(() => []),
       getQuestions(s).catch(() => []),
     ]);
-    s.topics.forEach((t, i) => docs.push({ kind: '📖 Тема', subject: s, title: t.title, text: texts[i], href: `#/s/${s.id}/topic/${t.id}` }));
-    questions.forEach((q) => docs.push({ kind: '🎓 Вопрос', subject: s, title: `${q.id}. ${q.q}`, text: `${q.q}\n${q.a || ''}`, href: `#/s/${s.id}/questions` }));
-    cards.forEach((c) => docs.push({ kind: '🃏 Карточка', subject: s, title: c.front, text: `${c.front}\n${c.back}`, href: `#/s/${s.id}/cards` }));
+    s.topics.forEach((t, i) => docs.push({ kind: 'Тема', subject: s, title: t.title, text: texts[i], href: `#/s/${s.id}/topic/${t.id}` }));
+    questions.forEach((q) => docs.push({ kind: 'Билет', subject: s, title: `${q.id}. ${q.q}`, text: `${q.q}\n${q.a || ''}`, href: `#/s/${s.id}/questions` }));
+    cards.forEach((c) => docs.push({ kind: 'Карточка', subject: s, title: c.front, text: `${c.front}\n${c.back}`, href: `#/s/${s.id}/cards` }));
   }));
   return docs;
 }
@@ -31,9 +31,12 @@ function snippet(text, q) {
 
 export async function renderSearch(app, params) {
   app.innerHTML = `
-    <h1>🔍 Поиск</h1>
-    <input class="search-input" id="q" type="search" placeholder="Термин, формула, тема…" autocomplete="off" value="${esc(params.get('q') || '')}">
-    <div id="results" style="margin-top:16px"><p class="muted">Индексирую материалы…</p></div>
+    <div class="page-head" style="margin-bottom:var(--s4)">
+      <span class="label">Поиск</span>
+      <label for="q" class="visually-hidden">Поиск по материалам</label>
+      <input class="search-input" id="q" type="search" placeholder="Термин, формула, тема…" autocomplete="off" value="${esc(params.get('q') || '')}">
+    </div>
+    <div id="results"><p class="muted">Индексирую материалы…</p></div>
   `;
   const input = app.querySelector('#q');
   const out = app.querySelector('#results');
@@ -47,13 +50,13 @@ export async function renderSearch(app, params) {
     }
     const hits = docs.filter((d) => d.text.toLowerCase().includes(q) || d.title.toLowerCase().includes(q)).slice(0, 50);
     out.innerHTML = hits.length
-      ? `<ul class="list">${hits.map((d) => `
-          <li><a class="list-item" href="${esc(d.href)}"><span class="grow">
-            <span class="muted small">${d.kind} · ${esc(d.subject.title)}</span><br>
-            <strong>${esc(d.title.slice(0, 120))}</strong><br>
-            <span class="small muted">${snippet(d.text, q)}</span>
+      ? `<p class="small muted mono">найдено: ${hits.length}</p><ul class="rows" style="border-top:1px solid var(--rule)">${hits.map((d) => `
+          <li><a class="row" href="${esc(d.href)}"><span class="grow">
+            <span class="label">${d.kind} · ${esc(d.subject.title)}</span>
+            <div class="row-title">${esc(d.title.slice(0, 120))}</div>
+            <div class="row-sub">${snippet(d.text, q)}</div>
           </span></a></li>`).join('')}</ul>`
-      : '<div class="empty">Ничего не найдено</div>';
+      : '<div class="empty">Ничего не найдено.</div>';
   }
 
   let t;

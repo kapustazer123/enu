@@ -1,6 +1,6 @@
 import { getSubject, getFlashcards } from '../content.js';
 import { store } from '../store.js';
-import { esc, md, shuffle, progressBar } from '../utils.js';
+import { esc, md, shuffle, progressBar, pct } from '../utils.js';
 
 export async function renderCards(app, subjectId) {
   const s = await getSubject(subjectId);
@@ -31,53 +31,60 @@ export async function renderCards(app, subjectId) {
 
   function draw() {
     const card = deck[i];
+    const unknownCount = cards.length - known();
     const head = `
-      <div class="breadcrumbs"><a href="#/">Предметы</a> / <a href="#/s/${esc(s.id)}">${esc(s.title)}</a> / Карточки</div>
-      <h1>🃏 Карточки</h1>
-      ${progressBar(cards.length ? (known() / cards.length) * 100 : 0, `знаю ${known()} из ${cards.length}`)}
-      <div class="toolbar" style="margin-top:14px">
-        <div class="seg">
-          <button data-mode="all" class="${mode === 'all' ? 'active' : ''}">Все</button>
-          <button data-mode="unknown" class="${mode === 'unknown' ? 'active' : ''}">Только невыученные</button>
+      <div class="breadcrumbs"><a href="#/">Предметы</a> / <a href="#/s/${esc(s.id)}">${esc(s.title)}</a></div>
+      <div class="page-head" style="margin-bottom:var(--s5)">
+        <span class="label">Карточки</span>
+        <h1>Термины и формулы</h1>
+        <div style="max-width:420px">${progressBar(pct(known(), cards.length), `${known()}/${cards.length}`)}</div>
+      </div>
+      <div class="toolbar">
+        <div class="tabs" role="tablist">
+          <button type="button" data-mode="all" class="${mode === 'all' ? 'active' : ''}">Все<span class="count">${cards.length}</span></button>
+          <button type="button" data-mode="unknown" class="${mode === 'unknown' ? 'active' : ''}">Невыученные<span class="count">${unknownCount}</span></button>
         </div>
-        <button class="btn sm" id="shuffle">🔀 Перемешать</button>
+        <button class="btn sm" type="button" id="shuffle">Перемешать</button>
       </div>`;
 
     if (!cards.length) {
-      app.innerHTML = head + '<div class="empty">Карточек пока нет</div>';
+      app.innerHTML = head + '<div class="empty">Карточек пока нет.</div>';
     } else if (!card) {
       app.innerHTML = head + `
-        <div class="card" style="text-align:center">
-          <h2 style="margin-top:0">Колода пройдена 🎉</h2>
-          <p class="muted">${deck.length ? `Вы просмотрели ${deck.length} карточек.` : 'Все карточки отмечены как выученные.'}</p>
-          <div class="btn-row" style="justify-content:center">
-            <button class="btn primary" id="restart">Начать заново</button>
-            <a class="btn" href="#/s/${esc(s.id)}">К предмету</a>
+        <div class="sheet" style="max-width:640px">
+          <span class="label">Колода пройдена</span>
+          <h2 style="margin-top:var(--s2)">${deck.length ? `Просмотрено карточек: ${deck.length}` : 'Все карточки выучены'}</h2>
+          <p class="muted">${unknownCount ? `Осталось невыученных: ${unknownCount}.` : 'Можно переходить к билетам.'}</p>
+          <div class="btn-row">
+            ${unknownCount && mode === 'all' ? '<button class="btn primary" type="button" id="only-unknown">Повторить невыученные</button>' : ''}
+            <button class="btn ${unknownCount && mode === 'all' ? '' : 'primary'}" type="button" id="restart">Начать заново</button>
+            <a class="btn quiet" href="#/s/${esc(s.id)}">К предмету</a>
           </div>
         </div>`;
     } else {
       const status = store.cardStatus(s.id, card.id);
       app.innerHTML = head + `
-        <div class="muted small">${i + 1} / ${deck.length} ${status ? `· <span class="badge ${status === 'known' ? 'ok' : 'warn'}">${status === 'known' ? 'знаю' : 'повторить'}</span>` : ''}</div>
+        <div class="small muted mono">${i + 1} / ${deck.length}${status ? ` · ${status === 'known' ? '<span style="color:var(--ok)">знаю</span>' : '<span style="color:var(--warn)">повторить</span>'}` : ''}</div>
         <div class="flashcard ${flipped ? 'flipped' : ''}" id="flashcard" role="button" tabindex="0" aria-label="Перевернуть карточку">
           <div class="flashcard-inner">
-            <div class="flashcard-face front"><span class="face-label">Вопрос</span><div>${md(card.front)}</div></div>
-            <div class="flashcard-face back"><span class="face-label">Ответ</span><div>${md(card.back)}</div></div>
+            <div class="flashcard-face front"><span class="label">Вопрос</span><div>${md(card.front)}</div></div>
+            <div class="flashcard-face back"><span class="label">Ответ</span><div>${md(card.back)}</div></div>
           </div>
         </div>
-        <p class="muted small" style="text-align:center">Нажмите на карточку или пробел, чтобы перевернуть</p>
-        <div class="btn-row" style="justify-content:center">
-          <button class="btn" id="prev" ${i === 0 ? 'disabled' : ''}>←</button>
-          <button class="btn bad" id="again">Ещё раз</button>
-          <button class="btn ok" id="known">Знаю</button>
-          <button class="btn" id="skip">→</button>
+        <div class="flashcard-actions">
+          <button class="btn" type="button" id="prev" ${i === 0 ? 'disabled' : ''} aria-label="Предыдущая">←</button>
+          <button class="btn" type="button" id="skip" aria-label="Следующая">→</button>
+          <span class="spacer"></span>
+          <button class="btn bad" type="button" id="again">Ещё раз</button>
+          <button class="btn ok" type="button" id="known">Знаю</button>
         </div>
-        <p class="muted small" style="text-align:center">Клавиши: пробел — перевернуть, 1 — «ещё раз», 2 — «знаю», ←/→ — листать</p>`;
+        <p class="hint"><kbd>Пробел</kbd> перевернуть · <kbd>1</kbd> ещё раз · <kbd>2</kbd> знаю · <kbd>←</kbd> <kbd>→</kbd> листать</p>`;
     }
 
     app.querySelectorAll('[data-mode]').forEach((b) => b.addEventListener('click', () => { mode = b.dataset.mode; build(); }));
     app.querySelector('#shuffle')?.addEventListener('click', () => build(true));
     app.querySelector('#restart')?.addEventListener('click', () => build());
+    app.querySelector('#only-unknown')?.addEventListener('click', () => { mode = 'unknown'; build(); });
     app.querySelector('#flashcard')?.addEventListener('click', flip);
     app.querySelector('#again')?.addEventListener('click', () => mark('again'));
     app.querySelector('#known')?.addEventListener('click', () => mark('known'));

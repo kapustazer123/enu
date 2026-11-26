@@ -40,7 +40,7 @@ async function router() {
   document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('active', !!match && a.dataset.nav === match[2]));
 
   if (!match) {
-    app.innerHTML = `<div class="empty"><h2>Страница не найдена</h2><p><a href="#/">На главную</a></p></div>`;
+    app.innerHTML = `<div class="page-head"><span class="label">Ошибка 404</span><h1>Страница не найдена</h1><p><a href="#/">На главную</a></p></div>`;
     return;
   }
 
@@ -55,14 +55,17 @@ async function router() {
   } catch (err) {
     if (id !== renderId) return;
     console.error(err);
-    app.innerHTML = `<div class="card"><h2>Не удалось открыть страницу</h2><p class="muted">${esc(err.message)}</p><p><a href="#/">На главную</a></p></div>`;
+    app.innerHTML = `<div class="page-head"><span class="label">Ошибка</span><h1>Не удалось открыть страницу</h1></div><div class="error-box"><p>${esc(err.message)}</p><p><a href="#/">На главную</a></p></div>`;
   }
 }
 
 // Тема
+const themeBtn = document.getElementById('theme-toggle');
 function applyTheme(t) {
   if (t) document.documentElement.dataset.theme = t;
   else delete document.documentElement.dataset.theme;
+  const dark = (t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+  themeBtn.textContent = dark ? 'Светлая' : 'Тёмная';
 }
 applyTheme(getTheme());
 document.getElementById('theme-toggle').addEventListener('click', () => {
