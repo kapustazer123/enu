@@ -20,10 +20,11 @@ python3 -m http.server 8000
 
 Затем откройте http://localhost:8000. (Открыть `index.html` двойным кликом не получится — браузер не даст загрузить файлы контента.)
 
-## Публикация на GitHub Pages
+## Публикация
 
-1. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. После каждого пуша в `main` workflow проверит контент и опубликует сайт.
+Сайт публикует **Cloudflare Pages**: он подключён к репозиторию и обновляется после каждого пуша в `main`. Сборка не нужна (Build command — пусто, Output directory — `/`).
+
+GitHub Actions при каждом пуше запускает `scripts/validate.mjs` — если в контенте ошибка, коммит будет с красным крестиком.
 
 ## Структура
 
