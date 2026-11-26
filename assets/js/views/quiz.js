@@ -40,7 +40,9 @@ export async function renderQuiz(app, subjectId, quizId) {
   let run;
 
   function start(pool, isFull) {
-    const ordered = quiz.shuffle === false ? pool : shuffle(pool);
+    let ordered = quiz.shuffle === false ? pool : shuffle(pool);
+    // sample: в каждой попытке — новая случайная выборка (режим «пробный экзамен»)
+    if (isFull && quiz.sample && quiz.sample < pool.length) ordered = shuffle(pool).slice(0, quiz.sample);
     run = { items: ordered.map((q) => prepare(q, quiz)), i: 0, sel: new Set(), text: '', checked: false, results: [], isFull };
     draw();
   }

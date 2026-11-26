@@ -8,6 +8,7 @@ import { join } from 'node:path';
 const root = new URL('../content/', import.meta.url).pathname;
 const errors = [];
 const warnings = [];
+const checkedBanks = new Set();
 let stats = { subjects: 0, topics: 0, quizzes: 0, questions: 0, cards: 0, examQuestions: 0 };
 
 function readJSON(path) {
@@ -76,7 +77,18 @@ if (portal) {
       stats.quizzes++;
       if (q.topic && !topicIds.has(q.topic)) warnings.push(`${where}: квиз «${q.id}» ссылается на несуществующую тему «${q.topic}»`);
       const quiz = readJSON(join(dir, q.file || ''));
-      if (quiz) checkQuiz(quiz, `${where}/${q.file}`);
+      if (!quiz) continue;
+      if (!quiz.source) { checkQuiz(quiz, `${where}/${q.file}`); continue; }
+      // Квиз берёт вопросы из общего банка: проверяем банк один раз и диапазон
+      const bankPath = join(dir, quiz.source);
+      const bank = readJSON(bankPath);
+      if (!bank) continue;
+      if (!checkedBanks.has(bankPath)) { checkedBanks.add(bankPath); checkQuiz(bank, `${where}/${quiz.source}`); }
+      const n = bank.questions?.length || 0;
+      if (quiz.range && !(Array.isArray(quiz.range) && quiz.range[0] >= 1 && quiz.range[1] <= n && quiz.range[0] <= quiz.range[1])) {
+        errors.push(`${where}/${q.file}: range ${JSON.stringify(quiz.range)} вне банка (1–${n})`);
+      }
+      if (quiz.sample && !(Number.isInteger(quiz.sample) && quiz.sample > 0)) errors.push(`${where}/${q.file}: sample должен быть целым числом > 0`);
     }
 
     if (s.flashcards) {

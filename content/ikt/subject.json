@@ -3,15 +3,116 @@
   "code": "IKT 1105",
   "color": "#2f4f7a",
   "teacher": "Ермаганбетова М.А. (лекции), Канапина З.Е. (практика)",
-  "description": "15 тем: от архитектуры компьютера и сетей до кибербезопасности, облаков и e-gov. Материалы курса на английском.",
+  "description": "15 lectures: from computer architecture and networks to cybersecurity, cloud and e-government. **Teacher's test bank: 300 questions** — practise by lecture or take a 30-question exam simulation. Content in English.",
   "exam": {
     "type": "Компьютерное тестирование",
     "date": "2026-12-17T12:00",
     "place": "Корпус №3 (ЦИСИ), ауд. 200"
   },
   "topics": [],
-  "quizzes": [],
+  "quizzes": [
+    {
+      "id": "exam",
+      "title": "Exam simulation: 30 random questions",
+      "description": "New random set from all 300 questions on every attempt",
+      "file": "quizzes/exam.json"
+    },
+    {
+      "id": "l01",
+      "title": "ICT in modern society",
+      "description": "Questions 1–16 · 16 questions",
+      "file": "quizzes/l01.json"
+    },
+    {
+      "id": "l02",
+      "title": "Computer generations and architecture",
+      "description": "Questions 17–36 · 20 questions",
+      "file": "quizzes/l02.json"
+    },
+    {
+      "id": "l03",
+      "title": "Software and operating systems",
+      "description": "Questions 37–50 · 14 questions",
+      "file": "quizzes/l03.json"
+    },
+    {
+      "id": "l04",
+      "title": "Human–computer interaction and ergonomics",
+      "description": "Questions 51–66 · 16 questions",
+      "file": "quizzes/l04.json"
+    },
+    {
+      "id": "l05",
+      "title": "Databases and SQL",
+      "description": "Questions 67–83 · 17 questions",
+      "file": "quizzes/l05.json"
+    },
+    {
+      "id": "l06",
+      "title": "Data analysis and visualization",
+      "description": "Questions 84–100 · 17 questions",
+      "file": "quizzes/l06.json"
+    },
+    {
+      "id": "l07a",
+      "title": "Computer networks and protocols",
+      "description": "Questions 101–118 · 18 questions",
+      "file": "quizzes/l07a.json"
+    },
+    {
+      "id": "l07b",
+      "title": "OSI, TCP/IP, IP addresses and telecommunications",
+      "description": "Questions 119–150 · 32 questions",
+      "file": "quizzes/l07b.json"
+    },
+    {
+      "id": "l08a",
+      "title": "Cybersecurity and information security",
+      "description": "Questions 151–182 · 32 questions",
+      "file": "quizzes/l08a.json"
+    },
+    {
+      "id": "l08b",
+      "title": "Encryption and malware",
+      "description": "Questions 183–200 · 18 questions",
+      "file": "quizzes/l08b.json"
+    },
+    {
+      "id": "l09",
+      "title": "Internet technologies and the Web",
+      "description": "Questions 201–220 · 20 questions",
+      "file": "quizzes/l09.json"
+    },
+    {
+      "id": "l10",
+      "title": "Cloud and mobile technologies",
+      "description": "Questions 221–235 · 15 questions",
+      "file": "quizzes/l10.json"
+    },
+    {
+      "id": "l11",
+      "title": "Multimedia technologies",
+      "description": "Questions 236–260 · 25 questions",
+      "file": "quizzes/l11.json"
+    },
+    {
+      "id": "l12",
+      "title": "Smart technologies: IoT, Big Data, AI, blockchain",
+      "description": "Questions 261–285 · 25 questions",
+      "file": "quizzes/l12.json"
+    },
+    {
+      "id": "l13",
+      "title": "E-business, e-learning and e-government",
+      "description": "Questions 286–300 · 15 questions",
+      "file": "quizzes/l13.json"
+    }
+  ],
+  "flashcards": "flashcards.json",
   "links": [
-    { "title": "Курс на mooc.enu.kz", "url": "https://mooc.enu.kz/course/view.php?id=1369" }
+    {
+      "title": "Курс на mooc.enu.kz",
+      "url": "https://mooc.enu.kz/course/view.php?id=1369"
+    }
   ]
 }

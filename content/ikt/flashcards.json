@@ -1,0 +1,1202 @@
+[
+ {
+  "front": "What does ICT stand for?",
+  "back": "Information and Communications Technology"
+ },
+ {
+  "front": "What is the main purpose of ICT?",
+  "back": "To share, store, and process information"
+ },
+ {
+  "front": "Which set consists entirely of ICT technologies?",
+  "back": "Computers, communication networks, and mobile technologies"
+ },
+ {
+  "front": "What is a key difference between IT and ICT according to the lecture?",
+  "back": "IT focuses on computers, while ICT focuses on communication and information"
+ },
+ {
+  "front": "Which stage of ICT evolution is associated with personal computers?",
+  "back": "1980s"
+ },
+ {
+  "front": "Which stage of ICT evolution is associated with Internet expansion?",
+  "back": "1990s"
+ },
+ {
+  "front": "Which technologies characterize ICT today according to the presentation?",
+  "back": "Cloud computing, IoT, and AI"
+ },
+ {
+  "front": "Which of the following is NOT listed as a main component of an ICT system?",
+  "back": "Mechanical engineering"
+ },
+ {
+  "front": "What is hardware in an ICT system?",
+  "back": "Physical devices used in ICT systems"
+ },
+ {
+  "front": "Which of the following is an example of ICT hardware?",
+  "back": "Router"
+ },
+ {
+  "front": "What is the role of software in ICT systems?",
+  "back": "It controls hardware through programs and applications"
+ },
+ {
+  "front": "What is the main purpose of networks and communication systems?",
+  "back": "To connect people, devices, and machines"
+ },
+ {
+  "front": "Which of the following is an example of a communication system?",
+  "back": "Wi-Fi"
+ },
+ {
+  "front": "What is one function of cybersecurity?",
+  "back": "To protect information and prevent cyber attacks"
+ },
+ {
+  "front": "How does ICT support engineering design?",
+  "back": "By creating digital designs, testing projects, and improving accuracy"
+ },
+ {
+  "front": "Which technology is used in logistics according to the lecture?",
+  "back": "GPS navigation"
+ },
+ {
+  "front": "How many generations of computers are commonly recognized in the presentation?",
+  "back": "Five"
+ },
+ {
+  "front": "Which technology was the major innovation of first-generation computers?",
+  "back": "Vacuum tubes"
+ },
+ {
+  "front": "Which language was mainly used in first-generation computers?",
+  "back": "Low-level machine language"
+ },
+ {
+  "front": "Which technology was the major innovation of second-generation computers?",
+  "back": "Transistors"
+ },
+ {
+  "front": "Which storage technology was commonly used for main memory in second-generation computers?",
+  "back": "Magnetic-core memory"
+ },
+ {
+  "front": "Which technology became the basic electronic component of third-generation computers?",
+  "back": "Integrated circuits"
+ },
+ {
+  "front": "Which input/output devices are associated with third-generation computers in the lecture?",
+  "back": "Keyboard and monitor"
+ },
+ {
+  "front": "Which innovation is associated with fourth-generation computers?",
+  "back": "Microprocessor using LSI/VLSI"
+ },
+ {
+  "front": "Which operating systems are mentioned for fourth-generation computers?",
+  "back": "MS-DOS and PC-DOS"
+ },
+ {
+  "front": "Which feature is associated with fifth-generation computers?",
+  "back": "Artificial intelligence and expert systems"
+ },
+ {
+  "front": "What is computer architecture?",
+  "back": "The conceptual design and operational structure of a computer system"
+ },
+ {
+  "front": "What is the motherboard?",
+  "back": "The main printed circuit board that connects major computer components"
+ },
+ {
+  "front": "Which component is responsible for arithmetic operations such as addition and subtraction?",
+  "back": "Arithmetic Logic Unit"
+ },
+ {
+  "front": "What is the main role of the CPU Control Unit?",
+  "back": "To direct and coordinate the execution of instructions"
+ },
+ {
+  "front": "Which factor influences CPU speed according to the lecture?",
+  "back": "Clock speed"
+ },
+ {
+  "front": "Which unit is commonly used to measure CPU clock speed?",
+  "back": "Gigahertz"
+ },
+ {
+  "front": "What is RAM?",
+  "back": "Volatile memory that stores currently used programs and data"
+ },
+ {
+  "front": "What is ROM?",
+  "back": "Non-volatile memory that keeps data when the computer is shut off"
+ },
+ {
+  "front": "How many bits are in one byte?",
+  "back": "8"
+ },
+ {
+  "front": "What is a bit?",
+  "back": "The fundamental unit of data with values 0 or 1"
+ },
+ {
+  "front": "What is software?",
+  "back": "A collection of programs and instructions that tell a computer how to perform tasks"
+ },
+ {
+  "front": "Which statement about software is correct?",
+  "back": "Software cannot be physically touched"
+ },
+ {
+  "front": "What are the two main categories of computer software?",
+  "back": "System software and application software"
+ },
+ {
+  "front": "What is the main role of system software?",
+  "back": "To manage computer hardware and provide a platform for applications"
+ },
+ {
+  "front": "What is the main role of application software?",
+  "back": "To help users perform specific tasks"
+ },
+ {
+  "front": "Which type of application is installed directly on a computer?",
+  "back": "Desktop application"
+ },
+ {
+  "front": "Which type of application can be opened in a browser without installation?",
+  "back": "Web app"
+ },
+ {
+  "front": "What is an operating system?",
+  "back": "Foundational software that manages hardware and software resources"
+ },
+ {
+  "front": "Which set lists core operating system functions?",
+  "back": "Process, memory, file, and device management"
+ },
+ {
+  "front": "Which operating system is developed by Apple for desktop and laptop computers?",
+  "back": "macOS"
+ },
+ {
+  "front": "Which mobile operating system is made by Google?",
+  "back": "Android"
+ },
+ {
+  "front": "Which mobile operating system runs only on iPhones according to the lecture?",
+  "back": "iOS"
+ },
+ {
+  "front": "What is a file system?",
+  "back": "A method used by an operating system to organize and store files"
+ },
+ {
+  "front": "Which action changes a filename without changing the file contents?",
+  "back": "Renaming the file"
+ },
+ {
+  "front": "What is the primary goal of Human-Computer Interaction (HCI)?",
+  "back": "To improve interaction between people and computer systems"
+ },
+ {
+  "front": "Which discipline contributes to HCI by studying human behavior and mental processes?",
+  "back": "Psychology"
+ },
+ {
+  "front": "Which set contains the five main components of an HCI system presented in the lecture?",
+  "back": "Human, computer system, interface, task, and environment"
+ },
+ {
+  "front": "Which outcome is associated with effective HCI?",
+  "back": "Reduced user errors"
+ },
+ {
+  "front": "What is a user interface (UI)?",
+  "back": "The point of interaction and communication between a user and a system"
+ },
+ {
+  "front": "Which item is a common user interface element?",
+  "back": "A dialog box"
+ },
+ {
+  "front": "An application uses the same icon for saving on every screen. Which UI design principle does this illustrate?",
+  "back": "Consistency"
+ },
+ {
+  "front": "After a user submits a form, the application displays a confirmation message. What does this message provide?",
+  "back": "Feedback"
+ },
+ {
+  "front": "What is the main focus of ergonomics in computer use?",
+  "back": "Adapting technology and work conditions to human needs"
+ },
+ {
+  "front": "Which type of ergonomics deals with posture, movement, and workplace design?",
+  "back": "Physical ergonomics"
+ },
+ {
+  "front": "Which type of ergonomics deals with perception, memory, and decision-making?",
+  "back": "Cognitive ergonomics"
+ },
+ {
+  "front": "Which type of ergonomics focuses on teamwork, communication, and work systems?",
+  "back": "Organizational ergonomics"
+ },
+ {
+  "front": "Which three aspects are central to usability in the lecture?",
+  "back": "Effectiveness, efficiency, and satisfaction"
+ },
+ {
+  "front": "A new user quickly learns how to complete a task in an application. Which usability attribute does this demonstrate?",
+  "back": "Learnability"
+ },
+ {
+  "front": "A user returns to an application after a long break and remembers how to use it. Which usability attribute is demonstrated?",
+  "back": "Memorability"
+ },
+ {
+  "front": "Which type of interface enables interaction through spoken commands?",
+  "back": "Voice User Interface (VUI)"
+ },
+ {
+  "front": "What is a database?",
+  "back": "An organized collection of related data"
+ },
+ {
+  "front": "Which example belongs to numeric data in a database?",
+  "back": "An employee's salary"
+ },
+ {
+  "front": "What is a Database Management System (DBMS)?",
+  "back": "Software for creating, managing, storing, and retrieving database data"
+ },
+ {
+  "front": "Which DBMS function helps restore data after a failure?",
+  "back": "Backup and recovery"
+ },
+ {
+  "front": "Which sequence best describes access to data in the DBMS architecture presented in the lecture?",
+  "back": "User, application, DBMS, database"
+ },
+ {
+  "front": "How does a relational database organize data?",
+  "back": "In tables containing rows and columns"
+ },
+ {
+  "front": "What does a row represent in a relational database table?",
+  "back": "A record"
+ },
+ {
+  "front": "What is the purpose of a primary key?",
+  "back": "To uniquely identify each record in a table"
+ },
+ {
+  "front": "What is the role of a foreign key?",
+  "back": "To link records between related tables"
+ },
+ {
+  "front": "Which system is listed as a NoSQL database management system in the lecture?",
+  "back": "MongoDB"
+ },
+ {
+  "front": "What is a main purpose of database normalization?",
+  "back": "To reduce unnecessary data duplication and improve consistency"
+ },
+ {
+  "front": "What does SQL stand for?",
+  "back": "Structured Query Language"
+ },
+ {
+  "front": "Which SQL statement retrieves data from a table?",
+  "back": "SELECT"
+ },
+ {
+  "front": "Which SQL statement adds a new record to an existing table?",
+  "back": "INSERT"
+ },
+ {
+  "front": "Which SQL statement changes values in existing records?",
+  "back": "UPDATE"
+ },
+ {
+  "front": "Which SQL statement removes selected rows from a table?",
+  "back": "DELETE"
+ },
+ {
+  "front": "Which SQL statement is an example of Data Definition Language (DDL)?",
+  "back": "CREATE TABLE"
+ },
+ {
+  "front": "Which statement best describes data as presented in the lecture?",
+  "back": "Raw facts, observations, measurements, or records"
+ },
+ {
+  "front": "What is the main purpose of data analysis?",
+  "back": "To transform raw data into meaningful information for decisions"
+ },
+ {
+  "front": "What is data-driven decision making?",
+  "back": "Using analyzed data to guide actions and strategies"
+ },
+ {
+  "front": "Which is an internal data source for a company?",
+  "back": "Its transaction system"
+ },
+ {
+  "front": "Which is an external data source for a company?",
+  "back": "A public dataset"
+ },
+ {
+  "front": "Which situation is a data quality problem?",
+  "back": "The same transaction appears twice in a dataset"
+ },
+ {
+  "front": "What is the main purpose of data processing before analysis?",
+  "back": "To improve data quality and prepare data for analysis"
+ },
+ {
+  "front": "Assigning customers to predefined groups such as low-risk and high-risk is an example of what?",
+  "back": "Classification"
+ },
+ {
+  "front": "A business estimates its sales for next month using historical data. What activity is this?",
+  "back": "Prediction"
+ },
+ {
+  "front": "What is the main goal of data mining?",
+  "back": "To discover useful patterns and relationships in data"
+ },
+ {
+  "front": "What is data visualization?",
+  "back": "The graphical representation of information and data"
+ },
+ {
+  "front": "Which chart is most suitable for comparing sales across product categories?",
+  "back": "Bar chart"
+ },
+ {
+  "front": "Which chart is most suitable for showing monthly sales trends over a year?",
+  "back": "Line chart"
+ },
+ {
+  "front": "Which chart is used to display proportions of a whole?",
+  "back": "Pie chart"
+ },
+ {
+  "front": "Which visualization is suitable for exploring the relationship between advertising expenditure and sales?",
+  "back": "Scatter plot"
+ },
+ {
+  "front": "Which practice supports good data visualization?",
+  "back": "Using clear labels and choosing an appropriate chart type"
+ },
+ {
+  "front": "What is Microsoft Power BI primarily used for?",
+  "back": "Business intelligence, data analysis, and interactive visualization"
+ },
+ {
+  "front": "What is the main purpose of a computer network?",
+  "back": "To enable devices to share data, resources, and services"
+ },
+ {
+  "front": "Which situation is an example of resource sharing in a network?",
+  "back": "Several employees use one network printer"
+ },
+ {
+  "front": "How does centralized data management benefit an organization?",
+  "back": "It provides multiple users with access to data stored in one location"
+ },
+ {
+  "front": "How can computer networks reduce organizational costs?",
+  "back": "By allowing users to share hardware and other resources"
+ },
+ {
+  "front": "Which network benefit allows teams in different locations to work together?",
+  "back": "Collaboration"
+ },
+ {
+  "front": "Which group consists entirely of end devices listed in the lecture?",
+  "back": "Computers, smartphones, and sensors"
+ },
+ {
+  "front": "Which group consists entirely of transmission media?",
+  "back": "Copper cables, fiber optics, and wireless links"
+ },
+ {
+  "front": "Which group consists entirely of networking devices?",
+  "back": "Routers, switches, and access points"
+ },
+ {
+  "front": "What does PAN stand for?",
+  "back": "Personal Area Network"
+ },
+ {
+  "front": "Which connection is the clearest example of a PAN?",
+  "back": "A Bluetooth connection between a smartphone and headphones"
+ },
+ {
+  "front": "Which statement best describes a LAN?",
+  "back": "A network covering a limited geographic area"
+ },
+ {
+  "front": "An office connects its computers and printer within one building. Which network type best fits this example?",
+  "back": "LAN"
+ },
+ {
+  "front": "Which statement best describes a WAN?",
+  "back": "A network connecting multiple LANs over large distances"
+ },
+ {
+  "front": "Which example of a WAN is given in the lecture?",
+  "back": "The Internet"
+ },
+ {
+  "front": "What is a communication protocol?",
+  "back": "A set of rules that enables devices to communicate"
+ },
+ {
+  "front": "Which item is defined by communication protocols?",
+  "back": "Data formats and transmission methods"
+ },
+ {
+  "front": "Why are protocols necessary for communication between devices?",
+  "back": "They provide common rules for interpreting and exchanging data"
+ },
+ {
+  "front": "Which group contains only communication protocols listed in the lecture?",
+  "back": "HTTP, FTP, and SMTP"
+ },
+ {
+  "front": "What does OSI stand for?",
+  "back": "Open Systems Interconnection"
+ },
+ {
+  "front": "Which organization developed the OSI conceptual framework?",
+  "back": "International Organization for Standardization (ISO)"
+ },
+ {
+  "front": "How many layers are in the OSI model?",
+  "back": "Seven"
+ },
+ {
+  "front": "What is a main purpose of the OSI model?",
+  "back": "To standardize communication functions and support interoperability"
+ },
+ {
+  "front": "Which sequence lists the OSI layers from lowest to highest?",
+  "back": "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+ },
+ {
+  "front": "Which OSI layer transmits raw bits through the physical medium?",
+  "back": "Physical layer"
+ },
+ {
+  "front": "Which OSI layer organizes data into frames for communication over a link?",
+  "back": "Data Link layer"
+ },
+ {
+  "front": "Which OSI layer determines the path that data takes between networks?",
+  "back": "Network layer"
+ },
+ {
+  "front": "TCP and UDP are associated with which OSI layer?",
+  "back": "Transport layer"
+ },
+ {
+  "front": "Which OSI layer establishes and manages communication sessions?",
+  "back": "Session layer"
+ },
+ {
+  "front": "Which OSI layer handles data representation and encryption in the model shown?",
+  "back": "Presentation layer"
+ },
+ {
+  "front": "Which OSI layer allows applications to access network services?",
+  "back": "Application layer"
+ },
+ {
+  "front": "How many layers are in the TCP/IP model presented in the lecture?",
+  "back": "Four"
+ },
+ {
+  "front": "Which model forms the practical foundation of Internet communication?",
+  "back": "TCP/IP model"
+ },
+ {
+  "front": "Which is an advantage of the TCP/IP model identified in the lecture?",
+  "back": "A simpler structure and practical implementation"
+ },
+ {
+  "front": "Which TCP/IP layer includes IPv4 and IPv6 in the lecture's diagram?",
+  "back": "Internet layer"
+ },
+ {
+  "front": "Which pair belongs to the TCP/IP transport layer?",
+  "back": "TCP and UDP"
+ },
+ {
+  "front": "Which OSI layers are grouped into the TCP/IP application layer in the comparison diagram?",
+  "back": "Application, Presentation, and Session"
+ },
+ {
+  "front": "Which OSI layers correspond to the TCP/IP network interface layer?",
+  "back": "Physical and Data Link"
+ },
+ {
+  "front": "What is the main function of an IP address?",
+  "back": "To identify a device for network communication"
+ },
+ {
+  "front": "Which is the IPv4 address example shown in the lecture?",
+  "back": "192.168.1.10"
+ },
+ {
+  "front": "Which is the IPv6 address example shown in the lecture?",
+  "back": "2001:db8::1"
+ },
+ {
+  "front": "What is routing in a computer network?",
+  "back": "Selecting a path for data to travel from source to destination"
+ },
+ {
+  "front": "Which device connects networks and forwards packets between them?",
+  "back": "Router"
+ },
+ {
+  "front": "What happens first when a user opens a website in the process described in the lecture?",
+  "back": "The browser sends a request"
+ },
+ {
+  "front": "What happens after a web server receives a browser's request in the lecture's simplified sequence?",
+  "back": "The server sends a response"
+ },
+ {
+  "front": "What is the main purpose of telecommunication systems?",
+  "back": "To transmit and receive information over distance"
+ },
+ {
+  "front": "Which types of information can telecommunication systems transmit?",
+  "back": "Voice, data, and video"
+ },
+ {
+  "front": "What is the function of a transmitter in a telecommunication system?",
+  "back": "To encode information and convert it into signals"
+ },
+ {
+  "front": "What is the role of a transmission channel?",
+  "back": "To carry signals from the transmitter to the receiver"
+ },
+ {
+  "front": "Which telecommunication system uses satellites to transmit signals over long distances?",
+  "back": "Satellite system"
+ },
+ {
+  "front": "Which economic activity illustrates an application of network and telecommunication systems?",
+  "back": "Online banking and digital payments"
+ },
+ {
+  "front": "What is the primary purpose of cybersecurity?",
+  "back": "Protect digital systems and information from attacks and unauthorized access"
+ },
+ {
+  "front": "Which asset is explicitly protected by cybersecurity?",
+  "back": "Cloud services"
+ },
+ {
+  "front": "Which objective of cybersecurity helps an organization continue operating during security incidents?",
+  "back": "Maintain business continuity"
+ },
+ {
+  "front": "Which cybersecurity objective focuses on preventing people from viewing restricted resources?",
+  "back": "Prevent unauthorized access"
+ },
+ {
+  "front": "Why is cybersecurity especially important for modern organizations?",
+  "back": "They increasingly depend on digital technologies"
+ },
+ {
+  "front": "Which of the following is a protected area mentioned in the lecture?",
+  "back": "Industrial control systems"
+ },
+ {
+  "front": "Which situation best illustrates a cyber attack?",
+  "back": "An intruder attempts to steal data from a network"
+ },
+ {
+  "front": "What is a cyber threat?",
+  "back": "A potential cause of harm to digital systems or data"
+ },
+ {
+  "front": "Which cybersecurity objective specifically concerns the safe exchange of information?",
+  "back": "Ensure secure communication"
+ },
+ {
+  "front": "How can good cybersecurity help a company's public image?",
+  "back": "By protecting its organizational reputation"
+ },
+ {
+  "front": "Which of the following is NOT a main cybersecurity objective presented in the lecture?",
+  "back": "Allow unrestricted access to confidential files"
+ },
+ {
+  "front": "What does information security (InfoSec) protect information against?",
+  "back": "Unauthorized access, disclosure, modification, and destruction"
+ },
+ {
+  "front": "What does the CIA Triad stand for?",
+  "back": "Confidentiality, Integrity, and Availability"
+ },
+ {
+  "front": "Which CIA principle ensures that only authorized people can access information?",
+  "back": "Confidentiality"
+ },
+ {
+  "front": "Which CIA principle requires information to remain accurate and unaltered without permission?",
+  "back": "Integrity"
+ },
+ {
+  "front": "Which CIA principle ensures that services can be accessed when authorized users need them?",
+  "back": "Availability"
+ },
+ {
+  "front": "A student illegally changes another student's grade. Which CIA principle is violated?",
+  "back": "Integrity"
+ },
+ {
+  "front": "An online banking service is inaccessible to customers for several hours. Which CIA principle is most directly affected?",
+  "back": "Availability"
+ },
+ {
+  "front": "A confidential company document is viewed by someone without permission. Which CIA principle is violated?",
+  "back": "Confidentiality"
+ },
+ {
+  "front": "Which measure is an example of protecting confidentiality in the lecture?",
+  "back": "Password-protected files"
+ },
+ {
+  "front": "What question does authentication answer?",
+  "back": "Who are you?"
+ },
+ {
+  "front": "What question does authorization answer?",
+  "back": "What are you allowed to do?"
+ },
+ {
+  "front": "An employee proves their identity by logging in with credentials. What process is this?",
+  "back": "Authentication"
+ },
+ {
+  "front": "A manager grants an employee permission to open payroll records. What process is this?",
+  "back": "Authorization"
+ },
+ {
+  "front": "What is access control?",
+  "back": "Limiting resource access according to roles and permissions"
+ },
+ {
+  "front": "What is a security policy?",
+  "back": "A set of rules and procedures designed to protect information and systems"
+ },
+ {
+  "front": "Which of these is an example of an organizational security policy?",
+  "back": "Acceptable use policy"
+ },
+ {
+  "front": "Why do organizations use role-based access restrictions?",
+  "back": "To give employees access only to information needed for their work"
+ },
+ {
+  "front": "Which example best illustrates information integrity?",
+  "back": "Financial records remain accurate and cannot be changed without permission"
+ },
+ {
+  "front": "What is data protection?",
+  "back": "Safeguarding information from loss, theft, unauthorized access, and misuse"
+ },
+ {
+  "front": "Which type of data is specifically identified in the data-protection section?",
+  "back": "Financial data"
+ },
+ {
+  "front": "Which is a stated benefit of data protection?",
+  "back": "Preventing data loss"
+ },
+ {
+  "front": "What is encryption?",
+  "back": "Converting readable plaintext into unreadable ciphertext"
+ },
+ {
+  "front": "What is plaintext?",
+  "back": "Readable information before encryption"
+ },
+ {
+  "front": "What is ciphertext?",
+  "back": "The unreadable output produced by encryption"
+ },
+ {
+  "front": "What is needed to decrypt encrypted information as described in the lecture?",
+  "back": "The correct decryption key"
+ },
+ {
+  "front": "Which statement describes the purpose of encryption?",
+  "back": "It helps prevent unauthorized people from reading information"
+ },
+ {
+  "front": "What does multi-factor authentication (MFA) require?",
+  "back": "Verification using more than one authentication factor"
+ },
+ {
+  "front": "Which key is normally used by a signer to create a digital signature?",
+  "back": "The signer's private key"
+ },
+ {
+  "front": "Which key is normally used to verify a digital signature?",
+  "back": "The signer's public key"
+ },
+ {
+  "front": "What is the role of a cryptographic hash in digital signatures?",
+  "back": "Providing a digest used to detect alterations to signed content"
+ },
+ {
+  "front": "What is malware?",
+  "back": "Malicious software designed to damage systems, steal information, or disrupt operations"
+ },
+ {
+  "front": "Which malware type can self-replicate and spread across networks?",
+  "back": "Worm"
+ },
+ {
+  "front": "Which type of malware disguises itself as a legitimate program?",
+  "back": "Trojan horse"
+ },
+ {
+  "front": "Which malicious software primarily attempts to secretly collect user information?",
+  "back": "Spyware"
+ },
+ {
+  "front": "Which malicious software commonly demands payment after restricting access to data?",
+  "back": "Ransomware"
+ },
+ {
+  "front": "Which of the following is a malware infection method listed in the lecture?",
+  "back": "Infected USB devices"
+ },
+ {
+  "front": "Which symptom may indicate a malware infection?",
+  "back": "Unexpected pop-up windows"
+ },
+ {
+  "front": "What is the main purpose of antivirus software?",
+  "back": "Detect and help remove malicious software"
+ },
+ {
+  "front": "How does a firewall improve network security?",
+  "back": "By filtering network traffic according to security rules"
+ },
+ {
+  "front": "How does the World Wide Web relate to the Internet?",
+  "back": "The Web is a service that operates over the Internet"
+ },
+ {
+  "front": "In a web interaction, what is the role of the client?",
+  "back": "To request a resource or service from a server"
+ },
+ {
+  "front": "Which task is typically performed by a web server?",
+  "back": "Responding to a browser request with a webpage or other resource"
+ },
+ {
+  "front": "What is the main purpose of DNS?",
+  "back": "To resolve domain names to IP addresses"
+ },
+ {
+  "front": "Why do users commonly enter domain names rather than IP addresses?",
+  "back": "Domain names are usually easier to remember"
+ },
+ {
+  "front": "Which statement correctly describes the relationship between URLs and URIs?",
+  "back": "A URL is a type of URI that specifies how to locate a resource"
+ },
+ {
+  "front": "What does HTTPS add to HTTP communication?",
+  "back": "Encryption and authentication of the connection using TLS"
+ },
+ {
+  "front": "Which web technology primarily defines page structure and content?",
+  "back": "HTML"
+ },
+ {
+  "front": "Which web technology primarily controls colors, fonts, and layout?",
+  "back": "CSS"
+ },
+ {
+  "front": "Which task is a typical use of JavaScript on a webpage?",
+  "back": "Updating displayed content when a user interacts with a control"
+ },
+ {
+  "front": "Which protocol is primarily used to send email?",
+  "back": "SMTP"
+ },
+ {
+  "front": "Which email protocol is designed to synchronize mailboxes across devices while keeping messages on the server?",
+  "back": "IMAP"
+ },
+ {
+  "front": "Which protocol commonly downloads email messages from a server to a mail client?",
+  "back": "POP3"
+ },
+ {
+  "front": "Which task belongs primarily to front-end web development?",
+  "back": "Building the page layout and interactive controls users see"
+ },
+ {
+  "front": "Which task belongs primarily to back-end web development?",
+  "back": "Processing requests and retrieving data from a server-side database"
+ },
+ {
+  "front": "What is the primary purpose of a content management system (CMS)?",
+  "back": "To create, organize, and publish website content"
+ },
+ {
+  "front": "Which pair contains examples of CMS platforms discussed in the lecture?",
+  "back": "WordPress and Joomla"
+ },
+ {
+  "front": "What distinguishes a dynamic website from a static website?",
+  "back": "A dynamic website can generate content using data and user requests"
+ },
+ {
+  "front": "What is the main purpose of web traffic analysis?",
+  "back": "To understand visits, user behavior, and website outcomes"
+ },
+ {
+  "front": "Which question can a website heatmap help investigate?",
+  "back": "Which areas of a page receive the most user interaction?"
+ },
+ {
+  "front": "What is cloud computing?",
+  "back": "Providing computing resources and services over a network on demand"
+ },
+ {
+  "front": "Which situation best illustrates cloud-based collaboration?",
+  "back": "Employees in different cities jointly edit a shared online document"
+ },
+ {
+  "front": "What is a potential business consequence of a cloud service outage?",
+  "back": "Users may temporarily lose access to hosted applications or data"
+ },
+ {
+  "front": "Why are data centers essential to cloud services?",
+  "back": "They house the servers, storage, and networking that deliver services"
+ },
+ {
+  "front": "What does virtualization allow a physical server to do?",
+  "back": "Run multiple isolated virtual machines"
+ },
+ {
+  "front": "Which service model provides virtual machines, storage, and networking for customers to manage?",
+  "back": "Infrastructure as a Service (IaaS)"
+ },
+ {
+  "front": "Which cloud service model provides an environment for developing and deploying applications without managing the underlying infrastructure directly?",
+  "back": "Platform as a Service (PaaS)"
+ },
+ {
+  "front": "Using an online application maintained by its provider is an example of which cloud model?",
+  "back": "Software as a Service (SaaS)"
+ },
+ {
+  "front": "What does cloud scalability mean?",
+  "back": "Adjusting computing resources to match changing demand"
+ },
+ {
+  "front": "Which technology primarily provides geographic positioning information?",
+  "back": "GPS"
+ },
+ {
+  "front": "What is the main role of GSM in mobile technologies?",
+  "back": "Supporting cellular communication services"
+ },
+ {
+  "front": "Which mobile technology is commonly used for short-range contactless payments?",
+  "back": "NFC"
+ },
+ {
+  "front": "What is a key characteristic of distributed computing?",
+  "back": "Several networked computers share processing tasks"
+ },
+ {
+  "front": "What is cloud storage?",
+  "back": "Storing data on remote systems accessible through a network"
+ },
+ {
+  "front": "Why should a business review access permissions for cloud data?",
+  "back": "To ensure users can access only the information they are authorized to use"
+ },
+ {
+  "front": "Which example best illustrates multimedia?",
+  "back": "An interactive lesson combining text, diagrams, and narration"
+ },
+ {
+  "front": "Why might a lecturer add a narrated animation to a written explanation of a process?",
+  "back": "It shows how the steps change over time while explaining what happens"
+ },
+ {
+  "front": "Which multimedia element is most suitable for demonstrating what a machine sounds like during normal operation?",
+  "back": "An audio recording"
+ },
+ {
+  "front": "Which element most directly illustrates a predicted change that has never been filmed?",
+  "back": "An animation of the predicted change"
+ },
+ {
+  "front": "How is text represented in a digital file?",
+  "back": "Characters are mapped to codes that are stored as bytes"
+ },
+ {
+  "front": "What is a pixel in a raster image?",
+  "back": "An individual picture element with a color or intensity value"
+ },
+ {
+  "front": "What distinguishes vector graphics from raster graphics?",
+  "back": "Vector graphics describe shapes mathematically; raster graphics store a grid of pixels"
+ },
+ {
+  "front": "Which representation is most suitable for a logo that must stay sharp at both business-card and billboard sizes?",
+  "back": "Vector graphics"
+ },
+ {
+  "front": "Why can a digital photograph require more storage than a short plain-text file?",
+  "back": "The photograph stores color or intensity information for many pixels"
+ },
+ {
+  "front": "All else being equal, why does a video usually need more storage than a single still image?",
+  "back": "It stores a sequence of frames and may also contain audio"
+ },
+ {
+  "front": "What is the main purpose of multimedia compression?",
+  "back": "To reduce the amount of data needed for storage or transmission"
+ },
+ {
+  "front": "Which statement correctly compares lossless and lossy compression?",
+  "back": "Lossless compression allows exact reconstruction; lossy compression discards some information"
+ },
+ {
+  "front": "Which task most clearly calls for lossless compression?",
+  "back": "Archiving source images whose original pixel values must be preserved"
+ },
+ {
+  "front": "Why is a compressed video often easier to send online?",
+  "back": "Fewer bytes need to be transferred at the same connection speed"
+ },
+ {
+  "front": "Which file extension is commonly used for digital audio?",
+  "back": ".mp3"
+ },
+ {
+  "front": "Which action is part of video editing?",
+  "back": "Trimming unwanted footage and arranging the remaining clips"
+ },
+ {
+  "front": "How does augmented reality enhance an experience?",
+  "back": "It overlays digital content on a view of the real environment"
+ },
+ {
+  "front": "A company wants to show a product demonstration on social media. Which asset meets that goal most directly?",
+  "back": "A short video showing the product in use"
+ },
+ {
+  "front": "Which task belongs to the planning stage of a business process?",
+  "back": "Defining the objective, resources, and order of activities"
+ },
+ {
+  "front": "Which format best communicates the order of tasks and decision points in an order-fulfillment process?",
+  "back": "A flowchart"
+ },
+ {
+  "front": "What is a key role of written text in business process documentation?",
+  "back": "To state responsibilities, rules, and instructions precisely"
+ },
+ {
+  "front": "Why is a demonstration video useful for training employees to use a checkout terminal?",
+  "back": "It lets them observe the sequence of actions and replay difficult steps"
+ },
+ {
+  "front": "Why should a team identify its target audience early in advertisement development?",
+  "back": "The audience informs the message, tone, and choice of media"
+ },
+ {
+  "front": "Which activity belongs to research and concept development for an advertisement?",
+  "back": "Studying customer needs and outlining a message before production"
+ },
+ {
+  "front": "What should the key message of an advertisement communicate?",
+  "back": "The main benefit or idea the target audience should remember"
+ },
+ {
+  "front": "What is the Internet of Things (IoT)?",
+  "back": "A network of connected physical devices that collect and exchange data"
+ },
+ {
+  "front": "Which sensor would a smart irrigation system use to determine whether soil is becoming too dry?",
+  "back": "A soil moisture sensor"
+ },
+ {
+  "front": "In the IoT workflow, which action comes first?",
+  "back": "Sensors capture data from the physical environment"
+ },
+ {
+  "front": "What makes a dataset an example of Big Data in the lecture's definition?",
+  "back": "Its size and complexity make traditional processing methods inefficient"
+ },
+ {
+  "front": "Which of the five Vs refers to the amount of data generated?",
+  "back": "Volume"
+ },
+ {
+  "front": "Which of the five Vs is most relevant when a retailer must process thousands of transactions as they arrive each second?",
+  "back": "Velocity"
+ },
+ {
+  "front": "A retailer combines purchase records, customer reviews, and product images. Which V does this mix of formats illustrate?",
+  "back": "Variety"
+ },
+ {
+  "front": "Which V is most directly affected when sensors report inaccurate readings?",
+  "back": "Veracity"
+ },
+ {
+  "front": "Which example best demonstrates the Value of Big Data?",
+  "back": "Using buying patterns to improve inventory decisions"
+ },
+ {
+  "front": "Which activity illustrates a characteristic capability of artificial intelligence?",
+  "back": "Identifying patterns in data to make predictions"
+ },
+ {
+  "front": "Why is raw data cleaned and organized before it is used to train an AI model?",
+  "back": "To prepare reliable inputs from which the model can learn patterns"
+ },
+ {
+  "front": "A voice assistant handles spoken requests within its supported functions. Which category best describes it?",
+  "back": "Narrow AI"
+ },
+ {
+  "front": "Which task is a typical use of generative AI?",
+  "back": "Drafting a summary of a market research report"
+ },
+ {
+  "front": "Which four elements are highlighted in the lecture's smart technology diagram?",
+  "back": "Sensors, data, connectivity, and automation"
+ },
+ {
+  "front": "In the intelligent traffic system example, what happens after the system analyzes traffic patterns?",
+  "back": "It selects a timing plan and automatically adjusts the lights"
+ },
+ {
+  "front": "Which example best illustrates digital transformation in a business?",
+  "back": "Integrating sales and inventory data to redesign how orders are handled"
+ },
+ {
+  "front": "Which factory scenario best illustrates Industry 4.0?",
+  "back": "Connected machines share live data that is analyzed to adjust production automatically"
+ },
+ {
+  "front": "What is a blockchain?",
+  "back": "A digital ledger whose records are grouped into linked blocks shared across a network"
+ },
+ {
+  "front": "Which field links a blockchain block to the block immediately before it?",
+  "back": "The previous block's hash"
+ },
+ {
+  "front": "What is the purpose of consensus in the blockchain workflow shown in the lecture?",
+  "back": "To let network participants agree on valid records before a block is added"
+ },
+ {
+  "front": "When does a smart contract carry out a programmed action?",
+  "back": "When its predefined conditions are met"
+ },
+ {
+  "front": "Which scenario best illustrates a smart contract?",
+  "back": "A system releases a payment automatically after confirmed delivery satisfies a coded rule"
+ },
+ {
+  "front": "What is the primary goal of Green ICT?",
+  "back": "To reduce the environmental impact of ICT and use resources more efficiently"
+ },
+ {
+  "front": "Which change directly helps a data center reduce energy use?",
+  "back": "Improving cooling efficiency and reducing unnecessary power consumption"
+ },
+ {
+  "front": "Which action is an example of responsible electronic waste management?",
+  "back": "Sending obsolete devices to a qualified reuse or recycling program"
+ },
+ {
+  "front": "Which statement best describes e-business?",
+  "back": "Using digital technologies to support business activities and processes"
+ },
+ {
+  "front": "A manufacturer sells components through an online portal to another company. Which e-business model is illustrated?",
+  "back": "Business-to-business (B2B)"
+ },
+ {
+  "front": "An online retailer sells a laptop directly to an individual for personal use. Which model applies?",
+  "back": "Business-to-consumer (B2C)"
+ },
+ {
+  "front": "One individual sells a used tablet to another through an online marketplace. Which model applies?",
+  "back": "Consumer-to-consumer (C2C)"
+ },
+ {
+  "front": "A freelance photographer licenses an image to a company through an online platform. Which model best fits?",
+  "back": "Consumer-to-business (C2B)"
+ },
+ {
+  "front": "Why are digital contracts useful in e-business?",
+  "back": "They record the parties' agreed terms for an online transaction"
+ },
+ {
+  "front": "Which practice best supports the protection of customer data in an online business?",
+  "back": "Limiting access and securely handling the information collected"
+ },
+ {
+  "front": "Why should an online shop provide clear product and purchase information?",
+  "back": "To help customers make informed decisions and understand transaction terms"
+ },
+ {
+  "front": "What is the primary purpose of a Learning Management System (LMS)?",
+  "back": "To organize course content, learning activities, and assessment records"
+ },
+ {
+  "front": "Which activity best illustrates asynchronous e-learning?",
+  "back": "Watching a recorded lesson and submitting an assignment later"
+ },
+ {
+  "front": "Which activity best illustrates synchronous e-learning?",
+  "back": "Attending a live online class with real-time discussion"
+ },
+ {
+  "front": "Which is a common challenge of online learning?",
+  "back": "Unreliable internet access that interrupts participation"
+ },
+ {
+  "front": "What is e-government?",
+  "back": "The use of digital platforms to provide public services and information"
+ },
+ {
+  "front": "Why is digital identity important when accessing a personal public-service account?",
+  "back": "It helps verify who is requesting access to personal services and records"
+ },
+ {
+  "front": "Which is an example of a digital public service?",
+  "back": "Applying for an official certificate through a government portal"
+ }
+]

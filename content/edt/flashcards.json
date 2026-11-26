@@ -1,0 +1,197 @@
+[
+ {
+  "front": "Excursion",
+  "back": "An organised, guided visit that lets tourists explore the cultural, historical, natural and social sides of a destination beyond their accommodation.",
+  "topic": "importance"
+ },
+ {
+  "front": "Main functions of excursions (Topic 1)",
+  "back": "Education and interpretation, emotional experience, economic benefit for locals, spatial spread of tourists, destination branding, sustainability, intercultural dialogue, seasonality management.",
+  "topic": "importance"
+ },
+ {
+  "front": "How do excursions help manage overtourism?",
+  "back": "Diversified programmes spread tourists to lesser-known areas, e.g. Murano and Burano in Venice, or rural and ecological sites beyond Almaty and Astana in Kazakhstan.",
+  "topic": "importance"
+ },
+ {
+  "front": "Grand Tour",
+  "back": "Renaissance-era educational travel of wealthy European aristocrats, mainly to Italy and France, visiting galleries, ruins and universities with tutors; a precursor of cultural excursions.",
+  "topic": "history"
+ },
+ {
+  "front": "Thomas Cook (1840s)",
+  "back": "Organised the first package tours in Britain: day trips to exhibitions, cities and seaside resorts with transport, meals and guided interpretation.",
+  "topic": "history"
+ },
+ {
+  "front": "Lehrwanderungen",
+  "back": "\"Educational walks\" popular in 19th-century Germany and Russia: guided visits to forests, factories, museums and historical sites, with preparation, thematic focus and reflection.",
+  "topic": "history"
+ },
+ {
+  "front": "Institutionalisation of excursions in Russia",
+  "back": "Society for School Excursions (1899) and Excursion Bureau in Moscow (1902) promoted excursions for patriotic and civic education, published guides and trained leaders.",
+  "topic": "history"
+ },
+ {
+  "front": "Excursion service",
+  "back": "Provision of informative, culturally enriching and emotionally engaging experiences through guided visits; focuses on interpretation and education, unlike accommodation, transport or food services.",
+  "topic": "features"
+ },
+ {
+  "front": "Peculiarities of excursion service",
+  "back": "Content/guide dependence, planning and dramaturgy, time-limited and mobile nature, legal framework, emotional dimension, interpersonal interaction, thematic diversity, technology integration.",
+  "topic": "features"
+ },
+ {
+  "front": "Four phases of excursion structure",
+  "back": "1) Preparation, 2) Introduction, 3) Main body, 4) Conclusion.",
+  "topic": "classification"
+ },
+ {
+  "front": "Criteria for classifying excursions",
+  "back": "Content/theme, form of movement, duration, target audience, purpose, method of delivery.",
+  "topic": "classification"
+ },
+ {
+  "front": "Excursions by duration",
+  "back": "Short (up to 2 hours), half-day, full-day, multi-day.",
+  "topic": "classification"
+ },
+ {
+  "front": "Excursions by purpose",
+  "back": "Educational, recreational, aesthetic, religious/pilgrimage, commemorative; many modern excursions are hybrid.",
+  "topic": "classification"
+ },
+ {
+  "front": "Excursion objects",
+  "back": "Material and immaterial components of a destination with cultural, historical, natural, aesthetic, scientific or symbolic significance, selected for interpretation and presentation.",
+  "topic": "objects"
+ },
+ {
+  "front": "Nine types of excursion objects",
+  "back": "Historical-architectural, natural, cultural-ethnographic, artistic/museum, industrial-technological, religious, memorial, contemporary urban, intangible.",
+  "topic": "objects"
+ },
+ {
+  "front": "Criteria for selecting excursion objects",
+  "back": "Safety, accessibility, seasonality, audience relevance, educational value, visual impact, capacity for group engagement.",
+  "topic": "objects"
+ },
+ {
+  "front": "Main phases of excursion preparation",
+  "back": "Theme selection, research, route design, commentary (script) writing, excursion plan, coordination, rehearsal, visual aids, ethical check, evaluation and feedback.",
+  "topic": "preparation"
+ },
+ {
+  "front": "Excursion script vs. excursion plan",
+  "back": "Script: interpretive text for each stop (facts, anecdotes, questions). Plan: document with timing, logistics, transport, permissions, emergency contacts, equipment and backup scenarios.",
+  "topic": "preparation"
+ },
+ {
+  "front": "Quality of excursion service",
+  "back": "Comprehensive excellence of planning, content, execution and customer engagement at all stages of the excursion process.",
+  "topic": "quality"
+ },
+ {
+  "front": "Components of excursion quality",
+  "back": "Guide's competence and emotional intelligence, accurate and structured content, logistics, technology, emotional experience, feedback, ethics, guide training and certification.",
+  "topic": "quality"
+ },
+ {
+  "front": "Methodological developments (excursion business)",
+  "back": "Well-structured, research-based guidelines and educational instruments that guide the preparation, implementation and evaluation of excursions.",
+  "topic": "methodical-docs"
+ },
+ {
+  "front": "Scripted excursion program",
+  "back": "Plan with stages (introduction, main stops, transitions, conclusion), time allocation, key talking points, visual aids, interactive parts and expected audience questions.",
+  "topic": "methodical-docs"
+ },
+ {
+  "front": "Route optimization",
+  "back": "Choosing the most efficient and meaningful path, balancing accessibility, visibility of sites, safety and thematic integrity; uses GIS, Google Earth Pro, ArcGIS StoryMaps.",
+  "topic": "methodical-docs"
+ },
+ {
+  "front": "Evaluation and feedback instruments",
+  "back": "Pre-tour questionnaires, observation sheets for guide self-assessment, tourist feedback forms and quality assessment criteria.",
+  "topic": "methodical-docs"
+ },
+ {
+  "front": "Interdisciplinary approach to excursions",
+  "back": "Using knowledge from history, geography, art, pedagogy, psychology, sociology, ecology, political science and economics to make excursions deeper and more engaging.",
+  "topic": "disciplines"
+ },
+ {
+  "front": "Physical vs. human geography in excursions",
+  "back": "Physical: landscapes, ecosystems, spatial relationships. Human: urban planning, population movements, regional development.",
+  "topic": "disciplines"
+ },
+ {
+  "front": "Narrative construction (interpretive guiding)",
+  "back": "Turning facts into a coherent, emotional story (exposition, conflict, climax, resolution). Rooted in Freeman Tilden's heritage interpretation principles.",
+  "topic": "techniques"
+ },
+ {
+  "front": "Thematic segmentation",
+  "back": "Dividing an excursion into clear thematic blocks with their own focus to manage the audience's cognitive load.",
+  "topic": "techniques"
+ },
+ {
+  "front": "Position-triangle",
+  "back": "Guide, object and group form a triangle so everyone can see and hear; part of site positioning.",
+  "topic": "techniques"
+ },
+ {
+  "front": "Demonstration method",
+  "back": "A guide or local expert shows a process (pottery, weaving, cooking, qvevri wine-making) with commentary; engages many senses and improves memory.",
+  "topic": "techniques"
+ },
+ {
+  "front": "Value-based guiding",
+  "back": "Method inviting reflection on cultural, ethical or philosophical themes; the guide asks open questions and cites multiple viewpoints without imposing opinions.",
+  "topic": "techniques"
+ },
+ {
+  "front": "Dark tourism excursion",
+  "back": "Tour to sites of tragedy, death or suffering (e.g. Auschwitz-Birkenau). Needs reflection, not entertainment; no sensationalism; testimonies and verified facts.",
+  "topic": "thematic"
+ },
+ {
+  "front": "Peculiarity of religious excursions",
+  "back": "Historical, spiritual and artistic dimensions coexist; guide stays neutral and respectful, explains dress codes and conduct in advance.",
+  "topic": "thematic"
+ },
+ {
+  "front": "Methodological dossier",
+  "back": "Collection of research, maps and visual aids for a tour, compiled by methodologists and used by guides as a reference in training.",
+  "topic": "guide-skills"
+ },
+ {
+  "front": "Key professional skills of a guide",
+  "back": "Subject knowledge, languages, communication, emotional intelligence, organization and time management, intercultural competence, methodological skills, ethical responsibility.",
+  "topic": "guide-skills"
+ },
+ {
+  "front": "Intourist",
+  "back": "Centralized Soviet organization that, with the All-Union Society for Cultural Relations, promoted ideologically framed excursions for citizens and foreign visitors.",
+  "topic": "world-cis"
+ },
+ {
+  "front": "Common challenges of excursion tourism in the CIS",
+  "back": "Uneven service quality, no standardized guide training, insufficient digitalization, weak integration into global tourism flows.",
+  "topic": "world-cis"
+ },
+ {
+  "front": "Sacred Geography of Kazakhstan",
+  "back": "National project of sacred sites for pilgrimage excursions: mausoleums in Turkestan, Beket-Ata underground mosque (Mangystau), Aisha-Bibi mausoleum (Zhambyl Region).",
+  "topic": "kazakhstan"
+ },
+ {
+  "front": "Four challenges of excursion activity in Kazakhstan",
+  "back": "Shortage of certified guides, underdeveloped infrastructure, weak marketing and digital presence, incomplete legal framework.",
+  "topic": "kazakhstan"
+ }
+]

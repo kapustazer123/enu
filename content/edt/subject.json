@@ -3,13 +3,33 @@
   "code": "EDT 2208",
   "color": "#8a3b2e",
   "teacher": "Мукатова Р.А.",
-  "description": "Экскурсоведение: классификация экскурсий, методика подготовки и проведения, мастерство гида, экскурсии в Казахстане. Материалы курса на английском.",
+  "description": "*Sightseeing activities in tourism.* Excursion studies: types of excursions, preparation and conducting methods, guide skills, excursion tourism in Kazakhstan. Content in English, based on the course lectures.",
   "exam": {
     "type": "Устный экзамен",
     "date": "2026-12-22T09:00",
     "place": "Корпус №1 (УАК), ауд. 337"
   },
-  "topics": [],
-  "quizzes": [],
+  "topics": [
+    { "id": "importance", "title": "The importance of excursions for serving tourists", "file": "topics/01-importance.md" },
+    { "id": "history", "title": "History of excursion studies", "file": "topics/02-history.md" },
+    { "id": "features", "title": "Peculiarities of excursion service", "file": "topics/03-features.md" },
+    { "id": "classification", "title": "Structure and classification of excursions", "file": "topics/04-classification.md" },
+    { "id": "objects", "title": "Excursion objects and their types", "file": "topics/05-objects.md" },
+    { "id": "preparation", "title": "Methodology of excursion preparation", "file": "topics/06-preparation.md" },
+    { "id": "quality", "title": "Quality of excursion service", "file": "topics/07-quality.md" },
+    { "id": "methodical-docs", "title": "Preparing methodological developments", "file": "topics/08-methodical-docs.md" },
+    { "id": "disciplines", "title": "Knowledge from other disciplines in excursions", "file": "topics/09-disciplines.md" },
+    { "id": "techniques", "title": "Techniques and methods of conducting excursions", "file": "topics/10-techniques.md" },
+    { "id": "thematic", "title": "Excursions on various topics", "file": "topics/11-thematic.md" },
+    { "id": "guide-skills", "title": "Professional skills of tour guides", "file": "topics/12-guide-skills.md" },
+    { "id": "world-cis", "title": "Excursion tourism in the world and CIS", "file": "topics/13-world-cis.md" },
+    { "id": "kazakhstan", "title": "Excursion activities in Kazakhstan", "file": "topics/14-kazakhstan.md" }
+  ],
+  "quizzes": [
+    { "id": "module-1", "title": "Module 1: Excursion basics", "description": "Topics 1–7", "file": "quizzes/module-1.json" },
+    { "id": "module-2", "title": "Module 2: Conducting excursions", "description": "Topics 8–14", "file": "quizzes/module-2.json" }
+  ],
+  "flashcards": "flashcards.json",
+  "questions": "questions.json",
   "links": []
 }

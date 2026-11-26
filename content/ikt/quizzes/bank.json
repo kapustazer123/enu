@@ -1,0 +1,3606 @@
+{
+ "title": "ICT exam test bank",
+ "note": "Teacher's bank of 300 questions; first option is correct in the source, options are shuffled in the app.",
+ "questions": [
+  {
+   "n": 1,
+   "q": "What does ICT stand for?",
+   "options": [
+    "Information and Communications Technology",
+    "Information and Computer Technology",
+    "Integrated Communication Technology",
+    "Internet and Computer Technology",
+    "Information Control Technology"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 2,
+   "q": "What is the main purpose of ICT?",
+   "options": [
+    "To share, store, and process information",
+    "Only to create computer games",
+    "Only to repair hardware",
+    "To replace all human communication",
+    "Only to design websites"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 3,
+   "q": "Which set consists entirely of ICT technologies?",
+   "options": [
+    "Computers, communication networks, and mobile technologies",
+    "Mechanical gears, pulleys, and manual levers",
+    "Printed ledgers, paper forms, and filing cabinets",
+    "Steam turbines, pumps, and valves",
+    "Hand tools, workbenches, and measuring tapes"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 4,
+   "q": "What is a key difference between IT and ICT according to the lecture?",
+   "options": [
+    "IT focuses on computers, while ICT focuses on communication and information",
+    "IT focuses on communication, while ICT focuses only on computers",
+    "IT uses no hardware",
+    "ICT does not use networks",
+    "There is no difference between IT and ICT"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 5,
+   "q": "Which stage of ICT evolution is associated with personal computers?",
+   "options": [
+    "1980s",
+    "1960s",
+    "1970s",
+    "1990s",
+    "2000s"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 6,
+   "q": "Which stage of ICT evolution is associated with Internet expansion?",
+   "options": [
+    "1990s",
+    "1960s",
+    "1980s",
+    "2000s",
+    "Today only"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 7,
+   "q": "Which technologies characterize ICT today according to the presentation?",
+   "options": [
+    "Cloud computing, IoT, and AI",
+    "Punch cards and vacuum tubes",
+    "Only fax machines",
+    "Only mainframe computers",
+    "Magnetic tapes only"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 8,
+   "q": "Which of the following is NOT listed as a main component of an ICT system?",
+   "options": [
+    "Mechanical engineering",
+    "Hardware",
+    "Software",
+    "Networks",
+    "Data Storage"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 9,
+   "q": "What is hardware in an ICT system?",
+   "options": [
+    "Physical devices used in ICT systems",
+    "Programs that control hardware",
+    "Only Internet services",
+    "A method of statistical analysis",
+    "A type of cloud storage"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 10,
+   "q": "Which of the following is an example of ICT hardware?",
+   "options": [
+    "Router",
+    "Spreadsheet formula",
+    "Operating system command",
+    "Database query",
+    "Software license"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 11,
+   "q": "What is the role of software in ICT systems?",
+   "options": [
+    "It controls hardware through programs and applications",
+    "It physically connects buildings",
+    "It replaces data storage",
+    "It only protects against viruses",
+    "It is used only for printing"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 12,
+   "q": "What is the main purpose of networks and communication systems?",
+   "options": [
+    "To connect people, devices, and machines",
+    "To increase monitor brightness",
+    "To replace operating systems",
+    "To manufacture processors",
+    "To create only local files"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 13,
+   "q": "Which of the following is an example of a communication system?",
+   "options": [
+    "Wi-Fi",
+    "Keyboard",
+    "CPU register",
+    "Spreadsheet cell",
+    "Printer cartridge"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 14,
+   "q": "What is one function of cybersecurity?",
+   "options": [
+    "To protect information and prevent cyber attacks",
+    "To increase screen size",
+    "To create 3D models",
+    "To print documents",
+    "To replace databases"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 15,
+   "q": "How does ICT support engineering design?",
+   "options": [
+    "By creating digital designs, testing projects, and improving accuracy",
+    "By removing the need for calculations",
+    "By preventing communication",
+    "By eliminating automation",
+    "By replacing all engineers"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 16,
+   "q": "Which technology is used in logistics according to the lecture?",
+   "options": [
+    "GPS navigation",
+    "Vacuum tubes",
+    "Punch cards",
+    "Machine language only",
+    "Floppy disks"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 17,
+   "q": "How many generations of computers are commonly recognized in the presentation?",
+   "options": [
+    "Five",
+    "Three",
+    "Four",
+    "Six",
+    "Seven"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 18,
+   "q": "Which technology was the major innovation of first-generation computers?",
+   "options": [
+    "Vacuum tubes",
+    "Transistors",
+    "Integrated circuits",
+    "Microprocessors",
+    "Artificial intelligence"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 19,
+   "q": "Which language was mainly used in first-generation computers?",
+   "options": [
+    "Low-level machine language",
+    "Python",
+    "Java",
+    "SQL",
+    "JavaScript"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 20,
+   "q": "Which technology was the major innovation of second-generation computers?",
+   "options": [
+    "Transistors",
+    "Vacuum tubes",
+    "VLSI",
+    "ULSI",
+    "Cloud computing"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 21,
+   "q": "Which storage technology was commonly used for main memory in second-generation computers?",
+   "options": [
+    "Magnetic-core memory",
+    "Solid-state drives",
+    "DVD discs",
+    "USB flash drives",
+    "Blu-ray discs"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 22,
+   "q": "Which technology became the basic electronic component of third-generation computers?",
+   "options": [
+    "Integrated circuits",
+    "Vacuum tubes",
+    "Transistors",
+    "Mechanical relays",
+    "Cloud servers"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 23,
+   "q": "Which input/output devices are associated with third-generation computers in the lecture?",
+   "options": [
+    "Keyboard and monitor",
+    "Punch cards only",
+    "Voice input only",
+    "Touchscreen only",
+    "No input/output devices"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 24,
+   "q": "Which innovation is associated with fourth-generation computers?",
+   "options": [
+    "Microprocessor using LSI/VLSI",
+    "Vacuum tubes",
+    "Transistors",
+    "Punch cards",
+    "Mechanical switches"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 25,
+   "q": "Which operating systems are mentioned for fourth-generation computers?",
+   "options": [
+    "MS-DOS and PC-DOS",
+    "Android and iOS",
+    "Linux only",
+    "No operating system",
+    "macOS only"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 26,
+   "q": "Which feature is associated with fifth-generation computers?",
+   "options": [
+    "Artificial intelligence and expert systems",
+    "Vacuum tubes",
+    "Punch cards",
+    "No graphical interface",
+    "Only magnetic tape storage"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 27,
+   "q": "What is computer architecture?",
+   "options": [
+    "The conceptual design and operational structure of a computer system",
+    "A type of application software",
+    "A method of writing documents",
+    "A communication protocol only",
+    "A spreadsheet function"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 28,
+   "q": "What is the motherboard?",
+   "options": [
+    "The main printed circuit board that connects major computer components",
+    "A type of operating system",
+    "An output device",
+    "A programming language",
+    "A network service"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 29,
+   "q": "Which component is responsible for arithmetic operations such as addition and subtraction?",
+   "options": [
+    "Arithmetic Logic Unit",
+    "Control Unit",
+    "Hard disk",
+    "Network card",
+    "Power supply"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 30,
+   "q": "What is the main role of the CPU Control Unit?",
+   "options": [
+    "To direct and coordinate the execution of instructions",
+    "To store user files permanently",
+    "To render every pixel on a monitor independently",
+    "To provide the computer with electrical power",
+    "To connect the computer wirelessly to the Internet"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 31,
+   "q": "Which factor influences CPU speed according to the lecture?",
+   "options": [
+    "Clock speed",
+    "Paper size",
+    "Screen color",
+    "Keyboard layout",
+    "File name length"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 32,
+   "q": "Which unit is commonly used to measure CPU clock speed?",
+   "options": [
+    "Gigahertz",
+    "Meters",
+    "Liters",
+    "Pixels",
+    "Bytes per page"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 33,
+   "q": "What is RAM?",
+   "options": [
+    "Volatile memory that stores currently used programs and data",
+    "Permanent read-only storage only",
+    "A network protocol",
+    "An output device",
+    "A graphics format"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 34,
+   "q": "What is ROM?",
+   "options": [
+    "Non-volatile memory that keeps data when the computer is shut off",
+    "Volatile memory erased when power is off",
+    "A type of input device",
+    "A web browser",
+    "A spreadsheet application"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 35,
+   "q": "How many bits are in one byte?",
+   "options": [
+    "8",
+    "2",
+    "4",
+    "16",
+    "32"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 36,
+   "q": "What is a bit?",
+   "options": [
+    "The fundamental unit of data with values 0 or 1",
+    "A group of 8 bytes",
+    "A type of software",
+    "A storage device",
+    "A computer network"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 37,
+   "q": "What is software?",
+   "options": [
+    "A collection of programs and instructions that tell a computer how to perform tasks",
+    "Only physical computer parts",
+    "A type of network cable",
+    "A storage device only",
+    "A computer monitor"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 38,
+   "q": "Which statement about software is correct?",
+   "options": [
+    "Software cannot be physically touched",
+    "Software can be physically touched like hardware",
+    "Software is always a hardware component",
+    "Software is used only for games",
+    "Software has no role in data analysis"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 39,
+   "q": "What are the two main categories of computer software?",
+   "options": [
+    "System software and application software",
+    "Desktop and mobile only",
+    "Free and paid only",
+    "Local and global only",
+    "Input and output software"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 40,
+   "q": "What is the main role of system software?",
+   "options": [
+    "To manage computer hardware and provide a platform for applications",
+    "To create only presentations",
+    "To browse only social media",
+    "To replace all application software",
+    "To perform only financial calculations"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 41,
+   "q": "What is the main role of application software?",
+   "options": [
+    "To help users perform specific tasks",
+    "To manufacture hardware",
+    "To control electrical power",
+    "To replace operating systems",
+    "To connect physical network cables"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 42,
+   "q": "Which type of application is installed directly on a computer?",
+   "options": [
+    "Desktop application",
+    "Web application only",
+    "Cloud database only",
+    "Mobile network",
+    "Operating system kernel"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 43,
+   "q": "Which type of application can be opened in a browser without installation?",
+   "options": [
+    "Web app",
+    "Desktop app",
+    "Firmware",
+    "Device driver",
+    "BIOS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 44,
+   "q": "What is an operating system?",
+   "options": [
+    "Foundational software that manages hardware and software resources",
+    "A document editor only",
+    "A type of input device",
+    "A programming language",
+    "A communication cable"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 45,
+   "q": "Which set lists core operating system functions?",
+   "options": [
+    "Process, memory, file, and device management",
+    "Image retouching, audio mixing, and video editing",
+    "Sales forecasting, stock valuation, and budgeting",
+    "Webpage styling, logo creation, and campaign planning",
+    "Survey design, interview transcription, and literature review"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 46,
+   "q": "Which operating system is developed by Apple for desktop and laptop computers?",
+   "options": [
+    "macOS",
+    "Windows",
+    "Android",
+    "Linux only",
+    "DOS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 47,
+   "q": "Which mobile operating system is made by Google?",
+   "options": [
+    "Android",
+    "iOS",
+    "macOS",
+    "Windows XP",
+    "UNIX"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 48,
+   "q": "Which mobile operating system runs only on iPhones according to the lecture?",
+   "options": [
+    "iOS",
+    "Android",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 49,
+   "q": "What is a file system?",
+   "options": [
+    "A method used by an operating system to organize and store files",
+    "A type of spreadsheet chart",
+    "A hardware processor",
+    "A network cable",
+    "A statistical model"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 50,
+   "q": "Which action changes a filename without changing the file contents?",
+   "options": [
+    "Renaming the file",
+    "Deleting the file",
+    "Opening the file for reading",
+    "Copying the file to another folder",
+    "Searching a folder for the file"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 51,
+   "q": "What is the primary goal of Human-Computer Interaction (HCI)?",
+   "options": [
+    "To improve interaction between people and computer systems",
+    "To increase the physical size of computers",
+    "To replace all human decisions with automation",
+    "To eliminate the need for software applications",
+    "To focus exclusively on processor design"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 52,
+   "q": "Which discipline contributes to HCI by studying human behavior and mental processes?",
+   "options": [
+    "Psychology",
+    "Geology",
+    "Astronomy",
+    "Botany",
+    "Oceanography"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 53,
+   "q": "Which set contains the five main components of an HCI system presented in the lecture?",
+   "options": [
+    "Human, computer system, interface, task, and environment",
+    "Processor, memory, disk, printer, and scanner",
+    "Database, table, row, column, and key",
+    "Input, sorting, grouping, storage, and backup",
+    "Website, browser, server, router, and modem"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 54,
+   "q": "Which outcome is associated with effective HCI?",
+   "options": [
+    "Reduced user errors",
+    "Increased user confusion",
+    "Lower system acceptance",
+    "Reduced user satisfaction",
+    "More operational mistakes"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 55,
+   "q": "What is a user interface (UI)?",
+   "options": [
+    "The point of interaction and communication between a user and a system",
+    "A collection of records stored in database tables",
+    "A procedure for forecasting future sales",
+    "A device used only for permanent data storage",
+    "A programming language for database queries"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 56,
+   "q": "Which item is a common user interface element?",
+   "options": [
+    "A dialog box",
+    "A foreign key",
+    "A database record",
+    "A regression coefficient",
+    "A transaction log"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 57,
+   "q": "An application uses the same icon for saving on every screen. Which UI design principle does this illustrate?",
+   "options": [
+    "Consistency",
+    "Data normalization",
+    "Data redundancy",
+    "Query processing",
+    "Classification"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 58,
+   "q": "After a user submits a form, the application displays a confirmation message. What does this message provide?",
+   "options": [
+    "Feedback",
+    "A database schema",
+    "A primary key",
+    "A prediction model",
+    "A backup copy"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 59,
+   "q": "What is the main focus of ergonomics in computer use?",
+   "options": [
+    "Adapting technology and work conditions to human needs",
+    "Making users adapt to uncomfortable equipment",
+    "Maximizing the number of database tables",
+    "Replacing graphical interfaces with SQL queries",
+    "Increasing the complexity of every user task"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 60,
+   "q": "Which type of ergonomics deals with posture, movement, and workplace design?",
+   "options": [
+    "Physical ergonomics",
+    "Cognitive ergonomics",
+    "Organizational ergonomics",
+    "Database ergonomics",
+    "Statistical ergonomics"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 61,
+   "q": "Which type of ergonomics deals with perception, memory, and decision-making?",
+   "options": [
+    "Cognitive ergonomics",
+    "Physical ergonomics",
+    "Organizational ergonomics",
+    "Mechanical ergonomics",
+    "Network ergonomics"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 62,
+   "q": "Which type of ergonomics focuses on teamwork, communication, and work systems?",
+   "options": [
+    "Organizational ergonomics",
+    "Physical ergonomics",
+    "Cognitive ergonomics",
+    "Visual ergonomics",
+    "Storage ergonomics"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 63,
+   "q": "Which three aspects are central to usability in the lecture?",
+   "options": [
+    "Effectiveness, efficiency, and satisfaction",
+    "Storage, retrieval, and backup",
+    "Collection, classification, and prediction",
+    "Hardware, software, and networking",
+    "Rows, columns, and relationships"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 64,
+   "q": "A new user quickly learns how to complete a task in an application. Which usability attribute does this demonstrate?",
+   "options": [
+    "Learnability",
+    "Memorability",
+    "Error tolerance",
+    "Data integrity",
+    "Geographic coverage"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 65,
+   "q": "A user returns to an application after a long break and remembers how to use it. Which usability attribute is demonstrated?",
+   "options": [
+    "Memorability",
+    "Learnability",
+    "Data redundancy",
+    "Query optimization",
+    "Physical comfort"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 66,
+   "q": "Which type of interface enables interaction through spoken commands?",
+   "options": [
+    "Voice User Interface (VUI)",
+    "Command-Line Interface (CLI)",
+    "A database table",
+    "A static printed report",
+    "A numeric spreadsheet cell"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 67,
+   "q": "What is a database?",
+   "options": [
+    "An organized collection of related data",
+    "A single command used to restart a computer",
+    "A graphical element used to navigate a website",
+    "A technique for improving workplace posture",
+    "A chart that shows changes over time"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 68,
+   "q": "Which example belongs to numeric data in a database?",
+   "options": [
+    "An employee's salary",
+    "A customer's surname",
+    "A product photograph",
+    "A recorded interview",
+    "A customer's email address"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 69,
+   "q": "What is a Database Management System (DBMS)?",
+   "options": [
+    "Software for creating, managing, storing, and retrieving database data",
+    "Hardware used only for displaying charts",
+    "A method for designing comfortable workstations",
+    "A collection of unrelated image files",
+    "A user interface element for submitting forms"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 70,
+   "q": "Which DBMS function helps restore data after a failure?",
+   "options": [
+    "Backup and recovery",
+    "Voice recognition",
+    "Screen brightness adjustment",
+    "Chart labeling",
+    "Interface animation"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 71,
+   "q": "Which sequence best describes access to data in the DBMS architecture presented in the lecture?",
+   "options": [
+    "User, application, DBMS, database",
+    "Database, keyboard, monitor, user",
+    "User, dashboard, printer, sensor",
+    "Application, chart, icon, menu",
+    "DBMS, posture, environment, task"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 72,
+   "q": "How does a relational database organize data?",
+   "options": [
+    "In tables containing rows and columns",
+    "Only in audio recordings",
+    "Only in graphical menus",
+    "In a single unstructured paragraph",
+    "Only in geographical maps"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 73,
+   "q": "What does a row represent in a relational database table?",
+   "options": [
+    "A record",
+    "A field name",
+    "A database management application",
+    "A complete database schema",
+    "A chart category label"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 74,
+   "q": "What is the purpose of a primary key?",
+   "options": [
+    "To uniquely identify each record in a table",
+    "To store all images in a database",
+    "To duplicate each record automatically",
+    "To sort every table by salary",
+    "To display database information as a map"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 75,
+   "q": "What is the role of a foreign key?",
+   "options": [
+    "To link records between related tables",
+    "To replace all primary keys with text labels",
+    "To create a backup of an entire database",
+    "To delete every duplicate value automatically",
+    "To convert all numeric fields into images"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 76,
+   "q": "Which system is listed as a NoSQL database management system in the lecture?",
+   "options": [
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Oracle",
+    "Microsoft SQL Server"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 77,
+   "q": "What is a main purpose of database normalization?",
+   "options": [
+    "To reduce unnecessary data duplication and improve consistency",
+    "To store all information in one repeating text field",
+    "To eliminate relationships between tables",
+    "To increase the number of duplicate records",
+    "To replace tables with interface icons"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 78,
+   "q": "What does SQL stand for?",
+   "options": [
+    "Structured Query Language",
+    "System Quality Logic",
+    "Standard Queue Library",
+    "Sequential Question List",
+    "Software Query Layout"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 79,
+   "q": "Which SQL statement retrieves data from a table?",
+   "options": [
+    "SELECT",
+    "INSERT",
+    "UPDATE",
+    "DELETE",
+    "CREATE TABLE"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 80,
+   "q": "Which SQL statement adds a new record to an existing table?",
+   "options": [
+    "INSERT",
+    "SELECT",
+    "UPDATE",
+    "DELETE",
+    "DROP TABLE"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 81,
+   "q": "Which SQL statement changes values in existing records?",
+   "options": [
+    "UPDATE",
+    "INSERT",
+    "SELECT",
+    "CREATE TABLE",
+    "DROP TABLE"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 82,
+   "q": "Which SQL statement removes selected rows from a table?",
+   "options": [
+    "DELETE",
+    "SELECT",
+    "INSERT",
+    "UPDATE",
+    "CREATE TABLE"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 83,
+   "q": "Which SQL statement is an example of Data Definition Language (DDL)?",
+   "options": [
+    "CREATE TABLE",
+    "INSERT",
+    "UPDATE",
+    "DELETE",
+    "SELECT"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 84,
+   "q": "Which statement best describes data as presented in the lecture?",
+   "options": [
+    "Raw facts, observations, measurements, or records",
+    "Only information shown in a dashboard",
+    "Only conclusions reached by managers",
+    "Only predictions made by machine learning",
+    "Only text stored in a user interface"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 85,
+   "q": "What is the main purpose of data analysis?",
+   "options": [
+    "To transform raw data into meaningful information for decisions",
+    "To collect data without interpreting it",
+    "To replace all databases with separate files",
+    "To remove every numeric value from a dataset",
+    "To design computer keyboards and monitors"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 86,
+   "q": "What is data-driven decision making?",
+   "options": [
+    "Using analyzed data to guide actions and strategies",
+    "Choosing actions solely on personal guesses",
+    "Making decisions without collecting evidence",
+    "Using only the appearance of a dashboard",
+    "Avoiding historical information when planning"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 87,
+   "q": "Which is an internal data source for a company?",
+   "options": [
+    "Its transaction system",
+    "A public research dataset",
+    "An external news website",
+    "A national open-data portal",
+    "A competitor's published annual report"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 88,
+   "q": "Which is an external data source for a company?",
+   "options": [
+    "A public dataset",
+    "Its internal payroll database",
+    "Its internal sales transaction system",
+    "Its production sensors",
+    "Its employee attendance database"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 89,
+   "q": "Which situation is a data quality problem?",
+   "options": [
+    "The same transaction appears twice in a dataset",
+    "Every record uses a consistent date format",
+    "Each customer has a unique identifier",
+    "All required values have been recorded",
+    "Records accurately reflect the original transactions"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 90,
+   "q": "What is the main purpose of data processing before analysis?",
+   "options": [
+    "To improve data quality and prepare data for analysis",
+    "To hide all data from analysts",
+    "To ensure that every record is duplicated",
+    "To replace data collection with interface design",
+    "To avoid organizing the available information"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 91,
+   "q": "Assigning customers to predefined groups such as low-risk and high-risk is an example of what?",
+   "options": [
+    "Classification",
+    "Backup and recovery",
+    "Interface navigation",
+    "Database normalization",
+    "Physical ergonomics"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 92,
+   "q": "A business estimates its sales for next month using historical data. What activity is this?",
+   "options": [
+    "Prediction",
+    "Primary key creation",
+    "Interface consistency testing",
+    "Data deletion",
+    "Workplace redesign"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 93,
+   "q": "What is the main goal of data mining?",
+   "options": [
+    "To discover useful patterns and relationships in data",
+    "To adjust a monitor to a comfortable height",
+    "To create only empty database tables",
+    "To replace all analysis with manual copying",
+    "To make charts more decorative without adding information"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 94,
+   "q": "What is data visualization?",
+   "options": [
+    "The graphical representation of information and data",
+    "The process of deleting all incomplete records",
+    "The physical storage of data on a disk",
+    "The assignment of primary keys to database tables",
+    "The use of spoken commands to control software"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 95,
+   "q": "Which chart is most suitable for comparing sales across product categories?",
+   "options": [
+    "Bar chart",
+    "Line chart showing monthly changes",
+    "Map showing regional boundaries",
+    "Scatter plot of two numeric variables",
+    "Pie chart showing one product's market share"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 96,
+   "q": "Which chart is most suitable for showing monthly sales trends over a year?",
+   "options": [
+    "Line chart",
+    "Pie chart",
+    "Map",
+    "Scatter plot without a time axis",
+    "A single KPI card"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 97,
+   "q": "Which chart is used to display proportions of a whole?",
+   "options": [
+    "Pie chart",
+    "Line chart",
+    "Scatter plot",
+    "Geographic map",
+    "A table of primary keys"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 98,
+   "q": "Which visualization is suitable for exploring the relationship between advertising expenditure and sales?",
+   "options": [
+    "Scatter plot",
+    "Pie chart",
+    "Geographic map",
+    "A single KPI card",
+    "A navigation menu"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 99,
+   "q": "Which practice supports good data visualization?",
+   "options": [
+    "Using clear labels and choosing an appropriate chart type",
+    "Adding as many decorative graphics as possible",
+    "Removing axis labels from every chart",
+    "Using the same chart type for every dataset",
+    "Hiding important information among unrelated graphics"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 100,
+   "q": "What is Microsoft Power BI primarily used for?",
+   "options": [
+    "Business intelligence, data analysis, and interactive visualization",
+    "Physical workplace assessment",
+    "Creating primary keys without a database",
+    "Replacing operating systems",
+    "Editing audio recordings only"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 101,
+   "q": "What is the main purpose of a computer network?",
+   "options": [
+    "To enable devices to share data, resources, and services",
+    "To replace software with transmission cables",
+    "To prevent communication between applications",
+    "To store all information on disconnected devices",
+    "To eliminate the need for end devices"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 102,
+   "q": "Which situation is an example of resource sharing in a network?",
+   "options": [
+    "Several employees use one network printer",
+    "A computer processes a file without a connection",
+    "A technician replaces a damaged keyboard",
+    "A user changes the brightness of a monitor",
+    "Each employee uses an isolated printer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 103,
+   "q": "How does centralized data management benefit an organization?",
+   "options": [
+    "It provides multiple users with access to data stored in one location",
+    "It removes the need for managing information",
+    "It stores every record only on personal headphones",
+    "It requires each user to maintain a separate unconnected database",
+    "It prevents authorized users from accessing shared records"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 104,
+   "q": "How can computer networks reduce organizational costs?",
+   "options": [
+    "By allowing users to share hardware and other resources",
+    "By requiring a separate printer for every application",
+    "By replacing shared servers with isolated systems",
+    "By preventing shared access to applications",
+    "By duplicating all equipment for each user"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 105,
+   "q": "Which network benefit allows teams in different locations to work together?",
+   "options": [
+    "Collaboration",
+    "Standalone file compression",
+    "Individual device charging",
+    "Local screen calibration",
+    "Offline hardware testing"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 106,
+   "q": "Which group consists entirely of end devices listed in the lecture?",
+   "options": [
+    "Computers, smartphones, and sensors",
+    "Routers, switches, and access points",
+    "Copper cables, fiber optics, and radio links",
+    "Physical, session, and presentation layers",
+    "HTTP, FTP, and SMTP"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 107,
+   "q": "Which group consists entirely of transmission media?",
+   "options": [
+    "Copper cables, fiber optics, and wireless links",
+    "HTTP, HTTPS, and FTP",
+    "Computers, servers, and printers",
+    "Routers, switches, and access points",
+    "Browsers, applications, and databases"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 108,
+   "q": "Which group consists entirely of networking devices?",
+   "options": [
+    "Routers, switches, and access points",
+    "Smartphones, printers, and sensors",
+    "HTTP, SMTP, and IP",
+    "Copper cables, fiber optics, and wireless links",
+    "Documents, spreadsheets, and presentations"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 109,
+   "q": "What does PAN stand for?",
+   "options": [
+    "Personal Area Network",
+    "Public Access Node",
+    "Private Application Network",
+    "Packet Address Number",
+    "Protocol Allocation Network"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 110,
+   "q": "Which connection is the clearest example of a PAN?",
+   "options": [
+    "A Bluetooth connection between a smartphone and headphones",
+    "A network linking offices on different continents",
+    "A corporate network spanning several countries",
+    "The Internet connecting networks worldwide",
+    "A telecommunications backbone joining multiple cities"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 111,
+   "q": "Which statement best describes a LAN?",
+   "options": [
+    "A network covering a limited geographic area",
+    "A protocol for assigning Internet addresses",
+    "A conceptual model with seven layers",
+    "A network that must connect several countries",
+    "A satellite channel linking continents"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 112,
+   "q": "An office connects its computers and printer within one building. Which network type best fits this example?",
+   "options": [
+    "LAN",
+    "A global telecommunications backbone",
+    "WAN",
+    "PAN",
+    "An intercontinental network"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 113,
+   "q": "Which statement best describes a WAN?",
+   "options": [
+    "A network connecting multiple LANs over large distances",
+    "A rule defining the format of a web request",
+    "A single computer operating without connections",
+    "A model that describes only the physical layer",
+    "A connection limited to one person's nearby devices"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 114,
+   "q": "Which example of a WAN is given in the lecture?",
+   "options": [
+    "The Internet",
+    "Bluetooth headphones connected to a phone",
+    "A USB keyboard attached to a computer",
+    "A local printer with no network connection",
+    "A single disconnected workstation"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 115,
+   "q": "What is a communication protocol?",
+   "options": [
+    "A set of rules that enables devices to communicate",
+    "A numerical address assigned to a network device",
+    "A device used to print shared documents",
+    "A physical cable connecting two buildings",
+    "A diagram showing an organization's employees"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 116,
+   "q": "Which item is defined by communication protocols?",
+   "options": [
+    "Data formats and transmission methods",
+    "Employee salary categories",
+    "Monitor dimensions and color settings",
+    "Office seating arrangements",
+    "The physical size of a server room"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 117,
+   "q": "Why are protocols necessary for communication between devices?",
+   "options": [
+    "They provide common rules for interpreting and exchanging data",
+    "They make all network devices perform the same task",
+    "They replace every application with a router",
+    "They ensure that every device has identical hardware",
+    "They remove the need for any communication channel"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 118,
+   "q": "Which group contains only communication protocols listed in the lecture?",
+   "options": [
+    "HTTP, FTP, and SMTP",
+    "Physical, session, and application",
+    "Router, switch, and printer",
+    "Copper, fiber, and wireless",
+    "LAN, PAN, and WAN"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 119,
+   "q": "What does OSI stand for?",
+   "options": [
+    "Open Systems Interconnection",
+    "Open Software Implementation",
+    "Optical Signal Interface",
+    "Online Service Integration",
+    "Organized Server Infrastructure"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 120,
+   "q": "Which organization developed the OSI conceptual framework?",
+   "options": [
+    "International Organization for Standardization (ISO)",
+    "United Nations Development Programme (UNDP)",
+    "International Monetary Fund (IMF)",
+    "World Trade Organization (WTO)",
+    "World Health Organization (WHO)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 121,
+   "q": "How many layers are in the OSI model?",
+   "options": [
+    "Seven",
+    "Five",
+    "Six",
+    "Four",
+    "Eight"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 122,
+   "q": "What is a main purpose of the OSI model?",
+   "options": [
+    "To standardize communication functions and support interoperability",
+    "To assign a salary to every network administrator",
+    "To restrict communication to identical hardware",
+    "To specify the purchase price of networking devices",
+    "To replace all network protocols with one application"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 123,
+   "q": "Which sequence lists the OSI layers from lowest to highest?",
+   "options": [
+    "Physical, Data Link, Network, Transport, Session, Presentation, Application",
+    "Data Link, Physical, Transport, Network, Presentation, Session, Application",
+    "Physical, Network, Data Link, Session, Transport, Presentation, Application",
+    "Physical, Data Link, Transport, Network, Session, Application, Presentation",
+    "Application, Presentation, Session, Transport, Network, Data Link, Physical"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 124,
+   "q": "Which OSI layer transmits raw bits through the physical medium?",
+   "options": [
+    "Physical layer",
+    "Session layer",
+    "Data Link layer",
+    "Network layer",
+    "Application layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 125,
+   "q": "Which OSI layer organizes data into frames for communication over a link?",
+   "options": [
+    "Data Link layer",
+    "Transport layer",
+    "Presentation layer",
+    "Physical layer",
+    "Application layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 126,
+   "q": "Which OSI layer determines the path that data takes between networks?",
+   "options": [
+    "Network layer",
+    "Presentation layer",
+    "Physical layer",
+    "Data Link layer",
+    "Session layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 127,
+   "q": "TCP and UDP are associated with which OSI layer?",
+   "options": [
+    "Transport layer",
+    "Physical layer",
+    "Data Link layer",
+    "Presentation layer",
+    "Session layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 128,
+   "q": "Which OSI layer establishes and manages communication sessions?",
+   "options": [
+    "Session layer",
+    "Presentation layer",
+    "Physical layer",
+    "Network layer",
+    "Data Link layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 129,
+   "q": "Which OSI layer handles data representation and encryption in the model shown?",
+   "options": [
+    "Presentation layer",
+    "Network layer",
+    "Session layer",
+    "Data Link layer",
+    "Physical layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 130,
+   "q": "Which OSI layer allows applications to access network services?",
+   "options": [
+    "Application layer",
+    "Physical layer",
+    "Data Link layer",
+    "Transport layer",
+    "Network layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 131,
+   "q": "How many layers are in the TCP/IP model presented in the lecture?",
+   "options": [
+    "Four",
+    "Five",
+    "Three",
+    "Seven",
+    "Six"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 132,
+   "q": "Which model forms the practical foundation of Internet communication?",
+   "options": [
+    "TCP/IP model",
+    "A model containing only the session layer",
+    "A model containing only the physical layer",
+    "The OSI seven-layer reference model alone",
+    "A model containing only the presentation layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 133,
+   "q": "Which is an advantage of the TCP/IP model identified in the lecture?",
+   "options": [
+    "A simpler structure and practical implementation",
+    "Use only within personal Bluetooth networks",
+    "A requirement for seven separate layers",
+    "Operation without communication protocols",
+    "Exclusive support for one hardware manufacturer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 134,
+   "q": "Which TCP/IP layer includes IPv4 and IPv6 in the lecture's diagram?",
+   "options": [
+    "Internet layer",
+    "Transport layer",
+    "Physical layer of the OSI model",
+    "Network interface layer",
+    "Application layer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 135,
+   "q": "Which pair belongs to the TCP/IP transport layer?",
+   "options": [
+    "TCP and UDP",
+    "HTTP and HTTPS",
+    "DNS and SMTP",
+    "Ethernet and wireless LAN",
+    "IPv4 and IPv6"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 136,
+   "q": "Which OSI layers are grouped into the TCP/IP application layer in the comparison diagram?",
+   "options": [
+    "Application, Presentation, and Session",
+    "Physical, Transport, and Application",
+    "Physical, Data Link, and Network",
+    "Network, Transport, and Session",
+    "Data Link, Transport, and Presentation"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 137,
+   "q": "Which OSI layers correspond to the TCP/IP network interface layer?",
+   "options": [
+    "Physical and Data Link",
+    "Transport and Session",
+    "Session and Presentation",
+    "Network and Transport",
+    "Presentation and Application"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 138,
+   "q": "What is the main function of an IP address?",
+   "options": [
+    "To identify a device for network communication",
+    "To define the number of OSI layers",
+    "To replace the need for a transmission medium",
+    "To determine the display resolution of a device",
+    "To specify the purchase price of a router"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 139,
+   "q": "Which is the IPv4 address example shown in the lecture?",
+   "options": [
+    "192.168.1.10",
+    "TCP/IP",
+    "HTTP",
+    "LAN",
+    "2001:db8::1"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 140,
+   "q": "Which is the IPv6 address example shown in the lecture?",
+   "options": [
+    "2001:db8::1",
+    "172.16.0.5",
+    "192.168.1.20",
+    "10.0.0.1",
+    "192.168.1.10"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 141,
+   "q": "What is routing in a computer network?",
+   "options": [
+    "Selecting a path for data to travel from source to destination",
+    "Converting a document into a printed page",
+    "Assigning graphical icons to applications",
+    "Creating an offline copy of a spreadsheet",
+    "Changing the brightness of a network display"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 142,
+   "q": "Which device connects networks and forwards packets between them?",
+   "options": [
+    "Router",
+    "Local temperature sensor",
+    "Network printer",
+    "Display monitor",
+    "Keyboard"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 143,
+   "q": "What happens first when a user opens a website in the process described in the lecture?",
+   "options": [
+    "The browser sends a request",
+    "The router creates the website's content",
+    "The server sends a response before receiving a request",
+    "The server prints a copy of the webpage",
+    "The webpage appears before any communication occurs"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 144,
+   "q": "What happens after a web server receives a browser's request in the lecture's simplified sequence?",
+   "options": [
+    "The server sends a response",
+    "The browser sends its first request",
+    "The user disconnects all routers",
+    "The transmission channel becomes a database",
+    "The server replaces the browser's hardware"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 145,
+   "q": "What is the main purpose of telecommunication systems?",
+   "options": [
+    "To transmit and receive information over distance",
+    "To store information only on isolated local devices",
+    "To prevent remote users from communicating",
+    "To replace all transmission channels with printed reports",
+    "To limit information exchange to one room"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 146,
+   "q": "Which types of information can telecommunication systems transmit?",
+   "options": [
+    "Voice, data, and video",
+    "Only processor instructions stored locally",
+    "Only information about network addresses",
+    "Only printed text on paper",
+    "Only database table names"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 147,
+   "q": "What is the function of a transmitter in a telecommunication system?",
+   "options": [
+    "To encode information and convert it into signals",
+    "To decode received signals into usable information",
+    "To carry signals between the transmitter and receiver",
+    "To store all organizational records in database tables",
+    "To display the final information to its recipient"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 148,
+   "q": "What is the role of a transmission channel?",
+   "options": [
+    "To carry signals from the transmitter to the receiver",
+    "To calculate the organization's operational budget",
+    "To set the user's application preferences",
+    "To generate the original information at the source",
+    "To decode signals into usable information"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 149,
+   "q": "Which telecommunication system uses satellites to transmit signals over long distances?",
+   "options": [
+    "Satellite system",
+    "Local Bluetooth personal network",
+    "Copper-only wired system",
+    "A printer connected directly by USB",
+    "Standalone offline system"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 150,
+   "q": "Which economic activity illustrates an application of network and telecommunication systems?",
+   "options": [
+    "Online banking and digital payments",
+    "Keeping all business information disconnected",
+    "Recording transactions only in a paper notebook",
+    "Using an isolated calculator without data exchange",
+    "Delivering every message only by physical mail"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 151,
+   "q": "What is the primary purpose of cybersecurity?",
+   "options": [
+    "Protect digital systems and information from attacks and unauthorized access",
+    "Increase processor clock speeds",
+    "Replace all computer networks",
+    "Design multimedia presentations",
+    "Reduce the size of databases"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 152,
+   "q": "Which asset is explicitly protected by cybersecurity?",
+   "options": [
+    "Cloud services",
+    "Office furniture",
+    "Printed advertising banners",
+    "Mechanical keyboards only",
+    "Non-digital filing cabinets"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 153,
+   "q": "Which objective of cybersecurity helps an organization continue operating during security incidents?",
+   "options": [
+    "Maintain business continuity",
+    "Eliminate software updates",
+    "Publish confidential passwords",
+    "Disable all backups",
+    "Remove access restrictions"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 154,
+   "q": "Which cybersecurity objective focuses on preventing people from viewing restricted resources?",
+   "options": [
+    "Prevent unauthorized access",
+    "Increase screen resolution",
+    "Improve printer speed",
+    "Expand physical office space",
+    "Automate slide transitions"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 155,
+   "q": "Why is cybersecurity especially important for modern organizations?",
+   "options": [
+    "They increasingly depend on digital technologies",
+    "They no longer store any digital data",
+    "All cyber threats have disappeared",
+    "They operate without networks or applications",
+    "Every employee has unrestricted access"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 156,
+   "q": "Which of the following is a protected area mentioned in the lecture?",
+   "options": [
+    "Industrial control systems",
+    "Paper notebook covers",
+    "Mechanical door hinges",
+    "Office lighting fixtures",
+    "Plastic storage trays"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 157,
+   "q": "Which situation best illustrates a cyber attack?",
+   "options": [
+    "An intruder attempts to steal data from a network",
+    "A company buys a new laptop",
+    "A user changes the desktop wallpaper",
+    "A student prints a public document",
+    "A technician cleans a monitor"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 158,
+   "q": "What is a cyber threat?",
+   "options": [
+    "A potential cause of harm to digital systems or data",
+    "A completed monthly sales report",
+    "A standard keyboard layout",
+    "A network cable connector",
+    "An approved employee holiday"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 159,
+   "q": "Which cybersecurity objective specifically concerns the safe exchange of information?",
+   "options": [
+    "Ensure secure communication",
+    "Increase monitor brightness",
+    "Shorten spreadsheet formulas",
+    "Remove all system passwords",
+    "Reduce the number of web pages"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 160,
+   "q": "How can good cybersecurity help a company's public image?",
+   "options": [
+    "By protecting its organizational reputation",
+    "By guaranteeing that competitors stop trading",
+    "By eliminating the need for customer service",
+    "By replacing business policies with advertisements",
+    "By making every document public"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 161,
+   "q": "Which of the following is NOT a main cybersecurity objective presented in the lecture?",
+   "options": [
+    "Allow unrestricted access to confidential files",
+    "Protect sensitive information",
+    "Reduce cyber risks",
+    "Maintain business continuity",
+    "Prevent unauthorized access"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 162,
+   "q": "What does information security (InfoSec) protect information against?",
+   "options": [
+    "Unauthorized access, disclosure, modification, and destruction",
+    "Only slow internet connections",
+    "Only physical damage to monitors",
+    "Only outdated graphic design",
+    "Only incorrect screen brightness"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 163,
+   "q": "What does the CIA Triad stand for?",
+   "options": [
+    "Confidentiality, Integrity, and Availability",
+    "Connectivity, Internet, and Authentication",
+    "Confidentiality, Inspection, and Automation",
+    "Control, Identification, and Access",
+    "Computing, Integration, and Analysis"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 164,
+   "q": "Which CIA principle ensures that only authorized people can access information?",
+   "options": [
+    "Confidentiality",
+    "Integrity",
+    "Availability",
+    "Scalability",
+    "Compatibility"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 165,
+   "q": "Which CIA principle requires information to remain accurate and unaltered without permission?",
+   "options": [
+    "Integrity",
+    "Availability",
+    "Confidentiality",
+    "Portability",
+    "Interoperability"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 166,
+   "q": "Which CIA principle ensures that services can be accessed when authorized users need them?",
+   "options": [
+    "Availability",
+    "Confidentiality",
+    "Integrity",
+    "Anonymity",
+    "Compression"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 167,
+   "q": "A student illegally changes another student's grade. Which CIA principle is violated?",
+   "options": [
+    "Integrity",
+    "Availability",
+    "Scalability",
+    "Portability",
+    "Redundancy"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 168,
+   "q": "An online banking service is inaccessible to customers for several hours. Which CIA principle is most directly affected?",
+   "options": [
+    "Availability",
+    "Integrity",
+    "Confidentiality",
+    "Authentication",
+    "Encoding"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 169,
+   "q": "A confidential company document is viewed by someone without permission. Which CIA principle is violated?",
+   "options": [
+    "Confidentiality",
+    "Availability",
+    "Integrity",
+    "Reliability",
+    "Consistency"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 170,
+   "q": "Which measure is an example of protecting confidentiality in the lecture?",
+   "options": [
+    "Password-protected files",
+    "Disabling all user accounts permanently",
+    "Publishing customer details publicly",
+    "Deleting all financial records",
+    "Allowing anonymous edits to grades"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 171,
+   "q": "What question does authentication answer?",
+   "options": [
+    "Who are you?",
+    "What files may you edit?",
+    "How much storage is available?",
+    "Which network is the fastest?",
+    "How large is the database?"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 172,
+   "q": "What question does authorization answer?",
+   "options": [
+    "What are you allowed to do?",
+    "What is your identity?",
+    "How old is your computer?",
+    "What color is the interface?",
+    "When was the application installed?"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 173,
+   "q": "An employee proves their identity by logging in with credentials. What process is this?",
+   "options": [
+    "Authentication",
+    "Authorization",
+    "Data compression",
+    "Database normalization",
+    "Video rendering"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 174,
+   "q": "A manager grants an employee permission to open payroll records. What process is this?",
+   "options": [
+    "Authorization",
+    "Authentication",
+    "Image encryption",
+    "Malware propagation",
+    "Network routing"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 175,
+   "q": "What is access control?",
+   "options": [
+    "Limiting resource access according to roles and permissions",
+    "Allowing every user to edit every file",
+    "Deleting company security policies",
+    "Removing all account verification",
+    "Replacing databases with spreadsheets"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 176,
+   "q": "What is a security policy?",
+   "options": [
+    "A set of rules and procedures designed to protect information and systems",
+    "A tool used only to enlarge images",
+    "A method for creating animation frames",
+    "A list of unrestricted public passwords",
+    "A protocol for converting video to audio"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 177,
+   "q": "Which of these is an example of an organizational security policy?",
+   "options": [
+    "Acceptable use policy",
+    "Random desktop wallpaper",
+    "Screen color palette",
+    "Audio sampling frequency",
+    "Printer paper size"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 178,
+   "q": "Why do organizations use role-based access restrictions?",
+   "options": [
+    "To give employees access only to information needed for their work",
+    "To ensure everyone has administrator privileges",
+    "To remove the need for any rules",
+    "To prevent all legitimate data use",
+    "To publish internal documents automatically"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 179,
+   "q": "Which example best illustrates information integrity?",
+   "options": [
+    "Financial records remain accurate and cannot be changed without permission",
+    "A database is always visible to the public",
+    "All files are deleted after each login",
+    "Anyone can obtain a private document",
+    "A website has colorful navigation buttons"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 180,
+   "q": "What is data protection?",
+   "options": [
+    "Safeguarding information from loss, theft, unauthorized access, and misuse",
+    "Increasing the brightness of computer displays",
+    "Converting every file into an image",
+    "Making confidential reports publicly available",
+    "Removing passwords from company accounts"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 181,
+   "q": "Which type of data is specifically identified in the data-protection section?",
+   "options": [
+    "Financial data",
+    "Weather forecast charts only",
+    "Computer wallpaper themes",
+    "Mouse cursor styles",
+    "Desktop icon arrangements"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 182,
+   "q": "Which is a stated benefit of data protection?",
+   "options": [
+    "Preventing data loss",
+    "Eliminating the need for information systems",
+    "Guaranteeing unlimited storage",
+    "Removing all cyber risks permanently",
+    "Making all private records public"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 183,
+   "q": "What is encryption?",
+   "options": [
+    "Converting readable plaintext into unreadable ciphertext",
+    "Restoring deleted hardware components",
+    "Increasing file size without changing content",
+    "Sharing passwords with anonymous users",
+    "Displaying private information on a public site"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 184,
+   "q": "What is plaintext?",
+   "options": [
+    "Readable information before encryption",
+    "A virus stored on a computer",
+    "An encrypted message that nobody can decode",
+    "A damaged computer memory module",
+    "An operating system security update"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 185,
+   "q": "What is ciphertext?",
+   "options": [
+    "The unreadable output produced by encryption",
+    "The original readable message",
+    "A physical network cable",
+    "An antivirus scan report",
+    "A user's legal name"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 186,
+   "q": "What is needed to decrypt encrypted information as described in the lecture?",
+   "options": [
+    "The correct decryption key",
+    "A larger monitor",
+    "A multimedia editor",
+    "A keyboard with extra keys",
+    "A paper-based invoice"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 187,
+   "q": "Which statement describes the purpose of encryption?",
+   "options": [
+    "It helps prevent unauthorized people from reading information",
+    "It guarantees uninterrupted electricity",
+    "It physically repairs damaged disk drives",
+    "It prevents every possible phishing message",
+    "It removes the need for access control"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 188,
+   "q": "What does multi-factor authentication (MFA) require?",
+   "options": [
+    "Verification using more than one authentication factor",
+    "Entering the same password twice as two independent factors",
+    "Using only a username without verification",
+    "Allowing unrestricted anonymous access",
+    "Turning off account verification"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 189,
+   "q": "Which key is normally used by a signer to create a digital signature?",
+   "options": [
+    "The signer's private key",
+    "The recipient's public browsing history",
+    "A website's domain name",
+    "The signer's monitor password hint",
+    "An antivirus license number"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 190,
+   "q": "Which key is normally used to verify a digital signature?",
+   "options": [
+    "The signer's public key",
+    "The verifier's keyboard serial number",
+    "A random Wi-Fi network name",
+    "The signer's private key disclosed to everyone",
+    "A file extension"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 191,
+   "q": "What is the role of a cryptographic hash in digital signatures?",
+   "options": [
+    "Providing a digest used to detect alterations to signed content",
+    "Increasing the screen resolution of a document",
+    "Translating text into a different spoken language",
+    "Replacing the entire database server",
+    "Creating a physical backup drive"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 192,
+   "q": "What is malware?",
+   "options": [
+    "Malicious software designed to damage systems, steal information, or disrupt operations",
+    "Software used exclusively for legitimate document editing",
+    "A standard network cable type",
+    "A physical storage shelf",
+    "A type of computer monitor"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 193,
+   "q": "Which malware type can self-replicate and spread across networks?",
+   "options": [
+    "Worm",
+    "Trojan horse",
+    "Spyware",
+    "Ransomware",
+    "Firewall"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 194,
+   "q": "Which type of malware disguises itself as a legitimate program?",
+   "options": [
+    "Trojan horse",
+    "Worm",
+    "Firewall",
+    "Backup utility",
+    "Access-control policy"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 195,
+   "q": "Which malicious software primarily attempts to secretly collect user information?",
+   "options": [
+    "Spyware",
+    "Ransomware",
+    "Firewall",
+    "Patch manager",
+    "Presentation software"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 196,
+   "q": "Which malicious software commonly demands payment after restricting access to data?",
+   "options": [
+    "Ransomware",
+    "Spyware",
+    "Screen recorder",
+    "Device driver",
+    "File archiver"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 197,
+   "q": "Which of the following is a malware infection method listed in the lecture?",
+   "options": [
+    "Infected USB devices",
+    "Approved paper forms",
+    "Unplugged display cables",
+    "Printed instruction manuals",
+    "Mechanical mouse pads"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 198,
+   "q": "Which symptom may indicate a malware infection?",
+   "options": [
+    "Unexpected pop-up windows",
+    "A properly authorized login",
+    "A successful scheduled backup",
+    "Normal software installation by an administrator",
+    "A correctly displayed web page"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 199,
+   "q": "What is the main purpose of antivirus software?",
+   "options": [
+    "Detect and help remove malicious software",
+    "Increase internet subscription prices",
+    "Create digital advertisements automatically",
+    "Store printed paper files",
+    "Replace all authentication methods"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 200,
+   "q": "How does a firewall improve network security?",
+   "options": [
+    "By filtering network traffic according to security rules",
+    "By automatically decrypting every user's private files",
+    "By increasing monitor resolution",
+    "By physically replacing hard drives",
+    "By creating stronger electrical power supplies"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 201,
+   "q": "How does the World Wide Web relate to the Internet?",
+   "options": [
+    "The Web is a service that operates over the Internet",
+    "The Web is the physical network connecting all devices",
+    "The Web replaces the Internet when a browser opens",
+    "The Web is used only for email delivery",
+    "The Web is a private network inside each computer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 202,
+   "q": "In a web interaction, what is the role of the client?",
+   "options": [
+    "To request a resource or service from a server",
+    "To host every website on the Internet",
+    "To translate every domain name worldwide",
+    "To assign addresses to all network devices",
+    "To approve every packet crossing the network"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 203,
+   "q": "Which task is typically performed by a web server?",
+   "options": [
+    "Responding to a browser request with a webpage or other resource",
+    "Measuring the user's keyboard pressure",
+    "Setting the user's monitor resolution",
+    "Charging the user's mobile device",
+    "Replacing the user's operating system"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 204,
+   "q": "What is the main purpose of DNS?",
+   "options": [
+    "To resolve domain names to IP addresses",
+    "To encrypt every file on a computer",
+    "To create the visual layout of a webpage",
+    "To synchronize messages between email folders",
+    "To compress photographs for online sharing"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 205,
+   "q": "Why do users commonly enter domain names rather than IP addresses?",
+   "options": [
+    "Domain names are usually easier to remember",
+    "Domain names eliminate the need for routing",
+    "Domain names store the complete website locally",
+    "Domain names prevent every kind of cyberattack",
+    "Domain names increase a computer's processing power"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 206,
+   "q": "Which statement correctly describes the relationship between URLs and URIs?",
+   "options": [
+    "A URL is a type of URI that specifies how to locate a resource",
+    "Every URI must be an IP address",
+    "A URL can identify only an email account",
+    "A URI is always a physical network device",
+    "URLs and URIs are both web programming languages"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 207,
+   "q": "What does HTTPS add to HTTP communication?",
+   "options": [
+    "Encryption and authentication of the connection using TLS",
+    "Guaranteed accuracy of all website content",
+    "Automatic removal of all online advertisements",
+    "Unlimited free storage for the browser",
+    "A guarantee that the website owner is trustworthy"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 208,
+   "q": "Which web technology primarily defines page structure and content?",
+   "options": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SMTP",
+    "DNS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 209,
+   "q": "Which web technology primarily controls colors, fonts, and layout?",
+   "options": [
+    "CSS",
+    "HTML",
+    "SMTP",
+    "POP3",
+    "DNS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 210,
+   "q": "Which task is a typical use of JavaScript on a webpage?",
+   "options": [
+    "Updating displayed content when a user interacts with a control",
+    "Replacing the physical cables of a network",
+    "Defining the encryption standard used by a router",
+    "Assigning a permanent IP address to a server",
+    "Cooling the hardware in a data center"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 211,
+   "q": "Which protocol is primarily used to send email?",
+   "options": [
+    "SMTP",
+    "IMAP",
+    "POP3",
+    "DNS",
+    "FTP"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 212,
+   "q": "Which email protocol is designed to synchronize mailboxes across devices while keeping messages on the server?",
+   "options": [
+    "IMAP",
+    "SMTP",
+    "HTTP",
+    "FTP",
+    "IP"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 213,
+   "q": "Which protocol commonly downloads email messages from a server to a mail client?",
+   "options": [
+    "POP3",
+    "SMTP",
+    "DNS",
+    "TCP",
+    "HTTPS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 214,
+   "q": "Which task belongs primarily to front-end web development?",
+   "options": [
+    "Building the page layout and interactive controls users see",
+    "Maintaining a server-side database backup",
+    "Configuring storage hardware in a data center",
+    "Implementing a server's database access layer",
+    "Managing server-side authentication logic"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 215,
+   "q": "Which task belongs primarily to back-end web development?",
+   "options": [
+    "Processing requests and retrieving data from a server-side database",
+    "Choosing the colors of a page heading",
+    "Setting spacing between navigation links with CSS",
+    "Drawing a static logo for a website",
+    "Adjusting the visible font size of a button"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 216,
+   "q": "What is the primary purpose of a content management system (CMS)?",
+   "options": [
+    "To create, organize, and publish website content",
+    "To manufacture network adapters",
+    "To replace all internet communication protocols",
+    "To calibrate mobile phone sensors",
+    "To manage only a computer's power supply"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 217,
+   "q": "Which pair contains examples of CMS platforms discussed in the lecture?",
+   "options": [
+    "WordPress and Joomla",
+    "SMTP and IMAP",
+    "HTML and CSS",
+    "GPS and GSM",
+    "IaaS and PaaS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 218,
+   "q": "What distinguishes a dynamic website from a static website?",
+   "options": [
+    "A dynamic website can generate content using data and user requests",
+    "A dynamic website must display continuous animation",
+    "A static website cannot contain images",
+    "A dynamic website works without software or hardware",
+    "A static website cannot be accessed through a browser"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 219,
+   "q": "What is the main purpose of web traffic analysis?",
+   "options": [
+    "To understand visits, user behavior, and website outcomes",
+    "To measure the weight of network hardware",
+    "To determine the temperature of an office",
+    "To replace the website's content automatically",
+    "To prevent all users from leaving a website"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 220,
+   "q": "Which question can a website heatmap help investigate?",
+   "options": [
+    "Which areas of a page receive the most user interaction?",
+    "Which server processor has the highest clock speed?",
+    "Which network cable is physically damaged?",
+    "Which employees need a new keyboard?",
+    "Which mobile network owns a radio tower?"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 221,
+   "q": "What is cloud computing?",
+   "options": [
+    "Providing computing resources and services over a network on demand",
+    "Storing data only on an isolated personal computer",
+    "Printing documents before sharing them",
+    "Replacing software applications with paper forms",
+    "Connecting devices only through a local USB cable"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 222,
+   "q": "Which situation best illustrates cloud-based collaboration?",
+   "options": [
+    "Employees in different cities jointly edit a shared online document",
+    "Each employee edits an independent offline copy with no sharing",
+    "A team prints files and stores them in separate cabinets",
+    "One user disconnects a laptop before opening a local file",
+    "Employees exchange handwritten revisions by post"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 223,
+   "q": "What is a potential business consequence of a cloud service outage?",
+   "options": [
+    "Users may temporarily lose access to hosted applications or data",
+    "All local computers permanently lose their processors",
+    "Every file automatically becomes public",
+    "All internet protocols stop existing",
+    "Every employee's device is physically damaged"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 224,
+   "q": "Why are data centers essential to cloud services?",
+   "options": [
+    "They house the servers, storage, and networking that deliver services",
+    "They provide only furniture for remote employees",
+    "They replace the need for electricity",
+    "They store information exclusively on paper",
+    "They prevent users from connecting remotely"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 225,
+   "q": "What does virtualization allow a physical server to do?",
+   "options": [
+    "Run multiple isolated virtual machines",
+    "Operate without a processor or memory",
+    "Store data without any storage device",
+    "Eliminate all software maintenance permanently",
+    "Provide unlimited capacity without hardware resources"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 226,
+   "q": "Which service model provides virtual machines, storage, and networking for customers to manage?",
+   "options": [
+    "Infrastructure as a Service (IaaS)",
+    "Software as a Service (SaaS)",
+    "Platform as a Service (PaaS)",
+    "Personal Area Network (PAN)",
+    "Content Management System (CMS)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 227,
+   "q": "Which cloud service model provides an environment for developing and deploying applications without managing the underlying infrastructure directly?",
+   "options": [
+    "Platform as a Service (PaaS)",
+    "Infrastructure as a Service (IaaS)",
+    "Software as a Service (SaaS)",
+    "Local Area Network (LAN)",
+    "Domain Name System (DNS)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 228,
+   "q": "Using an online application maintained by its provider is an example of which cloud model?",
+   "options": [
+    "Software as a Service (SaaS)",
+    "Infrastructure as a Service (IaaS)",
+    "Platform as a Service (PaaS)",
+    "Wide Area Network (WAN)",
+    "Transmission Control Protocol (TCP)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 229,
+   "q": "What does cloud scalability mean?",
+   "options": [
+    "Adjusting computing resources to match changing demand",
+    "Making every file publicly accessible",
+    "Maintaining exactly the same capacity regardless of workload",
+    "Removing all users from a service during busy periods",
+    "Replacing online applications with printed reports"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 230,
+   "q": "Which technology primarily provides geographic positioning information?",
+   "options": [
+    "GPS",
+    "GSM",
+    "SMTP",
+    "CSS",
+    "IMAP"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 231,
+   "q": "What is the main role of GSM in mobile technologies?",
+   "options": [
+    "Supporting cellular communication services",
+    "Determining a webpage's visual layout",
+    "Managing records in a blockchain",
+    "Resolving internet domain names",
+    "Creating virtual machines in a data center"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 232,
+   "q": "Which mobile technology is commonly used for short-range contactless payments?",
+   "options": [
+    "NFC",
+    "GPS",
+    "SMTP",
+    "POP3",
+    "DNS"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 233,
+   "q": "What is a key characteristic of distributed computing?",
+   "options": [
+    "Several networked computers share processing tasks",
+    "One isolated computer performs every task without a network",
+    "All calculations are performed manually before data entry",
+    "Only printed documents are exchanged between computers",
+    "Every device must store data on the same physical USB drive"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 234,
+   "q": "What is cloud storage?",
+   "options": [
+    "Storing data on remote systems accessible through a network",
+    "Saving data only to a disconnected internal drive",
+    "Keeping printed documents in a secure cabinet",
+    "Recording data only in a processor's registers",
+    "Copying files exclusively to a local optical disc"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 235,
+   "q": "Why should a business review access permissions for cloud data?",
+   "options": [
+    "To ensure users can access only the information they are authorized to use",
+    "To give all customers administrator privileges",
+    "To remove the need for backups",
+    "To eliminate all network delays",
+    "To make every file accessible without authentication"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 236,
+   "q": "Which example best illustrates multimedia?",
+   "options": [
+    "An interactive lesson combining text, diagrams, and narration",
+    "A table containing only numerical results",
+    "A folder of standalone audio recordings",
+    "A list of terms presented as plain text",
+    "A gallery of unlabeled product photographs"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 237,
+   "q": "Why might a lecturer add a narrated animation to a written explanation of a process?",
+   "options": [
+    "It shows how the steps change over time while explaining what happens",
+    "It ensures every student learns at the same speed",
+    "It makes the source files smaller by default",
+    "It removes the need to check the content for accuracy",
+    "It makes the animation accessible without any sound or captions"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 238,
+   "q": "Which multimedia element is most suitable for demonstrating what a machine sounds like during normal operation?",
+   "options": [
+    "An audio recording",
+    "A text heading",
+    "A product illustration",
+    "A still photograph",
+    "A workflow diagram"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 239,
+   "q": "Which element most directly illustrates a predicted change that has never been filmed?",
+   "options": [
+    "An animation of the predicted change",
+    "An unedited audio recording",
+    "A transcript of a voice recording",
+    "A static image of the starting state",
+    "A plain list of dates"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 240,
+   "q": "How is text represented in a digital file?",
+   "options": [
+    "Characters are mapped to codes that are stored as bytes",
+    "Each character is saved as a series of video frames",
+    "Characters are stored as separate audio samples",
+    "Each character is recorded as a color value only",
+    "Each character is stored as a compressed photograph"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 241,
+   "q": "What is a pixel in a raster image?",
+   "options": [
+    "An individual picture element with a color or intensity value",
+    "A mathematical rule defining an entire curve",
+    "A frame used to synchronize audio with video",
+    "A unit that measures the duration of a sound",
+    "An instruction that sets the speed of an animation"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 242,
+   "q": "What distinguishes vector graphics from raster graphics?",
+   "options": [
+    "Vector graphics describe shapes mathematically; raster graphics store a grid of pixels",
+    "Vector graphics store audio samples; raster graphics store text characters",
+    "Vector graphics require video playback; raster graphics require audio playback",
+    "Vector graphics store pixels; raster graphics describe paths and curves",
+    "Vector graphics use only photographs; raster graphics use only line drawings"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 243,
+   "q": "Which representation is most suitable for a logo that must stay sharp at both business-card and billboard sizes?",
+   "options": [
+    "Vector graphics",
+    "A single video frame",
+    "A screenshot cropped from a webpage",
+    "A small raster thumbnail",
+    "A low-resolution JPEG"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 244,
+   "q": "Why can a digital photograph require more storage than a short plain-text file?",
+   "options": [
+    "The photograph stores color or intensity information for many pixels",
+    "The photograph stores only its filename",
+    "Plain text always uses more data per item than a photograph",
+    "Plain text stores a separate sound recording per character",
+    "The photograph stores one character for each paragraph"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 245,
+   "q": "All else being equal, why does a video usually need more storage than a single still image?",
+   "options": [
+    "It stores a sequence of frames and may also contain audio",
+    "It stores only the final frame at the end of playback",
+    "It represents the entire scene as a single pixel",
+    "It records only the filename and the video's duration",
+    "It contains only the text used for the title"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 246,
+   "q": "What is the main purpose of multimedia compression?",
+   "options": [
+    "To reduce the amount of data needed for storage or transmission",
+    "To increase file size so more storage is used",
+    "To increase the physical size of the display",
+    "To convert every file into the same media type",
+    "To prevent later editing of all media"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 247,
+   "q": "Which statement correctly compares lossless and lossy compression?",
+   "options": [
+    "Lossless compression allows exact reconstruction; lossy compression discards some information",
+    "The terms describe whether a file contains sound",
+    "Both methods allow exact reconstruction by definition",
+    "Both methods require discarding original information",
+    "Lossy compression allows exact reconstruction; lossless compression discards some information"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 248,
+   "q": "Which task most clearly calls for lossless compression?",
+   "options": [
+    "Archiving source images whose original pixel values must be preserved",
+    "Sharing draft photos where only the general appearance matters",
+    "Distributing short clips when file size matters more than detail",
+    "Streaming footage when minor quality loss is acceptable",
+    "Posting a preview where small visual changes are acceptable"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 249,
+   "q": "Why is a compressed video often easier to send online?",
+   "options": [
+    "Fewer bytes need to be transferred at the same connection speed",
+    "Compression automatically increases the speed of the network",
+    "Compression guarantees the receiver has compatible software",
+    "Compression removes the need for a network connection",
+    "The original video becomes independent of file format"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 250,
+   "q": "Which file extension is commonly used for digital audio?",
+   "options": [
+    ".mp3",
+    ".pptx",
+    ".svg",
+    ".png",
+    ".txt"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 251,
+   "q": "Which action is part of video editing?",
+   "options": [
+    "Trimming unwanted footage and arranging the remaining clips",
+    "Choosing a camera location before recording begins",
+    "Collecting customer feedback before developing a concept",
+    "Estimating the annual budget for a campaign",
+    "Selecting the market segment before drafting an advertisement"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 252,
+   "q": "How does augmented reality enhance an experience?",
+   "options": [
+    "It overlays digital content on a view of the real environment",
+    "It removes the visual elements from a presentation",
+    "It reduces the file size of a recorded video",
+    "It replaces all real-world views with a completely virtual environment",
+    "It converts vector shapes into a pixel grid"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 253,
+   "q": "A company wants to show a product demonstration on social media. Which asset meets that goal most directly?",
+   "options": [
+    "A short video showing the product in use",
+    "A slide displaying only the website address",
+    "A workflow diagram for the company's approval process",
+    "An audio file containing only the brand's theme music",
+    "A spreadsheet listing the cost of production"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 254,
+   "q": "Which task belongs to the planning stage of a business process?",
+   "options": [
+    "Defining the objective, resources, and order of activities",
+    "Removing all milestones from an existing schedule",
+    "Archiving finished materials before assigning responsibilities",
+    "Recording final results after the activities have ended",
+    "Publishing conclusions before deciding what to measure"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 255,
+   "q": "Which format best communicates the order of tasks and decision points in an order-fulfillment process?",
+   "options": [
+    "A flowchart",
+    "A line chart of monthly sales",
+    "A pie chart of annual expenses",
+    "A photograph of the warehouse entrance",
+    "A portrait of the project manager"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 256,
+   "q": "What is a key role of written text in business process documentation?",
+   "options": [
+    "To state responsibilities, rules, and instructions precisely",
+    "To record the sound of each machine in use",
+    "To replace the need to define process steps",
+    "To show live motion without images",
+    "To summarize proportions in a circular chart"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 257,
+   "q": "Why is a demonstration video useful for training employees to use a checkout terminal?",
+   "options": [
+    "It lets them observe the sequence of actions and replay difficult steps",
+    "It automatically evaluates whether they can perform the procedure",
+    "It captures the user's performance without any additional setup",
+    "It replaces the need to update training materials when the terminal changes",
+    "It ensures every employee receives individual coaching"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 258,
+   "q": "Why should a team identify its target audience early in advertisement development?",
+   "options": [
+    "The audience informs the message, tone, and choice of media",
+    "The audience makes the campaign objective unnecessary",
+    "The audience determines the file format regardless of channel",
+    "The audience removes the need to test whether the message is clear",
+    "The audience determines the final conversion rate before publication"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 259,
+   "q": "Which activity belongs to research and concept development for an advertisement?",
+   "options": [
+    "Studying customer needs and outlining a message before production",
+    "Publishing the completed campaign and tracking results",
+    "Exporting the approved video to its final format",
+    "Replacing the published video with a corrected export",
+    "Archiving the final media assets after distribution"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 260,
+   "q": "What should the key message of an advertisement communicate?",
+   "options": [
+    "The main benefit or idea the target audience should remember",
+    "All alternative concepts the team rejected",
+    "The complete editing history of every asset",
+    "The technical specifications of the editing workstation",
+    "Every internal task on the production schedule"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 261,
+   "q": "What is the Internet of Things (IoT)?",
+   "options": [
+    "A network of connected physical devices that collect and exchange data",
+    "A database that accepts only files entered manually",
+    "A method for reducing the resolution of digital photographs",
+    "An accounting system that processes only printed invoices",
+    "A collection of images stored on an isolated computer"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 262,
+   "q": "Which sensor would a smart irrigation system use to determine whether soil is becoming too dry?",
+   "options": [
+    "A soil moisture sensor",
+    "A motion detector",
+    "A sound sensor",
+    "A light sensor",
+    "A GPS receiver"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 263,
+   "q": "In the IoT workflow, which action comes first?",
+   "options": [
+    "Sensors capture data from the physical environment",
+    "An actuator carries out the selected response",
+    "The application issues a recommendation",
+    "The user receives an alert",
+    "The system analyzes stored readings"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 264,
+   "q": "What makes a dataset an example of Big Data in the lecture's definition?",
+   "options": [
+    "Its size and complexity make traditional processing methods inefficient",
+    "It contains exactly five columns",
+    "It is stored on an external drive",
+    "It was entered by more than one employee",
+    "Its records were exported from a spreadsheet"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 265,
+   "q": "Which of the five Vs refers to the amount of data generated?",
+   "options": [
+    "Volume",
+    "Veracity",
+    "Variety",
+    "Value",
+    "Velocity"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 266,
+   "q": "Which of the five Vs is most relevant when a retailer must process thousands of transactions as they arrive each second?",
+   "options": [
+    "Velocity",
+    "Volume",
+    "Value",
+    "Veracity",
+    "Variety"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 267,
+   "q": "A retailer combines purchase records, customer reviews, and product images. Which V does this mix of formats illustrate?",
+   "options": [
+    "Variety",
+    "Veracity",
+    "Volume",
+    "Value",
+    "Velocity"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 268,
+   "q": "Which V is most directly affected when sensors report inaccurate readings?",
+   "options": [
+    "Veracity",
+    "Variety",
+    "Value",
+    "Velocity",
+    "Volume"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 269,
+   "q": "Which example best demonstrates the Value of Big Data?",
+   "options": [
+    "Using buying patterns to improve inventory decisions",
+    "Receiving the same stream at a faster rate",
+    "Storing repeated copies of the same dataset",
+    "Collecting more records without using them",
+    "Adding another file format to an archive"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 270,
+   "q": "Which activity illustrates a characteristic capability of artificial intelligence?",
+   "options": [
+    "Identifying patterns in data to make predictions",
+    "Opening a document when its filename is selected",
+    "Adding a fixed tax rate using a spreadsheet formula",
+    "Showing a static slide on a display",
+    "Copying files to a predefined folder on a fixed schedule"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 271,
+   "q": "Why is raw data cleaned and organized before it is used to train an AI model?",
+   "options": [
+    "To prepare reliable inputs from which the model can learn patterns",
+    "To make the model independent of input data",
+    "To replace learning with manual programming of every situation",
+    "To ensure the model produces the same answer for every input",
+    "To remove all relationships between observations"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 272,
+   "q": "A voice assistant handles spoken requests within its supported functions. Which category best describes it?",
+   "options": [
+    "Narrow AI",
+    "Artificial general intelligence",
+    "Artificial superintelligence",
+    "Blockchain consensus",
+    "Green data center technology"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 273,
+   "q": "Which task is a typical use of generative AI?",
+   "options": [
+    "Drafting a summary of a market research report",
+    "Connecting two devices through a physical cable",
+    "Compressing an image without changing its pixels",
+    "Measuring soil moisture directly with a probe",
+    "Routing electrical power between grid substations"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 274,
+   "q": "Which four elements are highlighted in the lecture's smart technology diagram?",
+   "options": [
+    "Sensors, data, connectivity, and automation",
+    "Blocks, hashes, timestamps, and ledgers",
+    "Text, images, audio, and video",
+    "Volume, velocity, variety, and veracity",
+    "Encryption, compression, rendering, and editing"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 275,
+   "q": "In the intelligent traffic system example, what happens after the system analyzes traffic patterns?",
+   "options": [
+    "It selects a timing plan and automatically adjusts the lights",
+    "The cameras begin collecting the first traffic data",
+    "The report is printed before any decision is made",
+    "The system sends the unprocessed readings to storage for the first time",
+    "The sensors switch to recording only audio"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 276,
+   "q": "Which example best illustrates digital transformation in a business?",
+   "options": [
+    "Integrating sales and inventory data to redesign how orders are handled",
+    "Replacing a desk calculator with another model",
+    "Scanning forms while keeping the same manual approval process",
+    "Renaming a folder without changing any workflow",
+    "Printing an existing spreadsheet in color"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 277,
+   "q": "Which factory scenario best illustrates Industry 4.0?",
+   "options": [
+    "Connected machines share live data that is analyzed to adjust production automatically",
+    "Each machine works in isolation and staff report output on paper",
+    "Staff type maintenance dates into an offline file once a year",
+    "A supervisor prints a schedule for a wholly manual process",
+    "A factory scans invoices without connecting its production systems"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 278,
+   "q": "What is a blockchain?",
+   "options": [
+    "A digital ledger whose records are grouped into linked blocks shared across a network",
+    "A tool for forecasting changes in customer demand",
+    "A media player that stores videos in a playlist",
+    "A single spreadsheet stored on one user's computer",
+    "A database of unrelated files arranged by size"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 279,
+   "q": "Which field links a blockchain block to the block immediately before it?",
+   "options": [
+    "The previous block's hash",
+    "The network's display name",
+    "The number of users in the network",
+    "The transaction amount",
+    "The current block's timestamp"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 280,
+   "q": "What is the purpose of consensus in the blockchain workflow shown in the lecture?",
+   "options": [
+    "To let network participants agree on valid records before a block is added",
+    "To convert the transaction history into video",
+    "To store sensor readings at a fixed sampling rate",
+    "To let one user rewrite old records independently",
+    "To determine how to format a product advertisement"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 281,
+   "q": "When does a smart contract carry out a programmed action?",
+   "options": [
+    "When its predefined conditions are met",
+    "Only after the blockchain record has been deleted",
+    "Whenever a connected device sends unrelated data",
+    "As soon as someone drafts its terms",
+    "Before the required conditions can be checked"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 282,
+   "q": "Which scenario best illustrates a smart contract?",
+   "options": [
+    "A system releases a payment automatically after confirmed delivery satisfies a coded rule",
+    "A retailer changes an invoice in a spreadsheet after a phone call",
+    "A company stores a scanned agreement without processing its terms",
+    "A manager reads printed delivery terms and manually approves a payment",
+    "A warehouse sends a weekly inventory report by email"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 283,
+   "q": "What is the primary goal of Green ICT?",
+   "options": [
+    "To reduce the environmental impact of ICT and use resources more efficiently",
+    "To increase hardware purchases regardless of need",
+    "To replace monitoring with estimates of energy use",
+    "To increase electricity use so systems can run continuously",
+    "To shorten device life so organizations buy more equipment"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 284,
+   "q": "Which change directly helps a data center reduce energy use?",
+   "options": [
+    "Improving cooling efficiency and reducing unnecessary power consumption",
+    "Running idle servers at full power overnight",
+    "Adding standby equipment that draws power continuously",
+    "Lowering the room temperature regardless of equipment needs",
+    "Replacing usage measurements with fixed monthly estimates"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 285,
+   "q": "Which action is an example of responsible electronic waste management?",
+   "options": [
+    "Sending obsolete devices to a qualified reuse or recycling program",
+    "Using extra packaging for every discarded monitor",
+    "Discarding old circuit boards with mixed household waste",
+    "Using the equipment longer without arranging for its eventual collection",
+    "Buying more servers without a plan for end-of-life equipment"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 286,
+   "q": "Which statement best describes e-business?",
+   "options": [
+    "Using digital technologies to support business activities and processes",
+    "Selling products only from physical stores",
+    "Using computers exclusively for playing training videos",
+    "Keeping all customer records on handwritten cards",
+    "Conducting business without communication or information systems"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 287,
+   "q": "A manufacturer sells components through an online portal to another company. Which e-business model is illustrated?",
+   "options": [
+    "Business-to-business (B2B)",
+    "Business-to-consumer (B2C)",
+    "Consumer-to-consumer (C2C)",
+    "Consumer-to-business (C2B)",
+    "Government-to-citizen (G2C)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 288,
+   "q": "An online retailer sells a laptop directly to an individual for personal use. Which model applies?",
+   "options": [
+    "Business-to-consumer (B2C)",
+    "Business-to-business (B2B)",
+    "Consumer-to-consumer (C2C)",
+    "Consumer-to-business (C2B)",
+    "Government-to-business (G2B)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 289,
+   "q": "One individual sells a used tablet to another through an online marketplace. Which model applies?",
+   "options": [
+    "Consumer-to-consumer (C2C)",
+    "Business-to-business (B2B)",
+    "Business-to-consumer (B2C)",
+    "Government-to-citizen (G2C)",
+    "Government-to-business (G2B)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 290,
+   "q": "A freelance photographer licenses an image to a company through an online platform. Which model best fits?",
+   "options": [
+    "Consumer-to-business (C2B)",
+    "Business-to-consumer (B2C)",
+    "Consumer-to-consumer (C2C)",
+    "Government-to-citizen (G2C)",
+    "Government-to-business (G2B)"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 291,
+   "q": "Why are digital contracts useful in e-business?",
+   "options": [
+    "They record the parties' agreed terms for an online transaction",
+    "They automatically remove every commercial risk",
+    "They replace all technical security measures",
+    "They guarantee that a product can never be defective",
+    "They make customer support unnecessary"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 292,
+   "q": "Which practice best supports the protection of customer data in an online business?",
+   "options": [
+    "Limiting access and securely handling the information collected",
+    "Publishing customer account details on a public page",
+    "Giving all employees unrestricted access to payment records",
+    "Sending passwords in public marketing messages",
+    "Keeping obsolete customer records without any review"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 293,
+   "q": "Why should an online shop provide clear product and purchase information?",
+   "options": [
+    "To help customers make informed decisions and understand transaction terms",
+    "To ensure every visitor buys a product",
+    "To replace all order-processing systems",
+    "To avoid responding to customer questions under any circumstances",
+    "To guarantee that delivery is always immediate"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 294,
+   "q": "What is the primary purpose of a Learning Management System (LMS)?",
+   "options": [
+    "To organize course content, learning activities, and assessment records",
+    "To route all internet traffic between countries",
+    "To provide geographic coordinates to mobile phones",
+    "To cool the servers used by an institution",
+    "To create the physical network cables for classrooms"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 295,
+   "q": "Which activity best illustrates asynchronous e-learning?",
+   "options": [
+    "Watching a recorded lesson and submitting an assignment later",
+    "Participating in a live video discussion at a fixed time",
+    "Answering a teacher's questions during a live online session",
+    "Taking part in a real-time virtual workshop",
+    "Joining a scheduled webinar with live interaction"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 296,
+   "q": "Which activity best illustrates synchronous e-learning?",
+   "options": [
+    "Attending a live online class with real-time discussion",
+    "Reading an uploaded e-book at a chosen time",
+    "Watching an archived video lesson independently",
+    "Posting an assignment before a flexible weekly deadline",
+    "Completing a self-paced module without live interaction"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 297,
+   "q": "Which is a common challenge of online learning?",
+   "options": [
+    "Unreliable internet access that interrupts participation",
+    "The impossibility of distributing digital documents",
+    "The inability to use any multimedia resources",
+    "The absence of any way to submit assignments online",
+    "The requirement that all learners share one room"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 298,
+   "q": "What is e-government?",
+   "options": [
+    "The use of digital platforms to provide public services and information",
+    "The use of online stores only for private retail sales",
+    "The replacement of every public institution with a social network",
+    "The delivery of all government services exclusively on paper",
+    "The management of only private company payroll systems"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 299,
+   "q": "Why is digital identity important when accessing a personal public-service account?",
+   "options": [
+    "It helps verify who is requesting access to personal services and records",
+    "It guarantees that all government records are publicly visible",
+    "It removes the need to protect personal information",
+    "It automatically provides unlimited cloud storage",
+    "It replaces all legal and administrative procedures"
+   ],
+   "answer": 0
+  },
+  {
+   "n": 300,
+   "q": "Which is an example of a digital public service?",
+   "options": [
+    "Applying for an official certificate through a government portal",
+    "Buying headphones from a private online retailer",
+    "Streaming entertainment through a subscription platform",
+    "Uploading holiday photos to a personal account",
+    "Playing an offline game on a laptop"
+   ],
+   "answer": 0
+  }
+ ]
+}

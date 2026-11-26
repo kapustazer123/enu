@@ -54,7 +54,19 @@ export async function getTimetable() {
 }
 
 export const getTopicText =(subject, topic) => fetchText(subject.base + topic.file);
-export const getQuiz = (subject, quiz) => fetchJSON(subject.base + quiz.file);
+/**
+ * Квиз. Вопросы можно не копировать, а брать из общего банка:
+ *   { "title": "...", "source": "quizzes/bank.json", "range": [1, 16], "sample": 30 }
+ * range — номера вопросов банка (с 1, включительно), sample — сколько случайных вопросов брать в попытку.
+ */
+export async function getQuiz(subject, quiz) {
+  const data = await fetchJSON(subject.base + quiz.file);
+  if (!data.source) return data;
+  const bank = await fetchJSON(subject.base + data.source);
+  let questions = bank.questions || [];
+  if (Array.isArray(data.range)) questions = questions.slice(data.range[0] - 1, data.range[1]);
+  return { ...data, questions };
+}
 
 export async function getFlashcards(subject) {
   if (!subject.flashcards) return [];
